@@ -47,6 +47,8 @@ class ArticleProvider():
                 article_id = article['id']
                 article_title = article.get('title', 'Unknown Title')
 
+                del article['vote_sum'], article['vote_count']
+
                 logger.info(f"[{processed_count}/{total_count}] Processing article: {article_id} | {article_title[:40]}...")
 
                 try:
