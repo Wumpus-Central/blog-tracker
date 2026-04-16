@@ -21,7 +21,7 @@ class ArticleProvider():
             
             try:
                 response = requests.get(
-                    f'https://{domain}/api/v2/help_center/en-us/articles.json?page={page}',
+                    f'https://{domain}/api/v2/help_center/en-us/articles.json?page={page}&per_page=100',
                     timeout=10
                 )
             except Exception as e:
