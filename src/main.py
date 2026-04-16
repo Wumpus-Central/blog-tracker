@@ -20,9 +20,6 @@ class ScraperEngine:
 
     def run(self):
         logger.info("Starting scraper...")
-        
-        # TODO: state_load
-        logger.info("Loading previous state...")
 
         articles = articles_provider.ArticleProvider()
 
@@ -59,6 +56,7 @@ class ScraperEngine:
 
         # TODO: blog_provider
         # TODO: diff_logic
+        logger.info("Loading previous state...")
         with open(self.state_file, "w") as self.old_data:
             json.dump(self.new_data, self.old_data, indent=4) 
             
