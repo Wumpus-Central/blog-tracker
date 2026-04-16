@@ -13,7 +13,7 @@ logger.add(
 
 class ScraperEngine:
     def __init__(self):
-        self.state_file = "data/state.json"
+        self.state_file = "state.json"
         self.new_data = {}
         self.old_data = {}
         logger.debug("ScraperEngine initialized. State file: {file}", file=self.state_file)
@@ -59,6 +59,10 @@ class ScraperEngine:
 
         # TODO: blog_provider
         # TODO: diff_logic
+        with open(self.state_file, "w") as self.old_data:
+            json.dump(self.new_data, self.old_data, indent=4) 
+            
+            logger.success("Overwriting old state.json with new state.json completed")
 
 if __name__ == "__main__":
     @logger.catch

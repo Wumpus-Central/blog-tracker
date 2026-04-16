@@ -1,7 +1,6 @@
 import json
 import requests
 import hashlib
-import time
 import subprocess
 from loguru import logger
 
@@ -61,6 +60,5 @@ class ArticleProvider():
                     logger.error(f"Failed to save article {article_id}: {e}")
 
             page += 1
-            time.sleep(0.25)
         
         return {source: articles}
