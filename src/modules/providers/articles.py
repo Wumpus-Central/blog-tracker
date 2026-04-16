@@ -1,8 +1,8 @@
 import json
 import requests
 import hashlib
-import os
 import time
+import subprocess
 from loguru import logger
 
 class ArticleProvider():
@@ -13,7 +13,8 @@ class ArticleProvider():
         processed_count = 0
         total_count = None
 
-        os.makedirs(f"./{source}", exist_ok=True)
+        subprocess.run(f"rm -rf ./{source}/*", shell=True)
+        subprocess.run(f"mkdir -p ./{source}", shell=True)
         logger.debug(f"Directory ./{source} is ready.")
 
         while True:
