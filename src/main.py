@@ -17,10 +17,8 @@ class ScraperEngine:
         self.new_data = {}
         self.old_data = {}
         logger.debug("ScraperEngine initialized. State file: {file}", file=self.state_file)
-
-    def run(self):
-        logger.info("Starting scraper...")
-
+    
+    def _fetch_articles(self):
         articles = articles_provider.ArticleProvider()
 
         article_sources = [
@@ -30,9 +28,9 @@ class ScraperEngine:
             'creator-support'
         ]
 
-        logger.info(f"Starting to walk through {len(article_sources)} sources.")
-        
         total_scraped = 0
+
+        logger.info(f"Starting to walk through {len(article_sources)} sources.")
 
         for source in article_sources:
             logger.info(f"Processing source: {source}")
@@ -48,18 +46,29 @@ class ScraperEngine:
                 logger.success(f"Successfully scraped {batch_size} articles from '{source}'")
             except Exception as e:
                 logger.exception(f"Failed to process source '{source}': {e}")
-
-        if total_scraped > 0:
-            logger.success(f"Finished! Total articles collected from all sources: {total_scraped}")
-        else:
-            logger.warning("Empty run: No articles were scraped.")
-
-        # TODO: blog_provider
-        # TODO: diff_logic
-        logger.info("Loading previous state...")
-        with open(self.state_file, "w") as self.old_data:
-            json.dump(self.new_data, self.old_data, indent=4) 
             
+            if total_scraped > 0:
+                logger.success(f"Finished! Total articles collected from all sources: {total_scraped}")
+            else:
+                logger.warning("Empty run: No articles were scraped.")
+    
+    def _fetch_blog(self):
+        # TODO: IMPLEMENT SUPPORT FOR BLOG
+        pass
+    
+    def _get_diff(self):
+        # TODO: IMPLEMENT SAVING METHOD
+        pass
+
+
+    def run(self):
+        logger.info("Starting scraper...")
+
+        self._fetch_articles()
+
+        logger.info("Loading previous state...")
+        with open(self.state_file, "w") as old_data_file:
+            json.dump(self.new_data, old_data_file, indent=4) 
             logger.success("Overwriting old state.json with new state.json completed")
 
 if __name__ == "__main__":
