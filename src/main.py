@@ -53,8 +53,14 @@ class ScraperEngine:
                 logger.warning("Empty run: No articles were scraped.")
     
     def _fetch_blog(self):
-        # TODO: IMPLEMENT SUPPORT FOR BLOG
-        pass
+        blog = blog_provider.BlogProvider()
+
+        total_scraped = 0
+
+        logger.info(f"Starting to walk throught Discord Blog.")
+
+        scraped_batch = blog.walker()
+        self.new_data.update(scraped_batch)
     
     def _get_diff(self):
         # TODO: IMPLEMENT SAVING METHOD
@@ -65,6 +71,7 @@ class ScraperEngine:
         logger.info("Starting scraper...")
 
         self._fetch_articles()
+        self._fetch_blog()
 
         logger.info("Loading previous state...")
         with open(self.state_file, "w") as old_data_file:
