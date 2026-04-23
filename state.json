@@ -18471,14 +18471,14 @@
             "position": 0,
             "section_id": 26498345822615,
             "created_at": "2024-09-20T03:54:51Z",
-            "updated_at": "2026-02-24T19:14:56Z",
+            "updated_at": "2026-04-23T20:56:36Z",
             "name": "Ephemeral Messages FAQ",
             "title": "Ephemeral Messages FAQ",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2024-09-24T00:25:40Z",
+            "edited_at": "2026-04-23T20:56:36Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -18488,7 +18488,7 @@
                 "system message",
                 "app command"
             ],
-            "body": "c409314069bda63cf9b92acdadb00300a12392b17ca44865464e10105e0c8814",
+            "body": "2ecf83660f93e72af671bd16fc560ccad38449f4c7b81f963743496118f6e7c3",
             "user_segment_ids": []
         },
         {
