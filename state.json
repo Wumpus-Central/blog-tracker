@@ -7337,14 +7337,14 @@
             "position": 0,
             "section_id": 360007875191,
             "created_at": "2019-10-29T23:24:20Z",
-            "updated_at": "2025-07-03T17:23:30Z",
+            "updated_at": "2026-04-23T22:23:23Z",
             "name": "Discord Testing Clients",
             "title": "Discord Testing Clients",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2025-07-03T17:21:09Z",
+            "edited_at": "2026-04-23T22:23:23Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -7355,7 +7355,7 @@
                 "alpha",
                 "canary"
             ],
-            "body": "e3f42f9c992a9cea6444a9090671397537e0e75e96a32a471f84c177c5978ce0",
+            "body": "d9edf6c841981aa4f6679c9c5609530ece1ec89943a98b757179418176c62bce",
             "user_segment_ids": []
         },
         {
