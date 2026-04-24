@@ -17081,37 +17081,6 @@
             "user_segment_ids": []
         },
         {
-            "id": 4404772028055,
-            "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/4404772028055.json",
-            "html_url": "https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Intent-FAQ-Redirecting",
-            "author_id": 17347533772439,
-            "comments_disabled": true,
-            "draft": false,
-            "promoted": false,
-            "position": 0,
-            "section_id": 360001637571,
-            "created_at": "2021-07-22T15:04:02Z",
-            "updated_at": "2026-04-22T18:48:44Z",
-            "name": "Message Content Intent FAQ (Redirecting\u2026)",
-            "title": "Message Content Intent FAQ (Redirecting\u2026)",
-            "source_locale": "en-us",
-            "locale": "en-us",
-            "outdated": false,
-            "outdated_locales": [],
-            "edited_at": "2026-04-22T18:48:44Z",
-            "user_segment_id": null,
-            "permission_group_id": 6449276657303,
-            "content_tag_ids": [],
-            "label_names": [
-                "answer-bot",
-                "bots",
-                "Message Content Intent",
-                "Privileged Intents"
-            ],
-            "body": "ae11284898edb1e0f98b118b97fe09bd1ad0325922bc180719ed8f04ece2abc0",
-            "user_segment_ids": []
-        },
-        {
             "id": 360040340451,
             "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/360040340451.json",
             "html_url": "https://support-dev.discord.com/hc/en-us/articles/360040340451-How-do-I-stop-selling-my-game",
@@ -18924,6 +18893,13 @@
     ],
     "blog": [
         {
+            "title": "Measure Less to Learn More: Using Fewer, Higher-quality Metrics to Capture What Matters",
+            "link": "https://discord.com/blog/measure-less-to-learn-more-using-fewer-higher-quality-metrics-to-capture-what-matters",
+            "summary": "Too many experiment metrics can make meaningful changes harder to detect. Learn how Discord used simulations and Principal Component Analysis to maximize signal and reduce noise.",
+            "published": "Fri, 24 Apr 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png"
+        },
+        {
             "title": "Making Discord on Desktop Look Just Right: Display Settings to Ease the Eyes",
             "link": "https://discord.com/blog/making-discord-on-desktop-look-just-right-display-settings-to-ease-the-eyes",
             "summary": "Learn all sorts of toggles, options, and features on Discord\u2019s desktop app to help you view media at your pace, lower the strength of colors across the app, and make app content easier to see.",
@@ -19615,13 +19591,6 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Fri, 01 Nov 2024 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6657ad0a58988c5decbfbc53_Header_3.png"
-        },
-        {
-            "title": "How to Play Games, Listen to Music, and Improve Your Discord Server with Apps & Activities",
-            "link": "https://discord.com/blog/how-to-play-games-listen-to-music-improve-your-discord-server-with-apps",
-            "summary": "Where do you find Apps? How do you use \u2018em? How can I make my own App for Discord? Read on to learn the answers to these and more!",
-            "published": "Wed, 30 Oct 2024 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/672165db4c87e38208370925_Products%20%26%20Features%20-%201%20(2).png"
         }
     ]
 }
