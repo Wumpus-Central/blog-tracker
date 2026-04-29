@@ -13929,14 +13929,14 @@
             "position": 13,
             "section_id": 115000458672,
             "created_at": "2020-11-30T20:42:12Z",
-            "updated_at": "2026-03-24T18:25:53Z",
+            "updated_at": "2026-04-29T18:49:11Z",
             "name": "Why isn't my DM going through?",
             "title": "Why isn't my DM going through?",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-03-11T20:11:43Z",
+            "edited_at": "2026-04-29T18:49:11Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -13948,7 +13948,7 @@
                 "answer-bot",
                 "direct message"
             ],
-            "body": "11323346366d647286f1373c44d8e44a5b0308b657793dd653f320a668af10b5",
+            "body": "2248ddb05ee625e377f8a31906e73c95b97405bdd0a827e68a0ebcc9ca4730db",
             "user_segment_ids": []
         },
         {
@@ -18922,6 +18922,13 @@
     ],
     "blog": [
         {
+            "title": "You\u2019ve Got (Too Much) Mail: Behind the Scenes of the 3/25/26 Voice Outage",
+            "link": "https://discord.com/blog/behind-the-scenes-of-the-3-25-26-voice-outage",
+            "summary": "On March 25th, voice and video on Discord suffered major degradation beginning at 12:13 PDT, lasting a little over three hours. Learn how the issue originated, how it affected systems across Discord, how we recovered, and how we\u2019re preventing the same problem from reoccurring.",
+            "published": "Wed, 29 Apr 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69f2444973213ba625d60106_2024_10_DiscordBlog_Safety-1.png"
+        },
+        {
             "title": "Measure Less to Learn More: Using Fewer, Higher-quality Metrics to Capture What Matters",
             "link": "https://discord.com/blog/measure-less-to-learn-more-using-fewer-higher-quality-metrics-to-capture-what-matters",
             "summary": "Too many experiment metrics can make meaningful changes harder to detect. Learn how Discord used simulations and Principal Component Analysis to maximize signal and reduce noise.",
@@ -19613,13 +19620,6 @@
             "summary": "With the final season in full swing, we\u2019re going all-in and bringing you a special Arcane Shop collection! Plus, get a behind-the-scenes look at how we made one of the Arcane collection\u2019s Profile Effects.",
             "published": "Wed, 13 Nov 2024 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/672e95661de7c16c8d8f7417_image2.png"
-        },
-        {
-            "title": "Discord Patch Notes: November 1, 2024",
-            "link": "https://discord.com/blog/discord-patch-notes-november-1-2024",
-            "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
-            "published": "Fri, 01 Nov 2024 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6657ad0a58988c5decbfbc53_Header_3.png"
         }
     ]
 }
