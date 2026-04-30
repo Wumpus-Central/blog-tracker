@@ -8422,14 +8422,14 @@
             "position": 0,
             "section_id": 360009072571,
             "created_at": "2016-05-26T17:18:00Z",
-            "updated_at": "2026-01-29T23:02:06Z",
+            "updated_at": "2026-04-30T13:31:56Z",
             "name": "Setting up Multi-Factor Authentication",
             "title": "Setting up Multi-Factor Authentication",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2025-07-18T21:23:24Z",
+            "edited_at": "2026-04-30T13:31:56Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -8447,7 +8447,7 @@
                 "authenication",
                 "MFA"
             ],
-            "body": "a9f8472172da0edcbc3fa0ea669e551b78ad2c4f76e53846dae3b88dcc16fb53",
+            "body": "7827fd46ad5c91aa8a3fc7999bb734bde1304360348d86f4d7b9bec6601294bb",
             "user_segment_ids": []
         },
         {
