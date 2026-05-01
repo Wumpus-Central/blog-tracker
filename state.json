@@ -709,14 +709,14 @@
             "position": 0,
             "section_id": 360002436391,
             "created_at": "2025-12-17T18:57:26Z",
-            "updated_at": "2026-03-12T21:28:54Z",
+            "updated_at": "2026-05-01T18:43:28Z",
             "name": "Monthly Orbs Drop for Nitro Members FAQ",
             "title": "Monthly Orbs Drop for Nitro Members FAQ",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-03-04T18:54:08Z",
+            "edited_at": "2026-05-01T18:43:28Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -725,7 +725,7 @@
                 "monthly orbs",
                 "orbs"
             ],
-            "body": "8cfde4a9541d5d3292126cdb74fe2420ba0969d2fa1c8c2e838e36ab520a82ef",
+            "body": "409eac7174bec8460ef9bf5b49380e4e03a488eab3b35b8a7e35f971cf4d0531",
             "user_segment_ids": []
         },
         {
@@ -8193,14 +8193,14 @@
             "position": 0,
             "section_id": 360009072571,
             "created_at": "2017-08-22T01:07:34Z",
-            "updated_at": "2025-12-19T07:48:56Z",
+            "updated_at": "2026-05-01T18:31:12Z",
             "name": "How to Recover Your Discord Account When Locked Out of Multi-Factor Authentication (MFA)",
             "title": "How to Recover Your Discord Account When Locked Out of Multi-Factor Authentication (MFA)",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2025-06-24T18:18:25Z",
+            "edited_at": "2026-05-01T18:31:12Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [
@@ -8217,7 +8217,7 @@
                 "SMS",
                 "authenticator app"
             ],
-            "body": "b41a1320da53d5800c2b88e6aa1a62d5d6d51ccc5c6be197a60e254b1bccc479",
+            "body": "da7c738e53bd674dd1ffee9482ddf25e6a132eab9091a28e5d137d61a81b97aa",
             "user_segment_ids": []
         },
         {
