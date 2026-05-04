@@ -18922,6 +18922,13 @@
     ],
     "blog": [
         {
+            "title": "Discord Patch Notes: May 4, 2026",
+            "link": "https://discord.com/blog/discord-patch-notes-may-4-2026",
+            "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
+            "published": "Mon, 04 May 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png"
+        },
+        {
             "title": "You\u2019ve Got (Too Much) Mail: Behind the Scenes of the 3/25/26 Voice Outage",
             "link": "https://discord.com/blog/behind-the-scenes-of-the-3-25-26-voice-outage",
             "summary": "On March 25th, voice and video on Discord suffered major degradation beginning at 12:13 PDT, lasting a little over three hours. Learn how the issue originated, how it affected systems across Discord, how we recovered, and how we\u2019re preventing the same problem from reoccurring.",
@@ -19613,13 +19620,6 @@
             "summary": "Here's the Discord Changelog from November 18, 2024, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Mon, 18 Nov 2024 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/636042835883b97b259ef618_Fall_November.png"
-        },
-        {
-            "title": "Celebrate Arcane\u2019s Second Season with a new Shop Collection",
-            "link": "https://discord.com/blog/arcane-shop-collection",
-            "summary": "With the final season in full swing, we\u2019re going all-in and bringing you a special Arcane Shop collection! Plus, get a behind-the-scenes look at how we made one of the Arcane collection\u2019s Profile Effects.",
-            "published": "Wed, 13 Nov 2024 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/672e95661de7c16c8d8f7417_image2.png"
         }
     ]
 }
