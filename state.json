@@ -1,6 +1,38 @@
 {
     "support": [
         {
+            "id": 40102783004311,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/40102783004311.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/40102783004311-Game-Shops-FAQ",
+            "author_id": 2921470028,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 24453241163799,
+            "created_at": "2026-04-29T16:12:35Z",
+            "updated_at": "2026-05-07T18:00:31Z",
+            "name": "Game Shops FAQ",
+            "title": "Game Shops FAQ",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-05-07T18:00:31Z",
+            "user_segment_id": null,
+            "permission_group_id": 6449276657303,
+            "content_tag_ids": [],
+            "label_names": [
+                "answer-bot",
+                "marvel rivals shop",
+                "game shops",
+                "game shop",
+                "rust shop"
+            ],
+            "body": "3bac3a0342222e99da82c08bfec4f5f139ea607eca164201802b837e269d3ee3",
+            "user_segment_ids": []
+        },
+        {
             "id": 39558449985047,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/39558449985047.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/39558449985047-GearUP-x-Discord",
@@ -857,39 +889,6 @@
                 "account stats"
             ],
             "body": "56a46e577edda3d2192328ca864c153474a35aaad2961aaf9493707ea3cc514a",
-            "user_segment_ids": []
-        },
-        {
-            "id": 36394123113239,
-            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/36394123113239.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/36394123113239-Marvel-Rivals-Shop-FAQ",
-            "author_id": 2921470028,
-            "comments_disabled": true,
-            "draft": false,
-            "promoted": false,
-            "position": 0,
-            "section_id": 24453241163799,
-            "created_at": "2025-11-17T18:32:18Z",
-            "updated_at": "2026-04-17T20:03:54Z",
-            "name": "Marvel Rivals Shop FAQ",
-            "title": "Marvel Rivals Shop FAQ",
-            "source_locale": "en-us",
-            "locale": "en-us",
-            "outdated": false,
-            "outdated_locales": [],
-            "edited_at": "2026-04-07T15:03:28Z",
-            "user_segment_id": null,
-            "permission_group_id": 6449276657303,
-            "content_tag_ids": [
-                "01KBDXDQHMFX6G1MGNJYN0R9J8",
-                "01KBDXE4M829MR8DP13KFXKXRE"
-            ],
-            "label_names": [
-                "marvel rivals",
-                "marvel rivals shop",
-                "game items shop"
-            ],
-            "body": "cb7781407e53ae920d3ef664ea4a69e810043283ceec4033073c77f3dbb0e4bd",
             "user_segment_ids": []
         },
         {
@@ -18922,6 +18921,13 @@
     ],
     "blog": [
         {
+            "title": "Stock Up in the New Rust Shop! Enjoy a Discord-Only 20% Sale on Most Items until 5/21",
+            "link": "https://discord.com/blog/rust-shop-on-discord-launch-sale",
+            "summary": "Starting today, you can now browse, purchase, and even gift and wishlist in-game items for Rust directly in Discord! See how it all works, and learn about a hefty two-week Discord-exclusive launch discount on a wide selection of officially-made Rust items.",
+            "published": "Thu, 07 May 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb913580d2452bfe2fd43a_RUST-Shop-blog-1800x720.png"
+        },
+        {
             "title": "Discord Patch Notes: May 4, 2026",
             "link": "https://discord.com/blog/discord-patch-notes-may-4-2026",
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
@@ -19613,13 +19619,6 @@
             "summary": "In this article, we\u2019ll go over helpful keyboard shortcuts built into Discord, how to make your own keybinds, and how one really helpful shortcut lets you blaze through your chats at top speed.",
             "published": "Tue, 19 Nov 2024 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6737bbffc9ba0d49d9aab778_image6.png"
-        },
-        {
-            "title": "Discord Update: November 18, 2024 Changelog",
-            "link": "https://discord.com/blog/discord-update-november-18-2024-changelog",
-            "summary": "Here's the Discord Changelog from November 18, 2024, so you can stay informed on what\u2019s new in recent app updates!",
-            "published": "Mon, 18 Nov 2024 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/636042835883b97b259ef618_Fall_November.png"
         }
     ]
 }
