@@ -18921,6 +18921,13 @@
     ],
     "blog": [
         {
+            "title": "How Discord Automates ScyllaDB Clusters at Scale",
+            "link": "https://discord.com/blog/how-discord-automates-scylladb-clusters-at-scale",
+            "summary": "You've been asked to stand up a brand-new database cluster, meaning a whole day of configuring dozens of nodes, validating replication, wiring up dual-write pipelines\u2026 what if this whole ordeal took less than two hours? This is how we got ourselves into this exact mess, and how we made our way out of it.",
+            "published": "Fri, 08 May 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb97b51217ebb66107035c_2024_10_DiscordBlog_DevandEngineers-5.png"
+        },
+        {
             "title": "Stock Up in the New Rust Shop! Enjoy a Discord-Only 20% Sale on Most Items until 5/21",
             "link": "https://discord.com/blog/rust-shop-on-discord-launch-sale",
             "summary": "Starting today, you can now browse, purchase, and even gift and wishlist in-game items for Rust directly in Discord! See how it all works, and learn about a hefty two-week Discord-exclusive launch discount on a wide selection of officially-made Rust items.",
@@ -19612,13 +19619,6 @@
             "summary": "Keyboard Navigation lets you get to wherever you want on Discord with just your keyboard! In this article, we\u2019ll show you the basics of cruising through Discord with just a few key presses, including keyboard shortcuts,",
             "published": "Tue, 26 Nov 2024 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/673fde4f0b1de879e48dc73a_image8.png"
-        },
-        {
-            "title": "How to Use Keyboard Shortcuts on Discord & Create Custom Keybinds",
-            "link": "https://discord.com/blog/how-to-use-keyboard-shortcuts-on-discord-create-custom-keybinds",
-            "summary": "In this article, we\u2019ll go over helpful keyboard shortcuts built into Discord, how to make your own keybinds, and how one really helpful shortcut lets you blaze through your chats at top speed.",
-            "published": "Tue, 19 Nov 2024 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6737bbffc9ba0d49d9aab778_image6.png"
         }
     ]
 }
