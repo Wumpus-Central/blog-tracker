@@ -33,6 +33,32 @@
             "user_segment_ids": []
         },
         {
+            "id": 39938793707543,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/39938793707543.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/39938793707543-Nitro-Rewards",
+            "author_id": 2921470028,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 360002436391,
+            "created_at": "2026-04-22T18:57:55Z",
+            "updated_at": "2026-05-11T14:54:20Z",
+            "name": "Nitro Rewards",
+            "title": "Nitro Rewards",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-05-11T14:54:20Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [],
+            "body": "27eefcb2c5c3e54563e4f0849924167e984232589b4461bc8d9ac121abdee6ea",
+            "user_segment_ids": []
+        },
+        {
             "id": 39558449985047,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/39558449985047.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/39558449985047-GearUP-x-Discord",
@@ -59,39 +85,6 @@
             "user_segment_ids": []
         },
         {
-            "id": 39554094193175,
-            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/39554094193175.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/39554094193175-Discord-Nitro-Logitech-Discount",
-            "author_id": 2921470028,
-            "comments_disabled": true,
-            "draft": false,
-            "promoted": false,
-            "position": 0,
-            "section_id": 22113084771863,
-            "created_at": "2026-04-06T19:09:33Z",
-            "updated_at": "2026-05-07T22:05:38Z",
-            "name": "Discord Nitro Logitech Discount",
-            "title": "Discord Nitro Logitech Discount",
-            "source_locale": "en-us",
-            "locale": "en-us",
-            "outdated": false,
-            "outdated_locales": [],
-            "edited_at": "2026-04-23T13:59:01Z",
-            "user_segment_id": null,
-            "permission_group_id": 6449276657303,
-            "content_tag_ids": [],
-            "label_names": [
-                "nitro",
-                "*officialhctemplate",
-                "logitech",
-                "logitech code",
-                "nitro perk",
-                "logitech discount"
-            ],
-            "body": "024d375be0e8a0da8e707e76d95b9b0aa52222a9da53d3dd1759b99f7c84d23f",
-            "user_segment_ids": []
-        },
-        {
             "id": 39404618931223,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/39404618931223.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/39404618931223-What-is-the-Take-It-Down-Act-TIDA",
@@ -115,6 +108,35 @@
             "content_tag_ids": [],
             "label_names": [],
             "body": "09997cac4b01c58f949de45ec94b29b6e8b112ba97cb21fd9c2e21e803c9506c",
+            "user_segment_ids": []
+        },
+        {
+            "id": 39188406147479,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/39188406147479.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/39188406147479-Nitro-Rewards",
+            "author_id": 2921470028,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 360002436391,
+            "created_at": "2026-03-20T18:55:02Z",
+            "updated_at": "2026-05-11T14:54:11Z",
+            "name": "Nitro Rewards",
+            "title": "Nitro Rewards",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-05-11T14:54:11Z",
+            "user_segment_id": null,
+            "permission_group_id": 6449276657303,
+            "content_tag_ids": [],
+            "label_names": [
+                "answer-bot",
+                "nitro rewards"
+            ],
+            "body": "9244251c8f70994c54ed9e5234a1c23f580a3b8b068cb72daf5f528125e9f743",
             "user_segment_ids": []
         },
         {
@@ -1118,45 +1140,6 @@
                 "tags"
             ],
             "body": "f515379ce1a00e0c02a8f5db1a2db5545ff3453b6c7efe0f8f75a519d76cf868",
-            "user_segment_ids": []
-        },
-        {
-            "id": 35479903794199,
-            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/35479903794199.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/35479903794199-Discord-Nitro-SteelSeries-Discount",
-            "author_id": 1504238994441,
-            "comments_disabled": true,
-            "draft": false,
-            "promoted": false,
-            "position": 0,
-            "section_id": 22113084771863,
-            "created_at": "2025-10-07T23:37:13Z",
-            "updated_at": "2025-12-01T22:12:06Z",
-            "name": "Discord Nitro SteelSeries Discount",
-            "title": "Discord Nitro SteelSeries Discount",
-            "source_locale": "en-us",
-            "locale": "en-us",
-            "outdated": false,
-            "outdated_locales": [],
-            "edited_at": "2025-11-20T17:51:10Z",
-            "user_segment_id": null,
-            "permission_group_id": 1720972,
-            "content_tag_ids": [],
-            "label_names": [
-                "steelseries",
-                "answer-bot",
-                "nitro",
-                "products",
-                "code",
-                "offer",
-                "perk",
-                "discount",
-                "SteelSeries",
-                "KontrolFreek",
-                "kontrolfreek",
-                "webstore"
-            ],
-            "body": "f1d4c255e14954ad57f099123bad15017e8360391880261e47c7166cf91e80e2",
             "user_segment_ids": []
         },
         {
@@ -18921,6 +18904,20 @@
     ],
     "blog": [
         {
+            "title": "Nitro Now Comes with Xbox Game Pass and New Benefits. Welcome to Nitro Rewards.",
+            "link": "https://discord.com/blog/nitro-rewards",
+            "summary": "As we hit Nitro\u2019s 10-year anniversary, we're launching Nitro Rewards: a brand-new benefits program built with some of the biggest names in gaming. See what\u2019s coming for Nitro members, for no added cost.",
+            "published": "Mon, 11 May 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb944c4e112d34c82f95b7_Blog_Banner.png"
+        },
+        {
+            "title": "How to Use Nitro: A Beginner\u2019s Guide to Discord\u2019s Premium Subscription",
+            "link": "https://discord.com/blog/beginners-guide-to-nitro",
+            "summary": "What\u2019s Discord Nitro all about? What perks does it give, and how can you get it? If you\u2019re looking to expand your Nitro knowledge, you\u2019re in the right place.",
+            "published": "Mon, 11 May 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a01d7c22acd73032a040029_image2.png"
+        },
+        {
             "title": "How Discord Automates ScyllaDB Clusters at Scale",
             "link": "https://discord.com/blog/how-discord-automates-scylladb-clusters-at-scale",
             "summary": "You've been asked to stand up a brand-new database cluster, meaning a whole day of configuring dozens of nodes, validating replication, wiring up dual-write pipelines\u2026 what if this whole ordeal took less than two hours? This is how we got ourselves into this exact mess, and how we made our way out of it.",
@@ -19605,20 +19602,6 @@
             "summary": "We\u2019re getting close to leaving 2024 and entering 2025! Let\u2019s hear from Veronica, Emi, Tyler, and Carlos on what they\u2019ve been playing and what games they recommend to new gamers!",
             "published": "Wed, 27 Nov 2024 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/674661dbb634a7e3f8c86e2d_image5.png"
-        },
-        {
-            "title": "Measuring Product Impact Without A/B Testing: How Discord Used the Synthetic Control Method for Voice Messages",
-            "link": "https://discord.com/blog/measuring-product-impact-without-a-b-testing-how-discord-used-the-synthetic-control-method-for-voice-messages",
-            "summary": "Learn how Discord accurately assessed product impact when traditional A/B tests weren't viable, utilizing the synthetic control method to evaluate voice messages.",
-            "published": "Wed, 27 Nov 2024 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/674654533573280b4d1afb80_image9.png"
-        },
-        {
-            "title": "How to Navigate Discord Using Only Your Keyboard",
-            "link": "https://discord.com/blog/how-to-navigate-discord-using-only-your-keyboard",
-            "summary": "Keyboard Navigation lets you get to wherever you want on Discord with just your keyboard! In this article, we\u2019ll show you the basics of cruising through Discord with just a few key presses, including keyboard shortcuts,",
-            "published": "Tue, 26 Nov 2024 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/673fde4f0b1de879e48dc73a_image8.png"
         }
     ]
 }
