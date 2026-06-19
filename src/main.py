@@ -5,6 +5,7 @@ from loguru import logger
 import modules.providers.zendesk as zendesk_provider 
 import modules.providers.blog as blog_provider
 import modules.differ as differ
+import modules.notifiers.discord as discord_notifier
 
 logger.remove()
 logger.add(
@@ -72,6 +73,9 @@ class ScraperEngine:
             self.output_dir, self.zendesk_sources, self.new_data, self.old_data
         )
 
+    def _notify_discord(self):
+        discord_notifier.DiscordNotifier().send(self.diff)
+
 
     def run(self):
         logger.info("Starting scraper...")
@@ -92,6 +96,7 @@ class ScraperEngine:
             logger.success("New state.json written.")
 
         self._get_diff()
+        self._notify_discord()
 
 if __name__ == "__main__":
     @logger.catch

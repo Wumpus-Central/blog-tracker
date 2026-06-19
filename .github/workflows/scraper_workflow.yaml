@@ -44,6 +44,7 @@ jobs:
         # folders into the `main` checkout, which we commit & push below.
         env:
           OUTPUT_DIR: data
+          DISCORD_WEBHOOK_UNI: ${{ secrets.DISCORD_WEBHOOK_UNI }}
         run: ./venv/bin/python code/src/main.py
 
       - name: Commit and Push changes to main
