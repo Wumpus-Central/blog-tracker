@@ -20,10 +20,10 @@ jobs:
           ref: source
           path: code
 
-      - name: Checkout main branch (data) into ./data
+      - name: Checkout data branch (main) into ./data
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: data
           path: data
 
       - name: Set up Python
