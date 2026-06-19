@@ -1,4 +1,5 @@
 import json
+import os
 import requests
 import hashlib
 import subprocess
@@ -12,9 +13,14 @@ class ArticleProvider:
         processed_count = 0
         total_count = None
 
-        subprocess.run(f"rm -rf ./{source}/*", shell=True)
-        subprocess.run(f"mkdir -p ./{source}", shell=True)
-        logger.debug(f"Directory ./{source} is ready.")
+        # Output dir for per-source article files. Defaults to cwd ("."),
+        # but in CI we set OUTPUT_DIR=data so writes land in the `main` checkout.
+        output_dir = os.environ.get("OUTPUT_DIR", ".")
+        source_dir = os.path.join(output_dir, source)
+
+        subprocess.run(f"rm -rf {source_dir}/*", shell=True)
+        subprocess.run(f"mkdir -p {source_dir}", shell=True)
+        logger.debug(f"Directory {source_dir} is ready.")
 
         while True:
             logger.debug(f"Fetching page {page} for {source}...")
@@ -52,7 +58,7 @@ class ArticleProvider:
                 logger.info(f"[{processed_count}/{total_count}] Processing article: {article_id} | {article_title[:40]}...")
 
                 try:
-                    file_path = f"./{source}/{article_id}.md"
+                    file_path = os.path.join(source_dir, f"{article_id}.md")
                     with open(file_path, "w", encoding="utf-8") as file:
                         file.write(article['body'])
                     

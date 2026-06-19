@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 from loguru import logger
 import modules.providers.articles as articles_provider 
@@ -13,7 +14,10 @@ logger.add(
 
 class ScraperEngine:
     def __init__(self):
-        self.state_file = "state.json"
+        # Output dir for scraped data + state.json. Defaults to cwd ("."),
+        # but in CI we set OUTPUT_DIR=data so writes land in the `main` checkout.
+        self.output_dir = os.environ.get("OUTPUT_DIR", ".")
+        self.state_file = os.path.join(self.output_dir, "state.json")
         self.new_data = {}
         self.old_data = {}
         logger.debug("ScraperEngine initialized. State file: {file}", file=self.state_file)
