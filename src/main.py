@@ -4,6 +4,7 @@ import sys
 from loguru import logger
 import modules.providers.articles as articles_provider 
 import modules.providers.blog as blog_provider
+import modules.differ as differ
 
 logger.remove()
 logger.add(
@@ -20,23 +21,23 @@ class ScraperEngine:
         self.state_file = os.path.join(self.output_dir, "state.json")
         self.new_data = {}
         self.old_data = {}
-        logger.debug("ScraperEngine initialized. State file: {file}", file=self.state_file)
-    
-    def _fetch_articles(self):
-        articles = articles_provider.ArticleProvider()
-
-        article_sources = [
+        self.diff = {}
+        self.article_sources = [
             'support',
             'support-dev',
             'support-apps',
             'creator-support'
         ]
+        logger.debug("ScraperEngine initialized. State file: {file}", file=self.state_file)
+    
+    def _fetch_articles(self):
+        articles = articles_provider.ArticleProvider()
 
         total_scraped = 0
 
-        logger.info(f"Starting to walk through {len(article_sources)} sources.")
+        logger.info(f"Starting to walk through {len(self.article_sources)} sources.")
 
-        for source in article_sources:
+        for source in self.article_sources:
             logger.info(f"Processing source: {source}")
             try:
                 scraped_batch = articles.walker(source)
@@ -67,20 +68,30 @@ class ScraperEngine:
         self.new_data.update(scraped_batch)
     
     def _get_diff(self):
-        # TODO: IMPLEMENT SAVING METHOD
-        pass
+        self.diff = differ.Differ().compute(
+            self.output_dir, self.article_sources, self.new_data, self.old_data
+        )
 
 
     def run(self):
         logger.info("Starting scraper...")
 
+        if os.path.exists(self.state_file):
+            with open(self.state_file, "r") as old_data_file:
+                self.old_data = json.load(old_data_file)
+            logger.info("Loaded previous state for diffing.")
+        else:
+            logger.info("No previous state found — first run.")
+
         self._fetch_articles()
         self._fetch_blog()
 
-        logger.info("Loading previous state...")
+        logger.info("Writing new state...")
         with open(self.state_file, "w") as old_data_file:
             json.dump(self.new_data, old_data_file, indent=4) 
-            logger.success("Overwriting old state.json with new state.json completed")
+            logger.success("New state.json written.")
+
+        self._get_diff()
 
 if __name__ == "__main__":
     @logger.catch
