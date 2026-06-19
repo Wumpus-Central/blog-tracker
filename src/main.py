@@ -2,7 +2,7 @@ import json
 import os
 import sys
 from loguru import logger
-import modules.providers.articles as articles_provider 
+import modules.providers.zendesk as zendesk_provider 
 import modules.providers.blog as blog_provider
 import modules.differ as differ
 
@@ -22,7 +22,7 @@ class ScraperEngine:
         self.new_data = {}
         self.old_data = {}
         self.diff = {}
-        self.article_sources = [
+        self.zendesk_sources = [
             'support',
             'support-dev',
             'support-apps',
@@ -30,17 +30,17 @@ class ScraperEngine:
         ]
         logger.debug("ScraperEngine initialized. State file: {file}", file=self.state_file)
     
-    def _fetch_articles(self):
-        articles = articles_provider.ArticleProvider()
+    def _fetch_zendesk(self):
+        zendesk = zendesk_provider.ZendeskProvider()
 
         total_scraped = 0
 
-        logger.info(f"Starting to walk through {len(self.article_sources)} sources.")
+        logger.info(f"Starting to walk through {len(self.zendesk_sources)} sources.")
 
-        for source in self.article_sources:
+        for source in self.zendesk_sources:
             logger.info(f"Processing source: {source}")
             try:
-                scraped_batch = articles.walker(source)
+                scraped_batch = zendesk.walker(source)
                 
                 current_articles = scraped_batch.get(source, [])
                 batch_size = len(current_articles)
@@ -69,7 +69,7 @@ class ScraperEngine:
     
     def _get_diff(self):
         self.diff = differ.Differ().compute(
-            self.output_dir, self.article_sources, self.new_data, self.old_data
+            self.output_dir, self.zendesk_sources, self.new_data, self.old_data
         )
 
 
@@ -83,7 +83,7 @@ class ScraperEngine:
         else:
             logger.info("No previous state found — first run.")
 
-        self._fetch_articles()
+        self._fetch_zendesk()
         self._fetch_blog()
 
         logger.info("Writing new state...")

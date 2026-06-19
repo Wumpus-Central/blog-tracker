@@ -5,7 +5,7 @@ import hashlib
 import subprocess
 from loguru import logger
 
-class ArticleProvider:
+class ZendeskProvider:
     def walker(self, source):
         domain = f"{source}.discord.com"
         page = 1
