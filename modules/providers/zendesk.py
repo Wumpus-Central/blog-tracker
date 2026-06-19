@@ -14,7 +14,7 @@ class ZendeskProvider:
         total_count = None
 
         # Output dir for per-source article files. Defaults to cwd ("."),
-        # but in CI we set OUTPUT_DIR=data so writes land in the `main` checkout.
+        # but in CI we set OUTPUT_DIR=data so writes land in the `data` checkout.
         output_dir = os.environ.get("OUTPUT_DIR", ".")
         source_dir = os.path.join(output_dir, source)
 

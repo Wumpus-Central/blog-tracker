@@ -11,7 +11,7 @@ This repository uses a **two-branch architecture** to separate code from generat
 
 | Branch | Role | Contents |
 |--------|------|----------|
-| `source` (default) | Code | `src/`, `.github/`, `.gitignore` |
+| `source` (default) | Code | `main.py`, `modules/`, `.github/`, `.gitignore` |
 | `data` | Output | `state.json`, `support/`, `support-dev/`, `support-apps/`, `creator-support/` |
 
 The scraper runs on `source` (since GitHub Actions scheduled workflows only fire on the default branch), but writes its output into a checkout of `data`, then commits and pushes changes there. This keeps the data branch's history clean (only data commits) and the source branch's history focused on code.
@@ -22,8 +22,8 @@ GitHub Actions (source branch, hourly cron)
 ├── checkout source → ./code    (scraper code + workflow)
 ├── checkout data   → ./data    (state.json + .md files)
 │
-├── pip install from code/src/requirements.txt
-├── python code/src/main.py     (OUTPUT_DIR=data)
+├── pip install from code/requirements.txt
+├── python code/main.py     (OUTPUT_DIR=data)
 │   ├── scrape Zendesk → data/{source}/{id}.md + state.json
 │   ├── scrape Blog    → state.json
 │   ├── differ         → git status in data/ → A/M/D
@@ -55,13 +55,13 @@ git clone -b source https://github.com/Wumpus-Central/blog-tracker.git
 cd blog-tracker
 
 python -m venv venv
-./venv/bin/pip install -r src/requirements.txt
+./venv/bin/pip install -r requirements.txt
 
 # Run with output to current directory (creates ./support/, ./state.json, etc.)
-./venv/bin/python src/main.py
+./venv/bin/python main.py
 
 # Or run against a data branch checkout
-OUTPUT_DIR=./data ./venv/bin/python src/main.py
+OUTPUT_DIR=./data ./venv/bin/python main.py
 ```
 
 > **Note:** The differ relies on `git status` in the output directory. For meaningful diffs, run against a checkout of the `data` branch. Running locally with `OUTPUT_DIR=.` will report all files as new (untracked).
@@ -81,7 +81,7 @@ OUTPUT_DIR=./data ./venv/bin/python src/main.py
 |--------|-------------|
 | `DISCORD_WEBHOOK_UNI` | Discord webhook URL for the UNI server |
 
-To add the official Wumpus Central server in the future, I will add a `DISCORD_WEBHOOK_WUMPUSCENTRAL` secret and append `"WUMPUSCENTRAL"` to `WEBHOOK_LABELS` in `src/modules/notifiers/discord.py`.
+To add the official Wumpus Central server in the future, I will add a `DISCORD_WEBHOOK_WUMPUSCENTRAL` secret and append `"WUMPUSCENTRAL"` to `WEBHOOK_LABELS` in `modules/notifiers/discord.py`.
 
 ## Data Format
 

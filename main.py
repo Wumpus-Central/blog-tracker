@@ -17,7 +17,7 @@ logger.add(
 class ScraperEngine:
     def __init__(self):
         # Output dir for scraped data + state.json. Defaults to cwd ("."),
-        # but in CI we set OUTPUT_DIR=data so writes land in the `main` checkout.
+        # but in CI we set OUTPUT_DIR=data so writes land in the `data` checkout.
         self.output_dir = os.environ.get("OUTPUT_DIR", ".")
         self.state_file = os.path.join(self.output_dir, "state.json")
         self.new_data = {}
