@@ -2,7 +2,7 @@ name: Content Scraper Workflow
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '51 * * * *'
   workflow_dispatch:
   push:
     branches: [source]
