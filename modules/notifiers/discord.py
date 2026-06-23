@@ -28,6 +28,10 @@ class DiscordNotifier:
             logger.info("Diff is empty — nothing to notify.")
             return
 
+        logger.info(f"Dispatching changes to {len(self.WEBHOOK_LABELS)} webhook target(s)...")
+
+        sent = 0
+
         for source, buckets in diff.items():
             creator = self.SOURCE_CREATORS.get(source)
             if creator is None:
@@ -41,7 +45,10 @@ class DiscordNotifier:
                     if message is None:
                         continue
                     self._dispatch(message, source, action, entry_key)
+                    sent += 1
                     time.sleep(self.SEND_DELAY_SECONDS)
+
+        logger.success(f"Notify complete: dispatched {sent} embed(s).")
 
     def _dispatch(self, message, source, action, entry_key):
         for label in self.WEBHOOK_LABELS:

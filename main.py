@@ -32,7 +32,7 @@ class ScraperEngine:
             'support-apps',
             'creator-support'
         ]
-        logger.debug("ScraperEngine initialized. State file: {file}", file=self.state_file)
+        logger.debug(f"ScraperEngine initialized. State file: {self.state_file}")
 
     def _fetch_zendesk(self):
         zendesk = zendesk_provider.ZendeskProvider()
@@ -54,22 +54,23 @@ class ScraperEngine:
 
                 logger.success(f"Successfully scraped {batch_size} articles from '{source}'")
             except Exception as e:
-                logger.exception(f"Failed to process source '{source}': {e}")
+                logger.exception(f"Failed to process source '{source}'")
 
-            if total_scraped > 0:
-                logger.success(f"Finished! Total articles collected from all sources: {total_scraped}")
-            else:
-                logger.warning("Empty run: No articles were scraped.")
+        if total_scraped > 0:
+            logger.success(f"Finished! Total articles collected from all sources: {total_scraped}")
+        else:
+            logger.warning("Empty run: No articles were scraped.")
 
     def _fetch_blog(self):
         blog = blog_provider.BlogProvider()
 
-        total_scraped = 0
+        logger.info("Starting to walk through Discord Blog.")
 
-        logger.info(f"Starting to walk throught Discord Blog.")
-
-        scraped_batch = blog.walker()
-        self.new_data.update(scraped_batch)
+        try:
+            scraped_batch = blog.walker()
+            self.new_data.update(scraped_batch)
+        except Exception as e:
+            logger.exception(f"Failed to process Discord Blog")
 
     def _get_diff(self):
         self.diff = differ.Differ().compute(
@@ -77,13 +78,21 @@ class ScraperEngine:
         )
 
     def _save_diff(self):
-        with open(self.diff_file, "w", encoding="utf-8") as f:
-            json.dump(self.diff, f, indent=4)
-        logger.success(f"Diff written to {self.diff_file}")
+        try:
+            with open(self.diff_file, "w", encoding="utf-8") as f:
+                json.dump(self.diff, f, indent=4)
+            logger.success(f"Diff written to {self.diff_file}")
+        except Exception as e:
+            logger.error(f"Failed to write diff to {self.diff_file}: {e}")
+            raise
 
     def _load_diff(self):
-        with open(self.diff_file, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(self.diff_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.error(f"Failed to load diff from {self.diff_file}: {e}")
+            raise
 
     def _notify_discord(self, commit_url=None):
         discord_notifier.DiscordNotifier().send(self.diff, commit_url)
@@ -110,8 +119,11 @@ class ScraperEngine:
         self._save_diff()
 
     def notify(self, commit_sha):
-        self.diff = self._load_diff()
+        logger.info("Starting notify...")
         commit_url = f"{REPO_URL}/commit/{commit_sha}" if commit_sha else None
+        logger.info(f"Commit URL: {commit_url or 'none'}")
+        self.diff = self._load_diff()
+        logger.info(f"Loaded diff.json ({len(self.diff)} sources)")
         self._notify_discord(commit_url)
 
 
@@ -157,9 +169,11 @@ def start():
     engine = ScraperEngine()
 
     if args.scrape:
+        logger.info("Running in scrape mode")
         engine.scrape()
 
     if args.notify:
+        logger.info("Running in notify mode")
         engine.notify(args.commit_sha)
 
 

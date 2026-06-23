@@ -27,6 +27,8 @@ class Differ:
             logger.error(f"Failed to run git status in {output_dir}: {e}")
             return result
 
+        skipped_lines = 0
+
         for line in status_output.splitlines():
             if not line.strip():
                 continue
@@ -36,14 +38,17 @@ class Differ:
 
             # state.json lives at output_dir root; skip it.
             if path == "state.json":
+                skipped_lines += 1
                 continue
 
             # Parse "{source}/{id}.md"
             parts = path.split("/")
             if len(parts) < 2 or parts[0] not in source_set:
+                skipped_lines += 1
                 continue
             filename = parts[-1]
             if not filename.endswith(".md"):
+                skipped_lines += 1
                 continue
 
             source = parts[0]
@@ -67,9 +72,17 @@ class Differ:
 
             result[source][bucket][article_id] = entry
 
+        if skipped_lines > 0:
+            logger.debug(f"Skipped {skipped_lines} non-article line(s) from git status.")
+
         self._diff_blog(old_data, new_data, result)
 
-        logger.info(f"Diff computed:\n{json.dumps(result, indent=2)}")
+        summary = ", ".join(
+            f"{s}: {len(b['added'])}a/{len(b['updated'])}u/{len(b['removed'])}r"
+            for s, b in result.items()
+        )
+        logger.info(f"Diff computed: {summary}")
+        logger.debug(f"Full diff:\n{json.dumps(result, indent=2)}")
         return result
 
     def _diff_blog(self, old_data, new_data, result):
@@ -94,6 +107,12 @@ class Differ:
         for link, post in old_posts.items():
             if link not in new_posts:
                 result["blog"]["removed"][link] = post
+
+        logger.info(
+            f"Blog diff: {len(result['blog']['added'])} added, "
+            f"{len(result['blog']['updated'])} updated, "
+            f"{len(result['blog']['removed'])} removed"
+        )
 
     @staticmethod
     def _lookup_entry(data, source, article_id):

@@ -1,4 +1,3 @@
-import json
 import os
 import requests
 import hashlib
@@ -18,10 +17,13 @@ class ZendeskProvider:
         output_dir = os.environ.get("OUTPUT_DIR", ".")
         source_dir = os.path.join(output_dir, source)
 
-        subprocess.run(f"rm -rf {source_dir}/*", shell=True)
-        subprocess.run(f"mkdir -p {source_dir}", shell=True)
+        rm_result = subprocess.run(f"rm -rf {source_dir}/*", shell=True)
+        if rm_result.returncode != 0:
+            logger.warning(f"rm -rf {source_dir}/* exited with code {rm_result.returncode}")
+        mkdir_result = subprocess.run(f"mkdir -p {source_dir}", shell=True)
+        if mkdir_result.returncode != 0:
+            logger.warning(f"mkdir -p {source_dir} exited with code {mkdir_result.returncode}")
         logger.debug(f"Directory {source_dir} is ready.")
-
         while True:
             logger.debug(f"Fetching page {page} for {source}...")
             
@@ -35,7 +37,10 @@ class ZendeskProvider:
                 break
 
             if response.status_code != 200:
-                logger.warning(f"Finished or error: Source {source} returned status {response.status_code} on page {page}")
+                if response.status_code == 404:
+                    logger.debug(f"Pagination ended for {source} at page {page} (404).")
+                else:
+                    logger.error(f"Source {source} returned status {response.status_code} on page {page}")
                 break
 
             data = response.json()
@@ -53,19 +58,21 @@ class ZendeskProvider:
                 article_id = article['id']
                 article_title = article.get('title', 'Unknown Title')
 
-                del article['vote_sum'], article['vote_count'], article['updated_at']
-
                 logger.info(f"[{processed_count}/{total_count}] Processing article: {article_id} | {article_title[:40]}...")
 
                 try:
+                    article.pop('vote_sum', None)
+                    article.pop('vote_count', None)
+                    article.pop('updated_at', None)
+
                     file_path = os.path.join(source_dir, f"{article_id}.md")
                     with open(file_path, "w", encoding="utf-8") as file:
                         file.write(article['body'])
-                    
+
                     article['body'] = hashlib.sha256(article['body'].encode('utf-8')).hexdigest()
                     articles.append(article)
                 except Exception as e:
-                    logger.error(f"Failed to save article {article_id}: {e}")
+                    logger.error(f"Failed to process article {article_id}: {e}")
 
             page += 1
         
