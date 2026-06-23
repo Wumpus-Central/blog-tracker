@@ -7,7 +7,12 @@ COLORS = {
 }
 
 
-def create_blog_embed(action, post, title):
+def create_blog_embed(action, entry, commit_url=None):
+    if not entry:
+        logger.warning(f"Blog embed: empty entry for action={action}, skipping.")
+        return None
+
+    title = entry.get("title")
     if not title:
         logger.warning(f"Blog embed: empty title for action={action}, skipping.")
         return None
@@ -19,17 +24,19 @@ def create_blog_embed(action, post, title):
 
     embed = {"title": title, "color": color}
 
-    if post is not None:
-        link = post.get("link")
-        if link:
-            embed["url"] = link
+    link = entry.get("link")
+    if link:
+        embed["url"] = link
 
-        summary = post.get("summary")
-        if summary:
-            embed["description"] = summary
+    summary = entry.get("summary")
+    if summary:
+        embed["description"] = summary
 
-        media_thumbnail_url = post.get("media_thumbnail_url")
-        if media_thumbnail_url:
-            embed["image"] = {"url": media_thumbnail_url}
+    media_thumbnail_url = entry.get("media_thumbnail_url")
+    if media_thumbnail_url:
+        embed["image"] = {"url": media_thumbnail_url}
+
+    if commit_url:
+        embed["fields"] = [{"name": "Commit", "value": f"[View commit]({commit_url})", "inline": True}]
 
     return {"embeds": [embed]}

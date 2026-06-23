@@ -7,7 +7,12 @@ COLORS = {
 }
 
 
-def create_zendesk_embed(action, article, title):
+def create_zendesk_embed(action, entry, commit_url=None):
+    if not entry:
+        logger.warning(f"Zendesk embed: empty entry for action={action}, skipping.")
+        return None
+
+    title = entry.get("title")
     if not title:
         logger.warning(f"Zendesk embed: empty title for action={action}, skipping.")
         return None
@@ -18,5 +23,12 @@ def create_zendesk_embed(action, article, title):
         return None
 
     embed = {"title": title, "color": color}
+
+    html_url = entry.get("html_url")
+    if html_url:
+        embed["url"] = html_url
+
+    if commit_url:
+        embed["fields"] = [{"name": "Commit", "value": f"[View commit]({commit_url})", "inline": True}]
 
     return {"embeds": [embed]}

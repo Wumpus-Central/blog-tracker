@@ -51,21 +51,21 @@ class Differ:
 
             if status == "??":
                 bucket = "added"
-                title = self._lookup_title(new_data, source, article_id)
+                entry = self._lookup_entry(new_data, source, article_id)
             elif status[1] == "M":
                 bucket = "updated"
-                title = self._lookup_title(new_data, source, article_id)
+                entry = self._lookup_entry(new_data, source, article_id)
             elif status[1] == "D":
                 bucket = "removed"
-                title = self._lookup_title(old_data, source, article_id)
+                entry = self._lookup_entry(old_data, source, article_id)
             else:
                 continue
 
-            if title is None:
+            if entry is None:
                 logger.warning(f"Diff: no metadata for {bucket} {source}/{article_id}")
                 continue
 
-            result[source][bucket][article_id] = title
+            result[source][bucket][article_id] = entry
 
         self._diff_blog(old_data, new_data, result)
 
@@ -87,16 +87,17 @@ class Differ:
 
         for link, post in new_posts.items():
             if link not in old_posts:
-                result["blog"]["added"][link] = post.get("title", "Unknown Title")
+                result["blog"]["added"][link] = post
             elif old_posts[link] != post:
-                result["blog"]["updated"][link] = post.get("title", "Unknown Title")
+                result["blog"]["updated"][link] = post
 
         for link, post in old_posts.items():
             if link not in new_posts:
-                result["blog"]["removed"][link] = post.get("title", "Unknown Title")
+                result["blog"]["removed"][link] = post
 
-    def _lookup_title(self, data, source, article_id):
+    @staticmethod
+    def _lookup_entry(data, source, article_id):
         for entry in data.get(source, []):
-            if str(entry.get("id")) == article_id:
-                return entry.get("title", "Unknown Title")
+            if str(entry.get("id")) == str(article_id):
+                return entry
         return None

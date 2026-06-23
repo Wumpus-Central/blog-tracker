@@ -41,11 +41,12 @@ jobs:
 
       - name: Run Scraper
         # OUTPUT_DIR=data makes the scraper write state.json + per-source
-        # folders into the `data` checkout, which we commit & push below.
+        # folders into the `data` checkout; DIFF_FILE writes the diff to the
+        # workspace root (outside data/) so it is not committed.
         env:
           OUTPUT_DIR: data
-          DISCORD_WEBHOOK_UNI: ${{ secrets.DISCORD_WEBHOOK_UNI }}
-        run: ./venv/bin/python code/main.py
+          DIFF_FILE: ./diff.json
+        run: ./venv/bin/python code/main.py --scrape
 
       - name: Commit and Push changes to data
         working-directory: data
@@ -59,6 +60,14 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Database update $(date +'%Y-%m-%d')"
             git push
+            echo "COMMIT_SHA=$(git rev-parse HEAD)" >> $GITHUB_ENV
           else
             echo "No changes detected, skipping commit."
           fi
+
+      - name: Notify Discord
+        if: env.COMMIT_SHA != ''
+        env:
+          DIFF_FILE: ./diff.json
+          DISCORD_WEBHOOK_UNI: ${{ secrets.DISCORD_WEBHOOK_UNI }}
+        run: ./venv/bin/python code/main.py --notify --commit-sha ${{ env.COMMIT_SHA }}
