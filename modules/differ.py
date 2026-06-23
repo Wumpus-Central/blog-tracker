@@ -67,8 +67,33 @@ class Differ:
 
             result[source][bucket][article_id] = title
 
+        self._diff_blog(old_data, new_data, result)
+
         logger.info(f"Diff computed:\n{json.dumps(result, indent=2)}")
         return result
+
+    def _diff_blog(self, old_data, new_data, result):
+        old_posts = {}
+        for post in old_data.get("blog", []):
+            link = post.get("link")
+            if link:
+                old_posts[link] = post
+
+        new_posts = {}
+        for post in new_data.get("blog", []):
+            link = post.get("link")
+            if link:
+                new_posts[link] = post
+
+        for link, post in new_posts.items():
+            if link not in old_posts:
+                result["blog"]["added"][link] = post.get("title", "Unknown Title")
+            elif old_posts[link] != post:
+                result["blog"]["updated"][link] = post.get("title", "Unknown Title")
+
+        for link, post in old_posts.items():
+            if link not in new_posts:
+                result["blog"]["removed"][link] = post.get("title", "Unknown Title")
 
     def _lookup_title(self, data, source, article_id):
         for entry in data.get(source, []):
