@@ -17,7 +17,7 @@ This repository uses a **two-branch architecture** to separate code from generat
 The scraper runs on `source` (since GitHub Actions scheduled workflows only fire on the default branch), but writes its output into a checkout of `data`, then commits and pushes changes there. This keeps the data branch's history clean (only data commits) and the source branch's history focused on code.
 
 ```
-GitHub Actions (source branch, cron 51 * * * *)
+GitHub Actions (source branch, cron 0 * * * *)
 │
 ├── checkout source → ./code    (scraper code + workflow)
 ├── checkout data   → ./data    (state.json + .md files)
@@ -61,9 +61,44 @@ modules/
 ## CI/CD
 
 The workflow (`.github/workflows/scraper_workflow.yaml`) runs:
-- **Hourly** via cron (`51 * * * *`)
+- **Hourly** via cron (`0 * * * *`)
 - On **push** to `source`
-- **Manually** via workflow dispatch
+- **Manually** via workflow dispatch or repository dispatch
+
+## Manual Dispatch
+
+The workflow can be triggered on demand via the GitHub API. This is useful for running the scraper from an external scheduler (e.g. Termux cron on a phone).
+
+### Repository dispatch (external webhook)
+
+Sends a `repository_dispatch` event with a custom `event_type` — ideal for scheduling from a phone or external service:
+
+```bash
+curl -s -o /dev/null \
+  --connect-timeout 10 \
+  --max-time 30 \
+  -L \
+  -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer $GITHUB_PAT" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/repos/Wumpus-Central/blog-tracker/dispatches \
+  -d '{"event_type": "trigger-scraping"}'
+```
+
+### Workflow dispatch (API)
+
+Alternatively, trigger the workflow directly by filename:
+
+```bash
+curl -s -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer $GITHUB_PAT" \
+  https://api.github.com/repos/Wumpus-Central/blog-tracker/actions/workflows/scraper_workflow.yaml/dispatches \
+  -d '{"ref":"source"}'
+```
+
+Both methods require a Personal Access Token with **Actions: Write** (fine-grained) or **repo** (classic) scope on this repository. Store the token as an environment variable (e.g. `GITHUB_PAT`) and schedule the curl via cron on your device.
 
 It performs three stages:
 
