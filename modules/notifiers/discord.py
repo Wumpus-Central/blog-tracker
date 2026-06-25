@@ -41,7 +41,7 @@ class DiscordNotifier:
             for bucket, action in self.BUCKET_ACTIONS:
                 entries = buckets.get(bucket, {})
                 for entry_key, entry in entries.items():
-                    message = creator(action, entry, commit_url)
+                    message = creator(action, entry, commit_url, source)
                     if message is None:
                         continue
                     self._dispatch(message, source, action, entry_key)

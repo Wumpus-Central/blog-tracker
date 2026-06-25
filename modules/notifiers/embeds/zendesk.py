@@ -1,3 +1,4 @@
+from datetime import datetime
 from loguru import logger
 
 COLORS = {
@@ -6,8 +7,21 @@ COLORS = {
     "REMOVED": 0xED4245,
 }
 
+ACTION_LABELS = {
+    "ADDED": "Added",
+    "UPDATED": "Updated",
+    "REMOVED": "Removed",
+}
 
-def create_zendesk_embed(action, entry, commit_url=None):
+SOURCE_FOOTERS = {
+    "support": "Discord Support",
+    "support-dev": "Discord Developer Support",
+    "support-apps": "Discord Apps Support",
+    "creator-support": "Creator Support",
+}
+
+
+def create_zendesk_embed(action, entry, commit_url=None, source=None):
     if not entry:
         logger.warning(f"Zendesk embed: empty entry for action={action}, skipping.")
         return None
@@ -28,7 +42,55 @@ def create_zendesk_embed(action, entry, commit_url=None):
     if html_url:
         embed["url"] = html_url
 
+    thumbnail_url = entry.get("thumbnail_url")
+    if thumbnail_url:
+        embed["image"] = {"url": thumbnail_url}
+
+    fields = []
+
+    if source:
+        fields.append({"name": "Source", "value": source, "inline": True})
+
+    article_id = entry.get("id")
+    if article_id is not None:
+        fields.append({"name": "Article ID", "value": str(article_id), "inline": True})
+
+    action_label = ACTION_LABELS.get(action, action)
+    fields.append({"name": "Action", "value": action_label, "inline": True})
+
+    created_at = entry.get("created_at")
+    if created_at:
+        epoch = _iso_to_epoch(created_at)
+        if epoch:
+            fields.append({"name": "Created", "value": f"<t:{epoch}:R>", "inline": True})
+
+    promoted = entry.get("promoted")
+    if promoted is not None:
+        fields.append({"name": "Promoted", "value": "Yes" if promoted else "No", "inline": True})
+
     if commit_url:
-        embed["fields"] = [{"name": "Commit", "value": f"[View commit]({commit_url})", "inline": True}]
+        fields.append({"name": "Commit", "value": f"[View commit]({commit_url})", "inline": True})
+
+    label_names = entry.get("label_names")
+    if label_names:
+        fields.append({"name": "Labels", "value": ", ".join(label_names), "inline": False})
+
+    if fields:
+        embed["fields"] = fields
+
+    footer_text = SOURCE_FOOTERS.get(source) if source else None
+    if footer_text:
+        embed["footer"] = {"text": footer_text}
 
     return {"embeds": [embed]}
+
+
+def _iso_to_epoch(iso_str):
+    try:
+        if iso_str.endswith("Z"):
+            iso_str = iso_str[:-1] + "+00:00"
+        dt = datetime.fromisoformat(iso_str)
+        return int(dt.timestamp())
+    except Exception as e:
+        logger.warning(f"Failed to parse ISO timestamp '{iso_str}': {e}")
+        return None

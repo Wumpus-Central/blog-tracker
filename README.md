@@ -157,7 +157,7 @@ To add the official Wumpus Central server in the future, I will add a `DISCORD_W
 ## Roadmap
 
 - [x] Build good looking embeds for webhooks
-- [ ] Rich Zendesk embeds (url, labels, edited_at, thumbnail) — currently title-only
+- [x] Rich Zendesk embeds (url, labels, created, promoted, thumbnail)
 - [ ] Add blog posts scraping as `.md` files (currently only stored in `state.json`)
 - [ ] Add newsroom posts scraping as `.md` files (currently only stored in `state.json`)
 - [ ] Add `WUMPUSCENTRAL` Discord webhook for the official server

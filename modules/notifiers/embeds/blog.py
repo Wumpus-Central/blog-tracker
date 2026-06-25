@@ -7,7 +7,7 @@ COLORS = {
 }
 
 
-def create_blog_embed(action, entry, commit_url=None):
+def create_blog_embed(action, entry, commit_url=None, source=None):
     if not entry:
         logger.warning(f"Blog embed: empty entry for action={action}, skipping.")
         return None
