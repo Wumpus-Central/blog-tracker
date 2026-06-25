@@ -18999,6 +18999,13 @@
     ],
     "blog": [
         {
+            "title": "Discord Update: June 25, 2026 Changelog",
+            "link": "https://discord.com/blog/discord-update-june-25-2026-changelog",
+            "summary": "Here's the Discord Changelog from June 25, 2026, so you can stay informed on what\u2019s new in recent app updates!",
+            "published": "Thu, 25 Jun 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6494b1e02e40699d67a766e6_Summer_June.png"
+        },
+        {
             "title": "How to Manage Your Discord Desktop Notifications: A Complete Guide",
             "link": "https://discord.com/blog/how-to-manage-your-discord-desktop-notifications",
             "summary": "Not getting pinged for the conversations you wanna know about? This guide walks through server and channel notifications settings, Do Not Disturb, turning off specific notification sounds, and what to check when your pings mysteriously go quiet.",
@@ -19690,13 +19697,6 @@
             "summary": "Recently Discord's Media Infrastructure team has modernized the app's image pipeline by adding support for animated WebP and AVIF formats! Join Scott Kidder as he explains how the team implemented support for these newer image formats.",
             "published": "Wed, 12 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d0c4e0932bb59c7f6271e5_2024_10_DiscordBlog_UsingDiscord-1.png"
-        },
-        {
-            "title": "Discord Patch Notes: March 11, 2025",
-            "link": "https://discord.com/blog/discord-patch-notes-march-11-2025",
-            "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
-            "published": "Tue, 11 Mar 2025 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6657ad0a58988c5decbfbc53_Header_3.png"
         }
     ]
 }
