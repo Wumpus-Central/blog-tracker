@@ -43,7 +43,7 @@ def create_zendesk_embed(action, entry, commit_url=None, source=None):
         embed["url"] = html_url
 
     thumbnail_url = entry.get("thumbnail_url")
-    if thumbnail_url:
+    if thumbnail_url and action == "ADDED":
         embed["image"] = {"url": thumbnail_url}
 
     fields = []
