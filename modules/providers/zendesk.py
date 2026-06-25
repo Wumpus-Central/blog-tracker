@@ -1,8 +1,14 @@
 import os
+import re
 import requests
 import hashlib
 import subprocess
 from loguru import logger
+
+IMG_TAG_RE = re.compile(r'<img[^>]*>', re.IGNORECASE)
+SRC_RE = re.compile(r'src="([^"]*)"', re.IGNORECASE)
+WIDTH_RE = re.compile(r'width="(\d+)"', re.IGNORECASE)
+
 
 class ZendeskProvider:
     def walker(self, source):
@@ -65,11 +71,19 @@ class ZendeskProvider:
                     article.pop('vote_count', None)
                     article.pop('updated_at', None)
 
+                    body = article['body']
+                    thumbnail_url = self._extract_thumbnail(body)
+                    if thumbnail_url:
+                        article['thumbnail_url'] = thumbnail_url
+                        logger.debug(f"Extracted thumbnail for article {article_id}: {thumbnail_url}")
+                    else:
+                        logger.debug(f"No thumbnail found for article {article_id}")
+
                     file_path = os.path.join(source_dir, f"{article_id}.md")
                     with open(file_path, "w", encoding="utf-8") as file:
-                        file.write(article['body'])
+                        file.write(body)
 
-                    article['body'] = hashlib.sha256(article['body'].encode('utf-8')).hexdigest()
+                    article['body'] = hashlib.sha256(body.encode('utf-8')).hexdigest()
                     articles.append(article)
                 except Exception as e:
                     logger.error(f"Failed to process article {article_id}: {e}")
@@ -77,3 +91,20 @@ class ZendeskProvider:
             page += 1
         
         return {source: articles}
+
+    @staticmethod
+    def _extract_thumbnail(html):
+        fallback = None
+        for tag in IMG_TAG_RE.finditer(html):
+            tag_text = tag.group(0)
+            src_match = SRC_RE.search(tag_text)
+            if not src_match:
+                continue
+            src = src_match.group(1)
+            if fallback is None:
+                fallback = src
+            width_match = WIDTH_RE.search(tag_text)
+            if width_match and int(width_match.group(1)) <= 32:
+                continue
+            return src
+        return fallback
