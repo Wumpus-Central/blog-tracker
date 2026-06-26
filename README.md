@@ -42,6 +42,8 @@ GitHub Actions (source branch, cron 0 * * * *)
 ```
 main.py                     ScraperEngine entrypoint (argparse: --scrape / --notify)
 modules/
+  _shared.py                Shared constants (ZENDESK_SOURCES, BLOG_SOURCE) + lookup_entry_by_id()
+  logging.py                Loguru sink configuration (setup_logging())
   archiver.py               Archive removed articles: move .md to archive/, update archive/state.json
   differ.py                 Diff: git status (Zendesk) + state comparison (blog)
   providers/

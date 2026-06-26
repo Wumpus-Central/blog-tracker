@@ -42,9 +42,6 @@ jobs:
           if [ -f ./code/requirements.txt ]; then ./venv/bin/pip install -r ./code/requirements.txt; fi
 
       - name: Run Scraper
-        # OUTPUT_DIR=data makes the scraper write state.json + per-source
-        # folders into the `data` checkout; DIFF_FILE writes the diff to the
-        # workspace root (outside data/) so it is not committed.
         env:
           OUTPUT_DIR: data
           DIFF_FILE: ./diff.json

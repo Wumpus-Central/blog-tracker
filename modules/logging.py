@@ -1,9 +1,3 @@
-"""Loguru sink configuration.
-
-Kept out of main.py so importing the engine (e.g. from tests) does not
-mutate the global logger as a side effect. Call setup_logging() once
-from the entrypoint.
-"""
 import sys
 from loguru import logger
 

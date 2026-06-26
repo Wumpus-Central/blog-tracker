@@ -13,11 +13,6 @@ class Differ:
             result[source] = {"added": {}, "removed": {}, "updated": {}}
         result[BLOG_SOURCE] = {"added": {}, "removed": {}, "updated": {}}
 
-        # git status --porcelain runs in the data checkout (output_dir).
-        # The workflow does `git add .` only AFTER main.py exits, so during
-        # this run all changes are unstaged: ?? = new, " M" = modified, " D" = deleted.
-        # Note: with OUTPUT_DIR="." on a non-data checkout everything reads as
-        # untracked (??) — this differ is a CI feature against the data branch.
         try:
             status_output = subprocess.run(
                 ["git", "status", "--porcelain"],
@@ -39,12 +34,10 @@ class Differ:
             status = line[:2]
             path = line[3:]
 
-            # state.json lives at output_dir root; skip it.
             if path == "state.json":
                 skipped_lines += 1
                 continue
 
-            # Parse "{source}/{id}.md"
             parts = path.split("/")
             if len(parts) < 2 or parts[0] not in source_set:
                 skipped_lines += 1
