@@ -6,6 +6,7 @@ from loguru import logger
 import modules.providers.zendesk as zendesk_provider
 import modules.providers.blog as blog_provider
 import modules.differ as differ
+import modules.archiver as archiver
 import modules.notifiers.discord as discord_notifier
 
 logger.remove()
@@ -35,7 +36,7 @@ class ScraperEngine:
         logger.debug(f"ScraperEngine initialized. State file: {self.state_file}")
 
     def _fetch_zendesk(self):
-        zendesk = zendesk_provider.ZendeskProvider()
+        self._zendesk = zendesk_provider.ZendeskProvider()
 
         total_scraped = 0
 
@@ -44,7 +45,7 @@ class ScraperEngine:
         for source in self.zendesk_sources:
             logger.info(f"Processing source: {source}")
             try:
-                scraped_batch = zendesk.walker(source)
+                scraped_batch = self._zendesk.fetch(source)
 
                 current_articles = scraped_batch.get(source, [])
                 batch_size = len(current_articles)
@@ -60,6 +61,25 @@ class ScraperEngine:
             logger.success(f"Finished! Total articles collected from all sources: {total_scraped}")
         else:
             logger.warning("Empty run: No articles were scraped.")
+
+    def _write_zendesk(self):
+        if not hasattr(self, '_zendesk'):
+            self._zendesk = zendesk_provider.ZendeskProvider()
+        for source in self.zendesk_sources:
+            articles = self.new_data.get(source, [])
+            try:
+                self._zendesk.write(source, articles)
+            except Exception as e:
+                logger.exception(f"Failed to write source '{source}'")
+
+    def _archive_removed(self):
+        logger.info("Archiving removed articles...")
+        try:
+            archiver.Archiver().process(
+                self.old_data, self.new_data, self.zendesk_sources, self.output_dir
+            )
+        except Exception as e:
+            logger.exception("Archiver failed")
 
     def _fetch_blog(self):
         blog = blog_provider.BlogProvider()
@@ -109,6 +129,9 @@ class ScraperEngine:
 
         self._fetch_zendesk()
         self._fetch_blog()
+
+        self._archive_removed()
+        self._write_zendesk()
 
         logger.info("Writing new state...")
         with open(self.state_file, "w", encoding="utf-8") as old_data_file:

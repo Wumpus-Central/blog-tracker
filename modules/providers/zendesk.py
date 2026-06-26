@@ -11,28 +11,18 @@ WIDTH_RE = re.compile(r'width="(\d+)"', re.IGNORECASE)
 
 
 class ZendeskProvider:
-    def walker(self, source):
+    def fetch(self, source):
         domain = f"{source}.discord.com"
         page = 1
         articles = []
         processed_count = 0
         total_count = None
 
-        # Output dir for per-source article files. Defaults to cwd ("."),
-        # but in CI we set OUTPUT_DIR=data so writes land in the `data` checkout.
-        output_dir = os.environ.get("OUTPUT_DIR", ".")
-        source_dir = os.path.join(output_dir, source)
+        logger.info(f"Fetching articles from '{source}'...")
 
-        rm_result = subprocess.run(f"rm -rf {source_dir}/*", shell=True)
-        if rm_result.returncode != 0:
-            logger.warning(f"rm -rf {source_dir}/* exited with code {rm_result.returncode}")
-        mkdir_result = subprocess.run(f"mkdir -p {source_dir}", shell=True)
-        if mkdir_result.returncode != 0:
-            logger.warning(f"mkdir -p {source_dir} exited with code {mkdir_result.returncode}")
-        logger.debug(f"Directory {source_dir} is ready.")
         while True:
             logger.debug(f"Fetching page {page} for {source}...")
-            
+
             try:
                 response = requests.get(
                     f'https://{domain}/api/v2/help_center/en-us/articles.json?page={page}&per_page=100',
@@ -50,7 +40,7 @@ class ZendeskProvider:
                 break
 
             data = response.json()
-            
+
             if total_count is None:
                 total_count = data.get('count', 0)
                 logger.info(f"Source '{source}' reports {total_count} articles across {data.get('page_count')} pages.")
@@ -58,7 +48,7 @@ class ZendeskProvider:
             batch = data.get('articles', [])
             if not batch:
                 break
-            
+
             for article in batch:
                 processed_count += 1
                 article_id = article['id']
@@ -79,18 +69,48 @@ class ZendeskProvider:
                     else:
                         logger.debug(f"No thumbnail found for article {article_id}")
 
-                    file_path = os.path.join(source_dir, f"{article_id}.md")
-                    with open(file_path, "w", encoding="utf-8") as file:
-                        file.write(body)
-
-                    article['body'] = hashlib.sha256(body.encode('utf-8')).hexdigest()
                     articles.append(article)
                 except Exception as e:
                     logger.error(f"Failed to process article {article_id}: {e}")
 
             page += 1
-        
+
+        logger.success(f"Fetched {len(articles)} articles from '{source}'.")
         return {source: articles}
+
+    def write(self, source, articles):
+        output_dir = os.environ.get("OUTPUT_DIR", ".")
+        source_dir = os.path.join(output_dir, source)
+
+        rm_result = subprocess.run(f"rm -rf {source_dir}/*", shell=True)
+        if rm_result.returncode != 0:
+            logger.warning(f"rm -rf {source_dir}/* exited with code {rm_result.returncode}")
+        mkdir_result = subprocess.run(f"mkdir -p {source_dir}", shell=True)
+        if mkdir_result.returncode != 0:
+            logger.warning(f"mkdir -p {source_dir} exited with code {mkdir_result.returncode}")
+        logger.debug(f"Directory {source_dir} is ready.")
+
+        written = 0
+        for article in articles:
+            article_id = article['id']
+            try:
+                body = article['body']
+                file_path = os.path.join(source_dir, f"{article_id}.md")
+                with open(file_path, "w", encoding="utf-8") as file:
+                    file.write(body)
+
+                article['body'] = hashlib.sha256(body.encode('utf-8')).hexdigest()
+                written += 1
+            except Exception as e:
+                logger.error(f"Failed to write article {article_id}: {e}")
+
+        logger.success(f"Wrote {written}/{len(articles)} .md files for '{source}'.")
+        return source
+
+    def walker(self, source):
+        fetched = self.fetch(source)
+        self.write(source, fetched[source])
+        return fetched
 
     @staticmethod
     def _extract_thumbnail(html):
