@@ -1,20 +1,14 @@
 import argparse
 import json
 import os
-import sys
 from loguru import logger
 import modules.providers.zendesk as zendesk_provider
 import modules.providers.blog as blog_provider
 import modules.differ as differ
 import modules.archiver as archiver
 import modules.notifiers.discord as discord_notifier
-
-logger.remove()
-logger.add(
-    sys.stderr,
-    level="INFO",
-    format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{message}</cyan>"
-)
+import modules.logging
+from modules._shared import ZENDESK_SOURCES
 
 REPO_URL = "https://github.com/Wumpus-Central/blog-tracker"
 
@@ -27,12 +21,7 @@ class ScraperEngine:
         self.new_data = {}
         self.old_data = {}
         self.diff = {}
-        self.zendesk_sources = [
-            'support',
-            'support-dev',
-            'support-apps',
-            'creator-support'
-        ]
+        self.zendesk_sources = ZENDESK_SOURCES
         logger.debug(f"ScraperEngine initialized. State file: {self.state_file}")
 
     def _fetch_zendesk(self):
@@ -179,6 +168,7 @@ Environment variables:
 
 @logger.catch
 def start():
+    modules.logging.setup_logging()
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--scrape", action="store_true")
     parser.add_argument("--notify", action="store_true")

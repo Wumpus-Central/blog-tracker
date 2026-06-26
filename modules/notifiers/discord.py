@@ -5,6 +5,7 @@ from loguru import logger
 
 import modules.notifiers.embeds.zendesk as zendesk_embeds
 import modules.notifiers.embeds.blog as blog_embeds
+from modules._shared import ZENDESK_SOURCES, BLOG_SOURCE
 
 
 class DiscordNotifier:
@@ -16,11 +17,8 @@ class DiscordNotifier:
         ("removed", "REMOVED"),
     ]
     SOURCE_CREATORS = {
-        "blog": blog_embeds.create_blog_embed,
-        "support": zendesk_embeds.create_zendesk_embed,
-        "support-dev": zendesk_embeds.create_zendesk_embed,
-        "support-apps": zendesk_embeds.create_zendesk_embed,
-        "creator-support": zendesk_embeds.create_zendesk_embed,
+        BLOG_SOURCE: blog_embeds.create_blog_embed,
+        **{source: zendesk_embeds.create_zendesk_embed for source in ZENDESK_SOURCES},
     }
 
     def send(self, diff, commit_url=None):

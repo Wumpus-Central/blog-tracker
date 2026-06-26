@@ -3,6 +3,8 @@ import os
 import shutil
 from loguru import logger
 
+from modules._shared import BLOG_SOURCE, lookup_entry_by_id
+
 
 class Archiver:
     def process(self, old_data, new_data, sources, output_dir):
@@ -35,7 +37,7 @@ class Archiver:
                 restored_count += 1
 
             for aid in (old_ids - new_ids):
-                entry = self._lookup_entry(old_data, source, aid)
+                entry = lookup_entry_by_id(old_data, source, aid)
                 if entry is None:
                     logger.warning(f"Archive: no metadata for removed {source}/{aid}")
                     continue
@@ -51,7 +53,7 @@ class Archiver:
                 archive_state[source].append(entry)
                 archived_count += 1
 
-        archive_state.setdefault("blog", [])
+        archive_state.setdefault(BLOG_SOURCE, [])
         blog_archived, blog_restored = self._archive_blog(old_data, new_data, archive_state)
         archived_count += blog_archived
         restored_count += blog_restored
@@ -65,14 +67,14 @@ class Archiver:
 
     @staticmethod
     def _archive_blog(old_data, new_data, archive_state):
-        old_links = {p.get("link"): p for p in old_data.get("blog", []) if p.get("link")}
-        new_links = {p.get("link") for p in new_data.get("blog", []) if p.get("link")}
-        archived_links = {p.get("link") for p in archive_state["blog"] if p.get("link")}
+        old_links = {p.get("link"): p for p in old_data.get(BLOG_SOURCE, []) if p.get("link")}
+        new_links = {p.get("link") for p in new_data.get(BLOG_SOURCE, []) if p.get("link")}
+        archived_links = {p.get("link") for p in archive_state[BLOG_SOURCE] if p.get("link")}
 
         restored = 0
         for link in (archived_links & new_links):
-            archive_state["blog"] = [
-                p for p in archive_state["blog"] if p.get("link") != link
+            archive_state[BLOG_SOURCE] = [
+                p for p in archive_state[BLOG_SOURCE] if p.get("link") != link
             ]
             logger.info(f"Restored blog post from archive (re-published): {link}")
             restored += 1
@@ -80,7 +82,7 @@ class Archiver:
         archived = 0
         for link, post in old_links.items():
             if link not in new_links:
-                archive_state["blog"].append(post)
+                archive_state[BLOG_SOURCE].append(post)
                 logger.info(f"Archived blog post: {link}")
                 archived += 1
 
@@ -105,10 +107,3 @@ class Archiver:
         with open(archive_state_file, "w", encoding="utf-8") as f:
             json.dump(archive_state, f, indent=4)
         logger.success(f"Archive state written to {archive_state_file}")
-
-    @staticmethod
-    def _lookup_entry(data, source, article_id):
-        for entry in data.get(source, []):
-            if str(entry.get("id")) == str(article_id):
-                return entry
-        return None

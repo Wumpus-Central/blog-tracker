@@ -2,13 +2,16 @@ import json
 import subprocess
 from loguru import logger
 
+from modules._shared import BLOG_SOURCE, lookup_entry_by_id
+
+
 class Differ:
     def compute(self, output_dir, sources, new_data, old_data):
         source_set = set(sources)
         result = {}
         for source in sources:
             result[source] = {"added": {}, "removed": {}, "updated": {}}
-        result["blog"] = {"added": {}, "removed": {}, "updated": {}}
+        result[BLOG_SOURCE] = {"added": {}, "removed": {}, "updated": {}}
 
         # git status --porcelain runs in the data checkout (output_dir).
         # The workflow does `git add .` only AFTER main.py exits, so during
@@ -56,13 +59,13 @@ class Differ:
 
             if status == "??":
                 bucket = "added"
-                entry = self._lookup_entry(new_data, source, article_id)
+                entry = lookup_entry_by_id(new_data, source, article_id)
             elif status[1] == "M":
                 bucket = "updated"
-                entry = self._lookup_entry(new_data, source, article_id)
+                entry = lookup_entry_by_id(new_data, source, article_id)
             elif status[1] == "D":
                 bucket = "removed"
-                entry = self._lookup_entry(old_data, source, article_id)
+                entry = lookup_entry_by_id(old_data, source, article_id)
             else:
                 continue
 
@@ -87,36 +90,29 @@ class Differ:
 
     def _diff_blog(self, old_data, new_data, result):
         old_posts = {}
-        for post in old_data.get("blog", []):
+        for post in old_data.get(BLOG_SOURCE, []):
             link = post.get("link")
             if link:
                 old_posts[link] = post
 
         new_posts = {}
-        for post in new_data.get("blog", []):
+        for post in new_data.get(BLOG_SOURCE, []):
             link = post.get("link")
             if link:
                 new_posts[link] = post
 
         for link, post in new_posts.items():
             if link not in old_posts:
-                result["blog"]["added"][link] = post
+                result[BLOG_SOURCE]["added"][link] = post
             elif old_posts[link] != post:
-                result["blog"]["updated"][link] = post
+                result[BLOG_SOURCE]["updated"][link] = post
 
         for link, post in old_posts.items():
             if link not in new_posts:
-                result["blog"]["removed"][link] = post
+                result[BLOG_SOURCE]["removed"][link] = post
 
         logger.info(
-            f"Blog diff: {len(result['blog']['added'])} added, "
-            f"{len(result['blog']['updated'])} updated, "
-            f"{len(result['blog']['removed'])} removed"
+            f"Blog diff: {len(result[BLOG_SOURCE]['added'])} added, "
+            f"{len(result[BLOG_SOURCE]['updated'])} updated, "
+            f"{len(result[BLOG_SOURCE]['removed'])} removed"
         )
-
-    @staticmethod
-    def _lookup_entry(data, source, article_id):
-        for entry in data.get(source, []):
-            if str(entry.get("id")) == str(article_id):
-                return entry
-        return None
