@@ -1218,7 +1218,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-26T00:42:13Z",
+            "edited_at": "2026-06-29T18:18:49Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [
@@ -1227,7 +1227,7 @@
             "label_names": [
                 "Nitro Squad"
             ],
-            "body": "e87db68e1531d71f89551bbd1a1706b5231f5788fc47c9a745110edf3767c718",
+            "body": "349ff4de269f97399054ea26376ddf5d5fa9d8d9b5cc479b46c44b9e55e00904",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/38344519968023"
         },
@@ -10302,7 +10302,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-02T20:57:10Z",
+            "edited_at": "2026-06-29T17:35:53Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -10322,7 +10322,7 @@
                 "early supporter badge",
                 "active developer badge"
             ],
-            "body": "52d48e94324c2e9b129feaafac56a6f1aa8789e714a2ca80436637ea25293e72",
+            "body": "47167757574e31e2ba9f1b9a674798734e707f8b3291d10824aca914eaf4b3a6",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/10928082393495"
         },
