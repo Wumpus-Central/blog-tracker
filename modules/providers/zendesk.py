@@ -92,7 +92,7 @@ class ZendeskProvider:
             article_id = article['id']
             try:
                 body = article['body']
-                file_path = os.path.join(source_dir, f"{article_id}.md")
+                file_path = source_path / f"{article_id}.md"
                 with open(file_path, "w", encoding="utf-8") as file:
                     file.write(body)
 
