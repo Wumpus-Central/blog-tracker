@@ -7,13 +7,7 @@ COLORS = {
     "REMOVED": 0xED4245,
 }
 
-ACTION_LABELS = {
-    "ADDED": "Added",
-    "UPDATED": "Updated",
-    "REMOVED": "Removed",
-}
-
-SOURCE_FOOTERS = {
+SOURCE_LABELS = {
     "support": "Discord Support",
     "support-dev": "Discord Developer Support",
     "support-apps": "Discord Apps Support",
@@ -21,7 +15,7 @@ SOURCE_FOOTERS = {
 }
 
 
-def create_zendesk_embed(action, entry, commit_url=None, source=None):
+def create_zendesk_embed(action, entry, commit_url=None, source=None, line_stats=None):
     if not entry:
         logger.warning(f"Zendesk embed: empty entry for action={action}, skipping.")
         return None
@@ -48,15 +42,16 @@ def create_zendesk_embed(action, entry, commit_url=None, source=None):
 
     fields = []
 
-    if source:
-        fields.append({"name": "Source", "value": source, "inline": True})
+    source_label = SOURCE_LABELS.get(source, source or "Unknown")
+    fields.append({"name": "Source", "value": source_label, "inline": True})
 
     article_id = entry.get("id")
     if article_id is not None:
         fields.append({"name": "Article ID", "value": str(article_id), "inline": True})
 
-    action_label = ACTION_LABELS.get(action, action)
-    fields.append({"name": "Action", "value": action_label, "inline": True})
+    changes = _format_changes(source, entry, line_stats)
+    if changes:
+        fields.append({"name": "Changes", "value": changes, "inline": True})
 
     created_at = entry.get("created_at")
     if created_at:
@@ -78,11 +73,28 @@ def create_zendesk_embed(action, entry, commit_url=None, source=None):
     if fields:
         embed["fields"] = fields
 
-    footer_text = SOURCE_FOOTERS.get(source) if source else None
-    if footer_text:
-        embed["footer"] = {"text": footer_text}
-
     return {"embeds": [embed]}
+
+
+def _format_changes(source, entry, line_stats):
+    if not line_stats:
+        return "N/A"
+
+    article_id = entry.get("id")
+    if article_id is None:
+        return "N/A"
+
+    key = f"{source}/{article_id}"
+    stats = line_stats.get(key)
+    if stats is None:
+        return "N/A"
+
+    added = stats.get("added", 0)
+    removed = stats.get("removed", 0)
+    edited = min(added, removed)
+    pure_added = added - edited
+    pure_removed = removed - edited
+    return f"+{pure_added} ~{edited} -{pure_removed}"
 
 
 def _iso_to_epoch(iso_str):

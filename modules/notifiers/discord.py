@@ -21,7 +21,7 @@ class DiscordNotifier:
         **{source: zendesk_embeds.create_zendesk_embed for source in ZENDESK_SOURCES},
     }
 
-    def send(self, diff, commit_url=None):
+    def send(self, diff, commit_url=None, line_stats=None):
         if self._is_empty(diff):
             logger.info("Diff is empty — nothing to notify.")
             return
@@ -39,7 +39,7 @@ class DiscordNotifier:
             for bucket, action in self.BUCKET_ACTIONS:
                 entries = buckets.get(bucket, {})
                 for entry_key, entry in entries.items():
-                    message = creator(action, entry, commit_url, source)
+                    message = creator(action, entry, commit_url, source, line_stats)
                     if message is None:
                         continue
                     self._dispatch(message, source, action, entry_key)

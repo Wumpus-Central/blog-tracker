@@ -7,7 +7,8 @@ import modules.providers.blog as blog_provider
 import modules.differ as differ
 import modules.archiver as archiver
 import modules.notifiers.discord as discord_notifier
-import modules.logging
+import modules.line_stats as line_stats_module
+import modules.log_setup
 from modules._shared import ZENDESK_SOURCES
 
 REPO_URL = "https://github.com/Wumpus-Central/blog-tracker"
@@ -18,6 +19,7 @@ class ScraperEngine:
         self.output_dir = os.environ.get("OUTPUT_DIR", ".")
         self.state_file = os.path.join(self.output_dir, "state.json")
         self.diff_file = os.environ.get("DIFF_FILE", "./diff.json")
+        self.line_stats_file = os.environ.get("LINE_STATS_FILE", "./line_stats.json")
         self.new_data = {}
         self.old_data = {}
         self.diff = {}
@@ -103,8 +105,8 @@ class ScraperEngine:
             logger.error(f"Failed to load diff from {self.diff_file}: {e}")
             raise
 
-    def _notify_discord(self, commit_url=None):
-        discord_notifier.DiscordNotifier().send(self.diff, commit_url)
+    def _notify_discord(self, commit_url=None, line_stats=None):
+        discord_notifier.DiscordNotifier().send(self.diff, commit_url, line_stats)
 
     def scrape(self):
         logger.info("Starting scraper...")
@@ -136,7 +138,10 @@ class ScraperEngine:
         logger.info(f"Commit URL: {commit_url or 'none'}")
         self.diff = self._load_diff()
         logger.info(f"Loaded diff.json ({len(self.diff)} sources)")
-        self._notify_discord(commit_url)
+        line_stats = line_stats_module.load_line_stats(self.line_stats_file)
+        if line_stats:
+            logger.info(f"Loaded line_stats.json ({len(line_stats)} entries)")
+        self._notify_discord(commit_url, line_stats)
 
 
 def print_help():
@@ -162,13 +167,14 @@ Modes:
 Environment variables:
   OUTPUT_DIR              Directory for state.json + .md files (default: .)
   DIFF_FILE               Path to diff.json (default: ./diff.json)
+  LINE_STATS_FILE         Path to line_stats.json (default: ./line_stats.json, notify mode)
   DISCORD_WEBHOOK_UNI     Discord webhook URL for the UNI server (notify mode)
 """)
 
 
 @logger.catch
 def start():
-    modules.logging.setup_logging()
+    modules.log_setup.setup_logging()
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--scrape", action="store_true")
     parser.add_argument("--notify", action="store_true")
