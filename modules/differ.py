@@ -15,7 +15,7 @@ class Differ:
 
         try:
             status_output = subprocess.run(
-                ["git", "status", "--porcelain"],
+                ["git", "status", "--porcelain", "--untracked-files=all"],
                 cwd=output_dir,
                 capture_output=True,
                 text=True,
