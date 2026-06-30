@@ -19073,6 +19073,13 @@
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fb78addf50b41deb42cf_image2.png"
         },
         {
+            "title": "Cost Attribution in Discord\u2019s API",
+            "link": "https://discord.com/blog/cost-attribution-in-discords-api",
+            "summary": "Discord's API spans 1700+ endpoints across hundreds of Kubernetes deployments. The challenge: tracking per-feature hosting costs without restructuring. Jim Benton helps explain how Discord tackled the situation.",
+            "published": "Tue, 30 Jun 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f597ab8965032c232c7d4a_image4.png"
+        },
+        {
             "title": "Discord Update: June 25, 2026 Changelog",
             "link": "https://discord.com/blog/discord-update-june-25-2026-changelog",
             "summary": "Here's the Discord Changelog from June 25, 2026, so you can stay informed on what\u2019s new in recent app updates!",
@@ -19757,13 +19764,6 @@
             "summary": "In Part Two, we'll help inspire the creation of real-time conversations around your game and foster engagement within your community.",
             "published": "Sun, 16 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614233b64d1e7ec1556caf32_1_jAwf-40J1rziW5LsHLm5-A.png"
-        },
-        {
-            "title": "The Game Developer Playbook: Three Incredible Game-Focused Communities",
-            "link": "https://discord.com/blog/the-game-developer-playbook-three-incredible-game-focused-communities",
-            "summary": "In this segment of our GameDev Playbook, we'll look at three communities that represent what we consider best-in-class server setups.",
-            "published": "Sat, 15 Mar 2025 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614236332e955871dd60a421_0_8cgjGtPwCPxWkOhC.png"
         }
     ]
 }
