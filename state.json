@@ -1,6 +1,39 @@
 {
     "support": [
         {
+            "id": 41412722792983,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41412722792983.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/41412722792983-Discord-on-Meta-Quest-FAQ",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 360007770552,
+            "created_at": "2026-06-22T21:12:04Z",
+            "name": "Discord on Meta Quest FAQ",
+            "title": "Discord on Meta Quest FAQ",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-06-27T00:11:48Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [
+                "01KWCQP52XENYT0Y7747VT2KR4",
+                "01KWCQPCB0NJ6170CXQCP6PJXS",
+                "01KWCQPPJ3EYJ8BK888EJE8NZ5"
+            ],
+            "label_names": [
+                "Discord on Meta Quest",
+                "Discord on Meta VR"
+            ],
+            "body": "8e8867c3f6ff5c51ca66bea0a432f6a9e94744e323d374f1be717fd43ea913b2",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/41504355484695"
+        },
+        {
             "id": 41117240080151,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41117240080151.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/41117240080151--Known-Issue-Support-for-macOS-11",
@@ -5759,7 +5792,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-23T22:05:23Z",
+            "edited_at": "2026-06-30T17:07:01Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -5780,7 +5813,7 @@
                 "guardians",
                 "linked account"
             ],
-            "body": "48f9bc2bcc94ab2da3a566d759b4a62d09883051dc102625ff7bb89388b09495",
+            "body": "366406d8443a05cc0ec018570f1ccd74dafaa8a25edb8be0497e1015353fafd2",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/36027365517207"
         },
@@ -5801,7 +5834,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-23T22:05:35Z",
+            "edited_at": "2026-06-30T17:07:08Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -5821,9 +5854,9 @@
                 "center",
                 "linking"
             ],
-            "body": "86aad4537c1d0f7db19473bd1078a13ca818635bb59adca9f05edc9571f39be6",
+            "body": "27d1717f65c447a7be05c15d637f61825349ce0a7ec3e778be58602abd0db43d",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/36027356118167"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/41441807578903"
         },
         {
             "id": 14155039712407,
@@ -19033,6 +19066,13 @@
     ],
     "blog": [
         {
+            "title": "Discord is Now on Meta Quest: Reach Out to Your Servers While in VR",
+            "link": "https://discord.com/blog/discord-is-now-on-meta-quest-reach-out-to-your-servers-while-in-vr",
+            "summary": "Starting today, Discord is now available to download directly from Meta\u2019s Horizon App Store. No more sideloading. No more using the web app. Grab it using the link in this blog, or at discord.com/download.",
+            "published": "Tue, 30 Jun 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fb78addf50b41deb42cf_image2.png"
+        },
+        {
             "title": "Discord Update: June 25, 2026 Changelog",
             "link": "https://discord.com/blog/discord-update-june-25-2026-changelog",
             "summary": "Here's the Discord Changelog from June 25, 2026, so you can stay informed on what\u2019s new in recent app updates!",
@@ -19724,13 +19764,6 @@
             "summary": "In this segment of our GameDev Playbook, we'll look at three communities that represent what we consider best-in-class server setups.",
             "published": "Sat, 15 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/614236332e955871dd60a421_0_8cgjGtPwCPxWkOhC.png"
-        },
-        {
-            "title": "Modern Image Formats at Discord: Supporting WebP and AVIF",
-            "link": "https://discord.com/blog/modern-image-formats-at-discord-supporting-webp-and-avif",
-            "summary": "Recently Discord's Media Infrastructure team has modernized the app's image pipeline by adding support for animated WebP and AVIF formats! Join Scott Kidder as he explains how the team implemented support for these newer image formats.",
-            "published": "Wed, 12 Mar 2025 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d0c4e0932bb59c7f6271e5_2024_10_DiscordBlog_UsingDiscord-1.png"
         }
     ]
 }
