@@ -33,9 +33,8 @@ GitHub Actions (source branch, cron 0 * * * *)
 ├── commit & push data/ → data branch
 │   └── capture COMMIT_SHA → $GITHUB_ENV
 │
-├── git diff --numstat HEAD~1 HEAD → line_stats.json    (if COMMIT_SHA set)
-│
-└── python code/main.py --notify --commit-sha $COMMIT_SHA    (if COMMIT_SHA set)
+└── python code/main.py --notify --commit-sha $COMMIT_SHA    (if COMMIT_SHA set, OUTPUT_DIR=data)
+    ├── git diff --numstat HEAD~1 HEAD → line stats (in-memory)
     └── per-change Discord embeds (color-coded, Changes, commit URL field, 2s delay)
 ```
 
@@ -46,7 +45,7 @@ main.py                     ScraperEngine entrypoint (argparse: --scrape / --not
 modules/
   _shared.py                Shared constants (ZENDESK_SOURCES, BLOG_SOURCE) + lookup_entry_by_id()
   log_setup.py              Loguru sink configuration (setup_logging())
-  line_stats.py             Build/load line_stats.json from git diff --numstat
+  line_stats.py             Build line stats dict from git diff --numstat (in-process)
   archiver.py               Archive removed articles: move .md to archive/, update archive/state.json
   differ.py                 Diff: git status (Zendesk) + state comparison (blog)
   providers/
@@ -64,8 +63,8 @@ modules/
 1. **Scrape Zendesk** — paginates through the help-center API for each source (`support`, `support-dev`, `support-apps`, `creator-support`), writes each article's HTML body to `data/{source}/{id}.md`, and stores metadata + a SHA-256 hash of the body in `state.json`.
 2. **Scrape Blog** — fetches the Discord blog RSS feed and stores post metadata in `state.json`.
 3. **Diff** — runs `git status --porcelain` in the `data` checkout to detect added (`??`), updated (` M`), and removed (` D`) Zendesk article files. Blog posts are diffed by comparing old vs new `state.json` entries by `link` (since blog posts are not written as `.md` files). Each diff entry carries the **full object** from the new state (added/updated) or old state (removed), persisted to `diff.json`.
-4. **Line stats** — runs `git diff --numstat HEAD~1 HEAD` in the `data` checkout to count added/removed lines per `.md` file, persists results to `line_stats.json` in the workspace root. Used by the notify step to show a `+N ~M -K` Changes field in Zendesk embeds.
-5. **Notify** — loads `diff.json` and dispatches one Discord embed per change (green = added, yellow = updated, red = removed). Zendesk embeds show a 2×3 grid of inline fields (Source, Article ID, Changes, Created, Promoted, Commit) plus a full-width Labels field; the Changes field (`+N ~M -K`) comes from `line_stats.json`. Blog embeds link the title to the post, include the summary as description and the thumbnail as image. Each embed carries a clickable "View commit" field linking to the data-branch commit that captured the change. A 2-second delay separates sends to respect webhook rate limits.
+4. **Line stats** — runs `git diff --numstat HEAD~1 HEAD` in the `data` checkout to count added/removed lines per `.md` file. Computed in-process by the notify step (no intermediate file).
+5. **Notify** — loads `diff.json` and dispatches one Discord embed per change (green = added, yellow = updated, red = removed). Zendesk embeds show a 2×3 grid of inline fields (Source, Article ID, Changes, Created, Promoted, Commit) plus a full-width Labels field; the Changes field (`+N ~M -K`) comes from the in-process line stats. Blog embeds link the title to the post, include the summary as description and the thumbnail as image. Each embed carries a clickable "View commit" field linking to the data-branch commit that captured the change. A 2-second delay separates sends to respect webhook rate limits.
 
 ## Archiving
 
@@ -153,9 +152,8 @@ DIFF_FILE=./diff.json ./venv/bin/python main.py --notify --commit-sha <SHA>
 
 | Variable | Default | Mode | Description |
 |----------|---------|------|-------------|
-| `OUTPUT_DIR` | `.` | scrape | Directory where `state.json` and per-source `.md` files are written |
+| `OUTPUT_DIR` | `.` | both | Directory where `state.json` and per-source `.md` files are written (scrape) / where `git diff --numstat` runs (notify) |
 | `DIFF_FILE` | `./diff.json` | both | Path to `diff.json` (written by `--scrape`, read by `--notify`) |
-| `LINE_STATS_FILE` | `./line_stats.json` | notify | Path to `line_stats.json` (written by the workflow's numstat step, read by `--notify`) |
 | `DISCORD_WEBHOOK_UNI` | — | notify | Discord webhook URL for the UNI server |
 
 ### GitHub Secrets

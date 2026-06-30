@@ -1,12 +1,10 @@
-import json
 import subprocess
-import sys
 from loguru import logger
 
 from modules._shared import ZENDESK_SOURCES
 
 
-def build_line_stats(data_dir, output_file):
+def build_line_stats(data_dir):
     logger.info(f"Computing line stats in {data_dir}...")
     try:
         result = subprocess.run(
@@ -18,13 +16,11 @@ def build_line_stats(data_dir, output_file):
         )
     except Exception as e:
         logger.error(f"Failed to run git diff --numstat: {e}")
-        _save({}, output_file)
-        return
+        return {}
 
     if result.returncode != 0:
         logger.warning(f"git diff --numstat exited {result.returncode}: {result.stderr.strip()}")
-        _save({}, output_file)
-        return
+        return {}
 
     source_set = set(ZENDESK_SOURCES)
     stats = {}
@@ -56,37 +52,6 @@ def build_line_stats(data_dir, output_file):
 
         stats[key] = {"added": int(added_s), "removed": int(removed_s)}
 
-    _save(stats, output_file)
-    logger.success(f"Line stats: {len(stats)} entries → {output_file}")
-
-
-def load_line_stats(stats_file):
-    try:
-        with open(stats_file, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        logger.warning(f"line_stats.json not found at {stats_file} — embeds will show N/A.")
-        return {}
-    except Exception as e:
-        logger.error(f"Failed to load line_stats.json: {e}")
-        return {}
-
-
-def _save(stats, output_file):
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(stats, f, indent=4)
-    logger.debug(f"Line stats written to {output_file}")
-
-
-if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--data-dir", default=".")
-    parser.add_argument("--output", default="./line_stats.json")
-    args = parser.parse_args()
-
-    import modules.log_setup
-    modules.log_setup.setup_logging()
-
-    build_line_stats(args.data_dir, args.output)
+    logger.success(f"Line stats: {len(stats)} entries")
+    logger.debug(f"Line stats:\n{stats}")
+    return stats

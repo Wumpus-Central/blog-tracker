@@ -64,17 +64,10 @@ jobs:
             echo "No changes detected, skipping commit."
           fi
 
-      - name: Compute line stats
-        if: env.COMMIT_SHA != ''
-        working-directory: data
-        env:
-          PYTHONPATH: ../code
-        run: ../venv/bin/python -m modules.line_stats --data-dir . --output ../line_stats.json
-
       - name: Notify Discord
         if: env.COMMIT_SHA != ''
         env:
+          OUTPUT_DIR: data
           DIFF_FILE: ./diff.json
-          LINE_STATS_FILE: ./line_stats.json
           DISCORD_WEBHOOK_UNI: ${{ secrets.DISCORD_WEBHOOK_UNI }}
         run: ./venv/bin/python code/main.py --notify --commit-sha ${{ env.COMMIT_SHA }}

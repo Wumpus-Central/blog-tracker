@@ -19,7 +19,6 @@ class ScraperEngine:
         self.output_dir = os.environ.get("OUTPUT_DIR", ".")
         self.state_file = os.path.join(self.output_dir, "state.json")
         self.diff_file = os.environ.get("DIFF_FILE", "./diff.json")
-        self.line_stats_file = os.environ.get("LINE_STATS_FILE", "./line_stats.json")
         self.new_data = {}
         self.old_data = {}
         self.diff = {}
@@ -138,9 +137,7 @@ class ScraperEngine:
         logger.info(f"Commit URL: {commit_url or 'none'}")
         self.diff = self._load_diff()
         logger.info(f"Loaded diff.json ({len(self.diff)} sources)")
-        line_stats = line_stats_module.load_line_stats(self.line_stats_file)
-        if line_stats:
-            logger.info(f"Loaded line_stats.json ({len(line_stats)} entries)")
+        line_stats = line_stats_module.build_line_stats(self.output_dir)
         self._notify_discord(commit_url, line_stats)
 
 
@@ -167,7 +164,6 @@ Modes:
 Environment variables:
   OUTPUT_DIR              Directory for state.json + .md files (default: .)
   DIFF_FILE               Path to diff.json (default: ./diff.json)
-  LINE_STATS_FILE         Path to line_stats.json (default: ./line_stats.json, notify mode)
   DISCORD_WEBHOOK_UNI     Discord webhook URL for the UNI server (notify mode)
 """)
 
