@@ -1,9 +1,10 @@
 import os
 import re
+import shutil
 import requests
 import hashlib
-import subprocess
 from loguru import logger
+from pathlib import Path
 
 IMG_TAG_RE = re.compile(r'<img[^>]*>', re.IGNORECASE)
 SRC_RE = re.compile(r'src="([^"]*)"', re.IGNORECASE)
@@ -80,15 +81,11 @@ class ZendeskProvider:
 
     def write(self, source, articles):
         output_dir = os.environ.get("OUTPUT_DIR", ".")
-        source_dir = os.path.join(output_dir, source)
+        source_path = Path(output_dir) / source
 
-        rm_result = subprocess.run(f"rm -rf {source_dir}/*", shell=True)
-        if rm_result.returncode != 0:
-            logger.warning(f"rm -rf {source_dir}/* exited with code {rm_result.returncode}")
-        mkdir_result = subprocess.run(f"mkdir -p {source_dir}", shell=True)
-        if mkdir_result.returncode != 0:
-            logger.warning(f"mkdir -p {source_dir} exited with code {mkdir_result.returncode}")
-        logger.debug(f"Directory {source_dir} is ready.")
+        shutil.rmtree(source_path, ignore_errors=True)
+        source_path.mkdir(parents=True, exist_ok=True)
+        logger.debug(f"Directory {source_path} is ready.")
 
         written = 0
         for article in articles:
