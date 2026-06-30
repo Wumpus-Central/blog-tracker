@@ -125,6 +125,38 @@
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/40785744057495"
         },
         {
+            "id": 40591073686679,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/40591073686679.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/40591073686679-Meta-x-Discord-Nitro",
+            "author_id": 2921470028,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 22113084771863,
+            "created_at": "2026-05-19T18:47:50Z",
+            "name": "Meta x Discord Nitro",
+            "title": "Meta x Discord Nitro",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-06-24T17:00:27Z",
+            "user_segment_id": null,
+            "permission_group_id": 6449276657303,
+            "content_tag_ids": [],
+            "label_names": [
+                "Nitro",
+                "promo",
+                "Discord Nitro",
+                "meta x nitro",
+                "meta"
+            ],
+            "body": "ab240d14c826f19635979a1047f36f7e8bcef76c514bc81efa42cbb5e70431be",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/41460031658263"
+        },
+        {
             "id": 40428187307543,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/40428187307543.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/40428187307543--Known-Issue-Desktop-Client-Crashing-When-Starting-a-Game-on-AMD-Graphics-Cards",
