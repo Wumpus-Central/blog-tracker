@@ -1,6 +1,38 @@
 {
     "support": [
         {
+            "id": 41444535280791,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41444535280791.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/41444535280791-Discord-Nitro-10K-Orbs-Offer",
+            "author_id": 424992137214,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 22113084771863,
+            "created_at": "2026-06-24T00:37:57Z",
+            "name": "Discord Nitro 10K Orbs Offer",
+            "title": "Discord Nitro 10K Orbs Offer",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-06-26T00:52:03Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [
+                "01KW0PRGN6XRVCRXW9W20VR1F8",
+                "01KW0PRM08GXT95DM0KHC2FX9H"
+            ],
+            "label_names": [
+                "Discord Nitro",
+                "discord orbs"
+            ],
+            "body": "064dd8ae3cacbf599f9693abc136724a67b638292139824655574f3392dacb72",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/41503298260247"
+        },
+        {
             "id": 41412722792983,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41412722792983.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/41412722792983-Discord-on-Meta-Quest-FAQ",
@@ -345,7 +377,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-05-29T01:22:13Z",
+            "edited_at": "2026-07-01T16:00:03Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -356,7 +388,7 @@
                 "game shop",
                 "rust shop"
             ],
-            "body": "b715a9ced88842121759d3756923e4ce027235c6c5c65b27abaf0ff86410e8dc",
+            "body": "d0d954f8f23d647b6435523fec594e8dc2d6c4b31a7f27e68b52620e72af8c2e",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/40167861384855"
         },
@@ -491,7 +523,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-12T18:19:56Z",
+            "edited_at": "2026-07-01T16:07:13Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -499,7 +531,7 @@
                 "answer-bot",
                 "nitro rewards"
             ],
-            "body": "726c8d4f400422213eb494bf645407de920ce532cb882a686c0a78313e158bbe",
+            "body": "eab16ab5d8d01b66ee9c73111dc8e78b84b64f9c03e5208d002d5b8562426295",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/40276842682007"
         },
@@ -5644,7 +5676,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-02-26T19:24:50Z",
+            "edited_at": "2026-07-01T16:00:03Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -5659,7 +5691,7 @@
                 "Shop",
                 "Shop FAQ"
             ],
-            "body": "c3384a7f956e4e3660d649c32e3ffb4a677ddbdcef792c07401972d8bfaa0011",
+            "body": "91c3247a99fa02bf437ab680df753bae290856b6a396df7f87911a3906a2bc5a",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/25517233436439"
         },
@@ -7893,7 +7925,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-23T20:50:19Z",
+            "edited_at": "2026-07-01T16:00:01Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -7908,7 +7940,7 @@
                 "boosting streak",
                 "boosts"
             ],
-            "body": "cc4d87f1113a26ef7df0cf80e7c6548a9d195951803f81e6fb282ac83c963404",
+            "body": "5bf3a9d06f186eefaf03c78374af71b88e409b93f17e8e6cc8078b33fabd3614",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/19576208155671"
         },
@@ -8625,7 +8657,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2025-11-14T17:34:03Z",
+            "edited_at": "2026-07-01T16:00:02Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -8668,7 +8700,7 @@
                 "special",
                 "rewarded"
             ],
-            "body": "95524ff6014acc3bd4128bfddc279bde294a0b537ab9a6a324d3351bbcb18b44",
+            "body": "755fbd21ccab90ac37b6496e659dc84c3e55f8cb06cb7ba37156d10856c0293b",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/32720384324119"
         },
@@ -15890,7 +15922,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2024-02-13T18:35:37Z",
+            "edited_at": "2026-07-01T16:00:02Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -15901,7 +15933,7 @@
                 "server subscriptions",
                 "memberships"
             ],
-            "body": "e7ae332891988e8f45c7bec8601b0eb5bb743a2d88b6a8ba2243c346bc3e4553",
+            "body": "d105632923eda920a52ce52e0b6bb504ed4c79200105ee86f5db48cb514aa2d1",
             "user_segment_ids": []
         },
         {
