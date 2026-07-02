@@ -6225,7 +6225,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2025-07-03T17:45:33Z",
+            "edited_at": "2026-07-02T21:13:55Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -6239,7 +6239,7 @@
                 "custom tag",
                 "server nickname"
             ],
-            "body": "354e6882146057e5e76565f95c0c09b1c66ab910251448afd8590051f6e0d3ef",
+            "body": "5658823a862a131246f38153d064d9fc1f6dffbdfe543b071d3ff8ec5d6bb408",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/14484974734871"
         },
@@ -10530,7 +10530,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-29T17:35:53Z",
+            "edited_at": "2026-07-02T21:06:23Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -10550,7 +10550,7 @@
                 "early supporter badge",
                 "active developer badge"
             ],
-            "body": "47167757574e31e2ba9f1b9a674798734e707f8b3291d10824aca914eaf4b3a6",
+            "body": "df86eb22a83bda4dab9dc280f263b0cd72f7bd1aff21e6160008ca6df642f573",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/10928082393495"
         },
