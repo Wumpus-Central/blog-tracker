@@ -2353,7 +2353,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-04-20T22:07:39Z",
+            "edited_at": "2026-07-06T17:48:05Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -2383,7 +2383,7 @@
                 "gated",
                 "friend requests"
             ],
-            "body": "9a9d6e0f47be7cfd85ecef41af680b3a2d78127ef157812ebf3ff154a0ed6cde",
+            "body": "e3be6fd42d95e33dc43e0b391bdbfa8cdd749e3be487875c5173a7884dad185e",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/38909170377239"
         },
