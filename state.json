@@ -742,7 +742,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-07-07T16:06:53Z",
+            "edited_at": "2026-07-08T21:34:39Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -750,7 +750,7 @@
                 "answer-bot",
                 "profile privacy"
             ],
-            "body": "5c047b28a9ab3fc5e1695a19c3812e65617e0bcf0dd8deac525194d281a1e4ea",
+            "body": "36419ee569a2a8101e5dddb09df3087221d6bd59b9008b41641a1bc132d460df",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/39722756283031"
         },
