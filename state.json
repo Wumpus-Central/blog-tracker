@@ -1,6 +1,32 @@
 {
     "support": [
         {
+            "id": 41832532728215,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41832532728215.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/41832532728215-How-to-Use-the-LFG-Channels-to-Find-Game-Sessions-on-Discord",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 201110577,
+            "created_at": "2026-07-09T15:42:20Z",
+            "name": "How to Use the LFG Channels  to Find Game Sessions on Discord",
+            "title": "How to Use the LFG Channels  to Find Game Sessions on Discord",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-07-14T23:44:08Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [],
+            "body": "b7d29280125e57ab0cd2c8c692143f8e66354d6d32af0f05cdcb2045da0636f2",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/41917230411927"
+        },
+        {
             "id": 41619407434391,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41619407434391.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/41619407434391-Discord-Self-Service-Advertising-Terms",
