@@ -629,7 +629,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-07-22T21:16:29Z",
+            "edited_at": "2026-07-22T23:14:23Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -640,7 +640,7 @@
                 "game shop",
                 "rust shop"
             ],
-            "body": "4b4517e4979e41b912989a3db6ff71c30731e889ea8ac5f884ab89dee793318d",
+            "body": "71035356a405e4ff21ebbf8bc78231012b818c09e4274285b08d3a3723e39581",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/40167861384855"
         },
@@ -5930,7 +5930,7 @@
             "outdated_locales": [],
             "edited_at": "2026-07-01T18:06:27Z",
             "user_segment_id": null,
-            "permission_group_id": 6449276657303,
+            "permission_group_id": 1720972,
             "content_tag_ids": [],
             "label_names": [
                 "nitro",
