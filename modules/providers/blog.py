@@ -11,8 +11,7 @@ class BlogProvider:
             rss_response = requests.get(url_rss, timeout=15).text
             logger.success(f"Successfully fetched RSS feed from {url_rss}")
         except Exception as e:
-            logger.error(f"Unexpected error while fetching RSS: {e}")
-            return {"blog": posts}
+            raise RuntimeError(f"Blog RSS fetch failed: {e}") from e
 
         try:
             rss_content = feedparser.parse(rss_response)
@@ -28,8 +27,7 @@ class BlogProvider:
                     "media_thumbnail_url": post["media_thumbnail"][0]["url"]
                 })
         except Exception as e:
-            logger.error(f"Failed to parse RSS feed: {e}")
-            return {"blog": posts}
+            raise RuntimeError(f"Blog RSS parse failed: {e}") from e
 
         logger.success(f"Processed {len(posts)} blog posts.")
         return {"blog": posts}

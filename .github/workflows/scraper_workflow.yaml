@@ -45,9 +45,11 @@ jobs:
         env:
           OUTPUT_DIR: data
           DIFF_FILE: ./diff.json
+          MONITOR_FILE: ./monitor.json
         run: ./venv/bin/python code/main.py --scrape
 
       - name: Commit and Push changes to data
+        if: success()
         working-directory: data
         run: |
           git config --global user.name "github-actions[bot]"
@@ -65,9 +67,16 @@ jobs:
           fi
 
       - name: Notify Discord
-        if: env.COMMIT_SHA != ''
+        if: always()
         env:
           OUTPUT_DIR: data
           DIFF_FILE: ./diff.json
+          MONITOR_FILE: ./monitor.json
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           DISCORD_WEBHOOK_UNI: ${{ secrets.DISCORD_WEBHOOK_UNI }}
-        run: ./venv/bin/python code/main.py --notify --commit-sha ${{ env.COMMIT_SHA }}
+        run: |
+          COMMIT_ARG=""
+          if [ -n "${{ env.COMMIT_SHA }}" ]; then
+            COMMIT_ARG="--commit-sha ${{ env.COMMIT_SHA }}"
+          fi
+          ./venv/bin/python code/main.py --notify $COMMIT_ARG

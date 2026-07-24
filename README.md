@@ -23,17 +23,19 @@ GitHub Actions (source branch, cron 0 * * * *)
 ├── checkout data   → ./data    (state.json + .md files)
 ├── pip install from code/requirements.txt
 │
-├── python code/main.py --scrape    (OUTPUT_DIR=data, DIFF_FILE=./diff.json)
-│   ├── fetch Zendesk   → in-memory articles (no file ops yet)
-│   ├── fetch Blog      → in-memory posts (RSS)
+├── python code/main.py --scrape    (OUTPUT_DIR=data, DIFF_FILE=./diff.json, MONITOR_FILE=./monitor.json)
+│   ├── fetch Zendesk   → 3x retry per source (backoff 1s/2s/4s, 429 Retry-After), in-memory articles
+│   ├── fetch Blog      → 3x retry, in-memory posts (RSS)
+│   ├── health gate     → if ANY source failed → save ./monitor.json, raise SystemExit(1)
 │   ├── archiver        → move removed .md to data/archive/{source}/, update archive/state.json
 │   ├── write Zendesk   → data/{source}/{id}.md + hash bodies
 │   └── differ          → diff.json (full entry objects, NOT notified yet)
 │
-├── commit & push data/ → data branch
+├── commit & push data/ → data branch    (skipped if scrape aborted)
 │   └── capture COMMIT_SHA → $GITHUB_ENV
 │
-└── python code/main.py --notify --commit-sha $COMMIT_SHA    (if COMMIT_SHA set, OUTPUT_DIR=data)
+└── python code/main.py --notify --commit-sha $COMMIT_SHA    (if: always(), OUTPUT_DIR=data)
+    ├── if ./monitor.json exists → send health-failure error embed (per-source status table + Actions run link), return
     ├── git diff --numstat HEAD~1 HEAD → line stats (in-memory)
     └── per-change Discord embeds (color-coded, Changes, commit URL field, 2s delay)
 ```
@@ -45,26 +47,29 @@ main.py                     ScraperEngine entrypoint (argparse: --scrape / --not
 modules/
   _shared.py                Shared constants (ZENDESK_SOURCES, BLOG_SOURCE) + lookup_entry_by_id()
   log_setup.py              Loguru sink configuration (setup_logging())
+  monitor.py                HealthMonitor — per-source status tracking + circuit breaker
   line_stats.py             Build line stats dict from git diff --numstat (in-process)
   archiver.py               Archive removed articles: move .md to archive/, update archive/state.json
   differ.py                 Diff: git status (Zendesk) + state comparison (blog)
   providers/
-    zendesk.py              Zendesk help-center API — fetch() + write() split
-    blog.py                 Discord blog RSS → state.json
+    zendesk.py              Zendesk help-center API — fetch() + write() split (raises on total failure)
+    blog.py                 Discord blog RSS → state.json (raises on fetch/parse failure)
   notifiers/
-    discord.py              Orchestrator: iterates diff, dispatches embeds, 2s delay
+    discord.py              Orchestrator: iterates diff, dispatches embeds + send_error() health embed, 2s delay
     embeds/
       zendesk.py            create_zendesk_embed(action, entry, commit_url, source, line_stats)
       blog.py               create_blog_embed(action, entry, commit_url, source, line_stats)
+      error.py              create_error_embed(record, run_url) — legacy error embed helper
 ```
 
 ## How It Works
 
-1. **Scrape Zendesk** — paginates through the help-center API for each source (`support`, `support-dev`, `support-apps`, `creator-support`), writes each article's HTML body to `data/{source}/{id}.md`, and stores metadata + a SHA-256 hash of the body in `state.json`.
-2. **Scrape Blog** — fetches the Discord blog RSS feed and stores post metadata in `state.json`.
-3. **Diff** — runs `git status --porcelain` in the `data` checkout to detect added (`??`), updated (` M`), and removed (` D`) Zendesk article files. Blog posts are diffed by comparing old vs new `state.json` entries by `link` (since blog posts are not written as `.md` files). Each diff entry carries the **full object** from the new state (added/updated) or old state (removed), persisted to `diff.json`.
-4. **Line stats** — runs `git diff --numstat HEAD~1 HEAD` in the `data` checkout to count added/removed lines per `.md` file. Computed in-process by the notify step (no intermediate file).
-5. **Notify** — loads `diff.json` and dispatches one Discord embed per change (green = added, yellow = updated, red = removed). Zendesk embeds show a 2×3 grid of inline fields (Source, Article ID, Changes, Created, Promoted, Commit) plus a full-width Labels field; the Changes field (`+N ~M -K`) comes from the in-process line stats. Blog embeds link the title to the post, include the summary as description and the thumbnail as image. Each embed carries a clickable "View commit" field linking to the data-branch commit that captured the change. A 2-second delay separates sends to respect webhook rate limits.
+1. **Scrape Zendesk** — paginates through the help-center API for each source (`support`, `support-dev`, `support-apps`, `creator-support`), writes each article's HTML body to `data/{source}/{id}.md`, and stores metadata + a SHA-256 hash of the body in `state.json`. Each per-source fetch is wrapped in **3 retry attempts** with exponential backoff (`1s → 2s → 4s`) and honors the HTTP `429 Retry-After` header. A source that fails all attempts raises and is marked `FAILED` in the health monitor.
+2. **Scrape Blog** — fetches the Discord blog RSS feed (same 3-attempt retry wrapper) and stores post metadata in `state.json`. On failure, marked `FAILED` in the health monitor.
+3. **Health gate (circuit breaker)** — after all sources are fetched, `HealthMonitor.is_healthy()` is checked. If **any** source is `FAILED`, the scrape is aborted **before** archiving, writing, or diffing: `monitor.json` is written to the workspace root and `SystemExit(1)` is raised. This prevents the false-deletion cascade that occurs when a transient API outage makes the archiver treat all articles as removed.
+4. **Diff** — runs `git status --porcelain` in the `data` checkout to detect added (`??`), updated (` M`), and removed (` D`) Zendesk article files. Blog posts are diffed by comparing old vs new `state.json` entries by `link` (since blog posts are not written as `.md` files). Each diff entry carries the **full object** from the new state (added/updated) or old state (removed), persisted to `diff.json`.
+5. **Line stats** — runs `git diff --numstat HEAD~1 HEAD` in the `data` checkout to count added/removed lines per `.md` file. Computed in-process by the notify step (no intermediate file).
+6. **Notify** — if `monitor.json` exists (aborted scrape), dispatches a single health-failure error embed to Discord listing every source's status (`OK`/`FAILED`), article count, attempts, and error message, with a clickable link to the Actions run. Otherwise loads `diff.json` and dispatches one Discord embed per change (green = added, yellow = updated, red = removed). Zendesk embeds show a 2×3 grid of inline fields (Source, Article ID, Changes, Created, Promoted, Commit) plus a full-width Labels field; the Changes field (`+N ~M -K`) comes from the in-process line stats. Blog embeds link the title to the post, include the summary as description and the thumbnail as image. Each embed carries a clickable "View commit" field linking to the data-branch commit that captured the change. A 2-second delay separates sends to respect webhook rate limits.
 
 ## Archiving
 
@@ -121,9 +126,9 @@ Both methods require a Personal Access Token with **Actions: Write** (fine-grain
 
 It performs three stages:
 
-1. **Scrape** — runs `python code/main.py --scrape` with `OUTPUT_DIR=data` and `DIFF_FILE=./diff.json`. Scrapes all sources, writes `state.json` + `.md` files into the `data` checkout, computes the diff, and persists it to `diff.json` in the workspace root (outside `data/`, so it is not committed).
-2. **Commit & Push** — commits changes in `data/` as `github-actions[bot]` and pushes to the `data` branch. On success, captures the commit SHA into `$GITHUB_ENV` as `COMMIT_SHA`. Skipped if there are no changes.
-3. **Notify** — runs only if `COMMIT_SHA` is set. Invokes `python code/main.py --notify --commit-sha $COMMIT_SHA` to load `diff.json` and dispatch per-change Discord embeds with a link to the commit.
+1. **Scrape** — runs `python code/main.py --scrape` with `OUTPUT_DIR=data`, `DIFF_FILE=./diff.json`, and `MONITOR_FILE=./monitor.json`. Fetches all sources (3 retries each), runs the health gate, then — if healthy — writes `state.json` + `.md` files into the `data` checkout, computes the diff, and persists it to `diff.json` in the workspace root (outside `data/`, so it is not committed). If any source failed, writes `monitor.json` and aborts with a non-zero exit before touching data.
+2. **Commit & Push** — runs `if: success()` only. Commits changes in `data/` as `github-actions[bot]` and pushes to the `data` branch. On success, captures the commit SHA into `$GITHUB_ENV` as `COMMIT_SHA`. Skipped automatically when the scrape aborted (non-zero exit). Also skipped if there are no changes.
+3. **Notify** — runs `if: always()` (so it fires even after a failed scrape). Invokes `python code/main.py --notify --commit-sha $COMMIT_SHA` (commit-sha omitted when no commit was produced). If `monitor.json` exists, dispatches a health-failure error embed (per-source status table + link to the Actions run) and returns; otherwise loads `diff.json` and dispatches per-change Discord embeds with a link to the commit.
 
 ## Local Development
 
@@ -154,6 +159,8 @@ DIFF_FILE=./diff.json ./venv/bin/python main.py --notify --commit-sha <SHA>
 |----------|---------|------|-------------|
 | `OUTPUT_DIR` | `.` | both | Directory where `state.json` and per-source `.md` files are written (scrape) / where `git diff --numstat` runs (notify) |
 | `DIFF_FILE` | `./diff.json` | both | Path to `diff.json` (written by `--scrape`, read by `--notify`) |
+| `MONITOR_FILE` | `./monitor.json` | both | Path to `monitor.json` (written by `--scrape` on abort, read by `--notify` to send error embed). Lives outside `data/`, never committed. |
+| `ACTIONS_RUN_URL` | — | notify | Optional URL to the GitHub Actions run; embedded as a clickable "View run logs" field in health-failure error embeds. Set automatically by the workflow. |
 | `DISCORD_WEBHOOK_UNI` | — | notify | Discord webhook URL for the UNI server |
 
 ### GitHub Secrets

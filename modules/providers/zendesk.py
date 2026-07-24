@@ -18,6 +18,8 @@ class ZendeskProvider:
         articles = []
         processed_count = 0
         total_count = None
+        first_page_failed = False
+        fetch_error = None
 
         logger.info(f"Fetching articles from '{source}'...")
 
@@ -30,14 +32,22 @@ class ZendeskProvider:
                     timeout=10
                 )
             except Exception as e:
-                logger.error(f"Request failed for {source} page {page}: {e}")
+                fetch_error = f"Network error on page {page}: {e}"
+                if page == 1:
+                    first_page_failed = True
+                else:
+                    logger.error(f"Request failed for {source} page {page}: {e}")
                 break
 
             if response.status_code != 200:
                 if response.status_code == 404:
                     logger.debug(f"Pagination ended for {source} at page {page} (404).")
                 else:
-                    logger.error(f"Source {source} returned status {response.status_code} on page {page}")
+                    fetch_error = f"HTTP {response.status_code} on page {page}"
+                    if page == 1:
+                        first_page_failed = True
+                    else:
+                        logger.error(f"Source {source} returned status {response.status_code} on page {page}")
                 break
 
             data = response.json()
@@ -75,6 +85,9 @@ class ZendeskProvider:
                     logger.error(f"Failed to process article {article_id}: {e}")
 
             page += 1
+
+        if first_page_failed or (fetch_error is not None and len(articles) == 0):
+            raise RuntimeError(f"Zendesk source '{source}' fetch failed: {fetch_error}")
 
         logger.success(f"Fetched {len(articles)} articles from '{source}'.")
         return {source: articles}

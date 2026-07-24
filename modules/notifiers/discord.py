@@ -20,6 +20,8 @@ class DiscordNotifier:
         BLOG_SOURCE: blog_embeds.create_blog_embed,
         **{source: zendesk_embeds.create_zendesk_embed for source in ZENDESK_SOURCES},
     }
+    EMBED_COLOR_OK = 0x57F287
+    EMBED_COLOR_FAIL = 0xED4245
 
     def send(self, diff, commit_url=None, line_stats=None):
         if self._is_empty(diff):
@@ -47,6 +49,66 @@ class DiscordNotifier:
                     time.sleep(self.SEND_DELAY_SECONDS)
 
         logger.success(f"Notify complete: dispatched {sent} embed(s).")
+
+    def send_error(self, monitor, run_url=None):
+        status = monitor.to_dict() if hasattr(monitor, "to_dict") else monitor
+        failed = [
+            name for name, s in status.items() if s.get("status") != "ok"
+        ]
+        total = len(status)
+        embed = {
+            "title": "Scrape aborted — source health failure",
+            "color": self.EMBED_COLOR_FAIL,
+            "description": (
+                f"{len(failed)}/{total} source(s) failed. "
+                f"Run aborted to protect data integrity."
+            ),
+            "fields": [],
+        }
+        for name, info in status.items():
+            is_ok = info.get("status") == "ok"
+            marker = "OK" if is_ok else "FAIL"
+            value = (
+                f"**{marker}**  `{info.get('status', '?')}`\n"
+                f"articles: `{info.get('articles', 0)}`  attempts: `{info.get('attempts', 0)}`"
+            )
+            if info.get("error"):
+                err = info["error"]
+                if len(err) > 200:
+                    err = err[:197] + "..."
+                value += f"\nerror: `{err}`"
+            embed["fields"].append({
+                "name": name,
+                "value": value,
+                "inline": True,
+            })
+        if run_url:
+            embed["fields"].append({
+                "name": "Actions Run",
+                "value": f"[View run logs]({run_url})",
+                "inline": False,
+            })
+        message = {"embeds": [embed]}
+        for label in self.WEBHOOK_LABELS:
+            webhook_url = os.environ.get(f"DISCORD_WEBHOOK_{label}")
+            if not webhook_url:
+                logger.warning(f"DISCORD_WEBHOOK_{label} not set — skipping error embed.")
+                continue
+            try:
+                response = requests.post(webhook_url, json=message, timeout=10)
+                if response.status_code in (200, 204):
+                    logger.success(
+                        f"Dispatched health-failure error embed to Discord ({label})."
+                    )
+                else:
+                    logger.error(
+                        f"Discord ({label}) returned {response.status_code} "
+                        f"for error embed: {response.text}"
+                    )
+            except Exception as e:
+                logger.error(
+                    f"Failed to dispatch error embed to Discord ({label}): {e}"
+                )
 
     def _dispatch(self, message, source, action, entry_key):
         for label in self.WEBHOOK_LABELS:
