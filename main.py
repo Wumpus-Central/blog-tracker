@@ -94,8 +94,6 @@ class ScraperEngine:
             logger.warning("Empty run: No articles were scraped.")
 
     def _write_zendesk(self):
-        if not hasattr(self, '_zendesk'):
-            self._zendesk = zendesk_provider.ZendeskProvider()
         for source in self.zendesk_sources:
             articles = self.new_data.get(source, [])
             try:
