@@ -117,11 +117,6 @@ class ZendeskProvider:
         logger.success(f"Wrote {written}/{len(articles)} .md files for '{source}'.")
         return source
 
-    def walker(self, source):
-        fetched = self.fetch(source)
-        self.write(source, fetched[source])
-        return fetched
-
     @staticmethod
     def _extract_thumbnail(html):
         fallback = None

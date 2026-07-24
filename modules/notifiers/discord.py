@@ -20,7 +20,6 @@ class DiscordNotifier:
         BLOG_SOURCE: blog_embeds.create_blog_embed,
         **{source: zendesk_embeds.create_zendesk_embed for source in ZENDESK_SOURCES},
     }
-    EMBED_COLOR_OK = 0x57F287
     EMBED_COLOR_FAIL = 0xED4245
 
     def send(self, diff, commit_url=None, line_stats=None):
