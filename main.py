@@ -157,6 +157,10 @@ class ScraperEngine:
     def scrape(self):
         logger.info("Starting scraper...")
 
+        if os.path.exists(self.monitor_file):
+            os.remove(self.monitor_file)
+            logger.info(f"Removed stale {self.monitor_file} from previous failed run.")
+
         if os.path.exists(self.state_file):
             with open(self.state_file, "r", encoding="utf-8") as old_data_file:
                 self.old_data = json.load(old_data_file)
