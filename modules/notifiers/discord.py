@@ -5,7 +5,7 @@ from loguru import logger
 
 import modules.notifiers.embeds.zendesk as zendesk_embeds
 import modules.notifiers.embeds.blog as blog_embeds
-from modules._shared import ZENDESK_SOURCES, BLOG_SOURCE
+from modules.core.constants import ZENDESK_SOURCES, BLOG_SOURCE
 
 
 class DiscordNotifier:

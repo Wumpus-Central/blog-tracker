@@ -45,21 +45,28 @@ GitHub Actions (source branch, cron 0 * * * *)
 ```
 main.py                     ScraperEngine entrypoint (argparse: --scrape / --notify)
 modules/
-  _shared.py                Shared constants (ZENDESK_SOURCES, BLOG_SOURCE) + lookup_entry_by_id()
-  log_setup.py              Loguru sink configuration (setup_logging())
-  monitor.py                HealthMonitor — per-source status tracking + circuit breaker
-  line_stats.py             Build line stats dict from git diff --numstat (in-process)
-  archiver.py               Archive removed articles: move .md to archive/, update archive/state.json
-  differ.py                 Diff: git status (Zendesk) + state comparison (blog)
+  __init__.py
+  core/
+    __init__.py
+    constants.py              Shared constants (ZENDESK_SOURCES, BLOG_SOURCE) + lookup_entry_by_id()
+    log_setup.py              Loguru sink configuration (setup_logging())
+    monitor.py                HealthMonitor — per-source status tracking + circuit breaker
+  processors/
+    __init__.py
+    archiver.py               Archive removed articles: move .md to archive/, update archive/state.json
+    differ.py                 Diff: git status (Zendesk) + state comparison (blog)
+    line_stats.py             Build line stats dict from git diff --numstat (in-process)
   providers/
-    zendesk.py              Zendesk help-center API — fetch() + write() split (raises on total failure)
-    blog.py                 Discord blog RSS → state.json (raises on fetch/parse failure)
+    __init__.py
+    zendesk.py                Zendesk help-center API — fetch() + write() split (raises on total failure)
+    blog.py                   Discord blog RSS → state.json (raises on fetch/parse failure)
   notifiers/
-    discord.py              Orchestrator: iterates diff, dispatches embeds + send_error() health embed, 2s delay
+    __init__.py
+    discord.py                Orchestrator: iterates diff, dispatches embeds + send_error() health embed, 2s delay
     embeds/
-      zendesk.py            create_zendesk_embed(action, entry, commit_url, source, line_stats)
-      blog.py               create_blog_embed(action, entry, commit_url, source, line_stats)
-      error.py              create_error_embed(record, run_url) — legacy error embed helper
+      __init__.py
+      zendesk.py              create_zendesk_embed(action, entry, commit_url, source, line_stats)
+      blog.py                 create_blog_embed(action, entry, commit_url, source, line_stats)
 ```
 
 ## How It Works

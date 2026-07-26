@@ -5,13 +5,13 @@ import time
 from loguru import logger
 import modules.providers.zendesk as zendesk_provider
 import modules.providers.blog as blog_provider
-import modules.differ as differ
-import modules.archiver as archiver
+import modules.processors.differ as differ
+import modules.processors.archiver as archiver
 import modules.notifiers.discord as discord_notifier
-import modules.line_stats as line_stats_module
-import modules.log_setup
-from modules._shared import ZENDESK_SOURCES, BLOG_SOURCE
-from modules.monitor import HealthMonitor, SourceStatus
+import modules.processors.line_stats as line_stats_module
+import modules.core.log_setup
+from modules.core.constants import ZENDESK_SOURCES, BLOG_SOURCE
+from modules.core.monitor import HealthMonitor, SourceStatus
 
 REPO_URL = "https://github.com/Wumpus-Central/blog-tracker"
 MAX_FETCH_ATTEMPTS = 3
@@ -232,7 +232,7 @@ Environment variables:
 
 @logger.catch
 def start():
-    modules.log_setup.setup_logging()
+    modules.core.log_setup.setup_logging()
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--scrape", action="store_true")
     parser.add_argument("--notify", action="store_true")

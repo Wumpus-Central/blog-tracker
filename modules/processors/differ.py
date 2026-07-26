@@ -2,7 +2,7 @@ import json
 import subprocess
 from loguru import logger
 
-from modules._shared import BLOG_SOURCE, lookup_entry_by_id
+from modules.core.constants import BLOG_SOURCE, lookup_entry_by_id
 
 
 class Differ:

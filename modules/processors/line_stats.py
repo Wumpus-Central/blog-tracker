@@ -1,7 +1,7 @@
 import subprocess
 from loguru import logger
 
-from modules._shared import ZENDESK_SOURCES
+from modules.core.constants import ZENDESK_SOURCES
 
 
 def build_line_stats(data_dir):
