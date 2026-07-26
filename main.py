@@ -2,7 +2,6 @@ import argparse
 import json
 import os
 import time
-import requests
 from loguru import logger
 import modules.providers.zendesk as zendesk_provider
 import modules.providers.blog as blog_provider
@@ -39,16 +38,6 @@ class ScraperEngine:
                 result = fetch_fn()
                 self._attempt_counts[source_name] = attempt
                 return result
-            except requests.HTTPError as e:
-                last_error = e
-                if (
-                    e.response is not None
-                    and e.response.status_code == 429
-                    and "Retry-After" in e.response.headers
-                ):
-                    delay = int(e.response.headers["Retry-After"])
-                else:
-                    delay = 2 ** (attempt - 1)
             except Exception as e:
                 last_error = e
                 delay = 2 ** (attempt - 1)
