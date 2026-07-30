@@ -809,7 +809,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-07-30T14:03:26Z",
+            "edited_at": "2026-07-30T17:05:02Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -817,7 +817,7 @@
                 "answer-bot",
                 "nitro rewards"
             ],
-            "body": "3a31a9a7430efc11b0e5b6808f43eb07470eebca3b839b84d2ddb30022c8e04d",
+            "body": "a8f3e817ccf29944dc79191b315be9f33c4ee245c8516c58a936e82ae7610ed1",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/40276842682007"
         },
