@@ -9115,7 +9115,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-07-31T18:46:37Z",
+            "edited_at": "2026-07-31T19:09:12Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -9142,7 +9142,7 @@
                 "in-app notifications settings",
                 "notification overrides"
             ],
-            "body": "d12200eb9fcfce1df811fbcfa39c4337bc4a06a3c975538cd6f82017c936b014",
+            "body": "8ce293796015c4f7c0d4c1ef7e29a0a4db6de1504d8976355205fd178b74d86c",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/42377991199511"
         },
