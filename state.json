@@ -1,6 +1,43 @@
 {
     "support": [
         {
+            "id": 42383370736023,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42383370736023.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/42383370736023-Mobile-Visual-Refresh-What-s-Changing",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 115000457731,
+            "created_at": "2026-07-31T21:48:23Z",
+            "name": "Mobile Visual Refresh: What's Changing",
+            "title": "Mobile Visual Refresh: What's Changing",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-08-04T16:28:30Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [
+                "ios",
+                "answer-bot",
+                "mobile",
+                "android",
+                "app",
+                "mobile app",
+                "visual",
+                "what's",
+                "refresh",
+                "changing"
+            ],
+            "body": "e1312e16cc1417644c6f79cbc52872cb1ed9cf57d7243d04c094de3627a24b50",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/42433243586711"
+        },
+        {
             "id": 42206889059991,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42206889059991.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/42206889059991-NVIDIA-GeForce-x-Discord-Nitro-Promotion",
@@ -5924,7 +5961,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-08-04T10:12:35Z",
+            "edited_at": "2026-08-04T17:21:09Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -5939,7 +5976,7 @@
                 "Shop",
                 "Shop FAQ"
             ],
-            "body": "91c3247a99fa02bf437ab680df753bae290856b6a396df7f87911a3906a2bc5a",
+            "body": "6083713e72fe538b75bc63843d20c680098667496a4f62984d2fa4e609c2ace4",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/25517233436439"
         },
@@ -19389,6 +19426,13 @@
     ],
     "blog": [
         {
+            "title": "Squircles, Styles, and Spacing: How Your Feedback is Helping Improve Mobile",
+            "link": "https://discord.com/blog/improving-mobile-with-squircles-styles-and-spacing",
+            "summary": "We're working to more closely match your mobile and desktop experiences, including changes to server icons and the chat bar. (Did we mention Ash, the OG dark theme, is back?)",
+            "published": "Tue, 04 Aug 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a70ce2458ab09e58b7d5218_Blog%20Hero%20-%201800x720%20-%201x.png"
+        },
+        {
             "title": "Introducing Profile Frames: Decorative Borders to Make Your Discord Profile Museum-Worthy",
             "link": "https://discord.com/blog/introducing-profile-frames-decorative-borders-to-make-your-discord-profile-museum-worthy",
             "summary": "Introducing Profile Frames: a new way to put a finishing touch on your Discord profile. Frames add a decorative border around your profile, giving the whole thing a look that's unmistakably yours.",
@@ -20080,13 +20124,6 @@
             "summary": "Announcing Discord Social SDK, which enables developers of all sizes to tap into Discord\u2019s social infrastructure and drive their game\u2019s social and multiplayer experiences \u2014 with or without a Discord account.",
             "published": "Mon, 17 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d8342841717d38bc4269c6_Discord-SDK-Hero_Image_1800x720_2.png"
-        },
-        {
-            "title": "Announcing Discord\u2019s Social SDK, Helping Power Your Game\u2019s Social Experiences",
-            "link": "https://discord.com/blog/announcing-discords-social-sdk-helping-power-your-games-social-experiences",
-            "summary": "Today, we\u2019re announcing our new Social SDK that empowers game developers of all sizes to implement Discord-powered features directly in their games, helping players easily talk, connect and enhance their social experiences.",
-            "published": "Mon, 17 Mar 2025 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d81e40b860d18d09760bff_Discord-SDK-Blog-Header_1800x720.png"
         }
     ]
 }
