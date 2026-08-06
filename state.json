@@ -216,38 +216,6 @@
             "user_segment_ids": []
         },
         {
-            "id": 41444535280791,
-            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41444535280791.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/41444535280791-Discord-Nitro-10K-Orbs-Offer",
-            "author_id": 424992137214,
-            "comments_disabled": true,
-            "draft": false,
-            "promoted": false,
-            "position": 0,
-            "section_id": 22113084771863,
-            "created_at": "2026-06-24T00:37:57Z",
-            "name": "Discord Nitro 10K Orbs Offer",
-            "title": "Discord Nitro 10K Orbs Offer",
-            "source_locale": "en-us",
-            "locale": "en-us",
-            "outdated": false,
-            "outdated_locales": [],
-            "edited_at": "2026-07-03T23:17:38Z",
-            "user_segment_id": null,
-            "permission_group_id": 1720972,
-            "content_tag_ids": [
-                "01KW0PRGN6XRVCRXW9W20VR1F8",
-                "01KW0PRM08GXT95DM0KHC2FX9H"
-            ],
-            "label_names": [
-                "Discord Nitro",
-                "discord orbs"
-            ],
-            "body": "cd525c99b316caaaf86b6ae6c0af0e5ee9e2aa90b958554196675faa4ccddf29",
-            "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/41503298260247"
-        },
-        {
             "id": 41412722792983,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41412722792983.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/41412722792983-Discord-on-Meta-Quest-FAQ",
@@ -19458,6 +19426,20 @@
     ],
     "blog": [
         {
+            "title": "Discord Patch Notes: August 4, 2026",
+            "link": "https://discord.com/blog/discord-patch-notes-august-4-2026",
+            "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
+            "published": "Thu, 06 Aug 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png"
+        },
+        {
+            "title": "General Availability of Mobile Platform Support Arrives in Discord Social SDK Version 1.10",
+            "link": "https://discord.com/blog/mobile-platform-support-arrives-in-discord-social-sdk",
+            "summary": "Mobile support is now generally available in the Discord Social SDK, allowing developers to extend Discord's social experiences to iOS and Android.",
+            "published": "Thu, 06 Aug 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a739eab90b6719a4af75a42_image1.png"
+        },
+        {
             "title": "Squircles, Styles, and Spacing: How Your Feedback is Helping Improve Mobile",
             "link": "https://discord.com/blog/improving-mobile-with-squircles-styles-and-spacing",
             "summary": "We're working to more closely match your mobile and desktop experiences, including changes to server icons and the chat bar. (Did we mention Ash, the OG dark theme, is back?)",
@@ -20142,20 +20124,6 @@
             "summary": "We\u2019re releasing a new and improved version of the Game Overlay, along with a refreshed desktop app so you can further customize Discord to your style.",
             "published": "Tue, 25 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67e1a71360e0b28ee369fc83_(DMKT08-PQ1)_Blog_Banner_Static_Final_1800x720.png"
-        },
-        {
-            "title": "Discord Announces First Mobile Ad Format, Broadening Advertising Opportunities",
-            "link": "https://discord.com/blog/announcing-quests-advertising-on-mobile",
-            "summary": "Discord announces plans to expand its successful Video Quests advertising format to mobile devices, making the company's first mobile ad offering.",
-            "published": "Thu, 20 Mar 2025 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67db36ec52f3165e99f8a0d6_2024_10_DiscordBlog_CompanyAnnoucements-6.png"
-        },
-        {
-            "title": "Discord Launches SDK to Power Social Infrastructure and Communications for Games",
-            "link": "https://discord.com/blog/announcing-discord-social-sdk-to-power-game-comms",
-            "summary": "Announcing Discord Social SDK, which enables developers of all sizes to tap into Discord\u2019s social infrastructure and drive their game\u2019s social and multiplayer experiences \u2014 with or without a Discord account.",
-            "published": "Mon, 17 Mar 2025 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d8342841717d38bc4269c6_Discord-SDK-Hero_Image_1800x720_2.png"
         }
     ]
 }
