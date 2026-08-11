@@ -3448,7 +3448,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-06-26T20:16:45Z",
+            "edited_at": "2026-08-11T17:00:22Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -3472,7 +3472,7 @@
                 "items",
                 "earn"
             ],
-            "body": "5623fae7aef38d52eade28bc8a5945bcadb7b18cf7665c0b7b0a74478e0bf9b4",
+            "body": "791516e69a4bf65ea68db0d4bd32567e4dc30001ef8192c1e0d56c15ed8b4fb4",
             "user_segment_ids": [],
             "thumbnail_url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXc2Dv32ha-1TD6KACxqHVA0rpq2MhlK_qy-A1gua9xYp57kT030C2LOu11npwzGlqGBchzvox8Fjve0cYMf0jN-5v3tdfthLj-uYpFj9ieXrnW20Auc4kko3ikHpKRvFM72OxdV?key=71muv3c5-NuExAugvQn57AhE"
         },
@@ -13980,7 +13980,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-02-12T16:04:18Z",
+            "edited_at": "2026-08-11T16:59:01Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -19426,6 +19426,13 @@
     ],
     "blog": [
         {
+            "title": "Link Discord and WoW to Keep the Guild Chatting Wherever You Are",
+            "link": "https://discord.com/blog/link-world-of-warcraft-with-discord",
+            "summary": "Gather your guildmates! Link your Discord and Battle.net accounts to unlock synced guild chat across Discord and World of Warcraft.",
+            "published": "Tue, 11 Aug 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a7a5b99beaeb69ba2e79997_image6.png"
+        },
+        {
             "title": "Discord Patch Notes: August 4, 2026",
             "link": "https://discord.com/blog/discord-patch-notes-august-4-2026",
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
@@ -20117,13 +20124,6 @@
             "summary": "Here's the Discord Changelog from March 25, 2025, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Tue, 25 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65e0d5d41a1beac596a12aaa_March%20Changelog%20Headers.png"
-        },
-        {
-            "title": "Revamped Overlay & Refreshed Desktop Give Game Time a Boost",
-            "link": "https://discord.com/blog/player-release-q12025",
-            "summary": "We\u2019re releasing a new and improved version of the Game Overlay, along with a refreshed desktop app so you can further customize Discord to your style.",
-            "published": "Tue, 25 Mar 2025 00:00:00 GMT",
-            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67e1a71360e0b28ee369fc83_(DMKT08-PQ1)_Blog_Banner_Static_Final_1800x720.png"
         }
     ]
 }
