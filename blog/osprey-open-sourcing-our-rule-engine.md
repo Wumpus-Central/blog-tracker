@@ -1,1 +1,31 @@
-<h5>This is a collaborative piece written by Jared Miller and Ayu.</h5><p>Despite virtually every online platform facing these sorts of challenges, many are left to reinvent tools from scratch, with varying degrees of success. We’d like to help our fellow companies get a head-start on their safety measures — that&#x27;s why, in partnership with  <a href="https://roost.tools/">ROOST</a> and the <a href="https://internet.dev/">internet.dev</a> team, we’re excited to open-source <a href="https://discord.com/press-releases/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era">Osprey</a>: our safety rules engine.</p><p>With Osprey, teams can investigate real-time activities across their platforms and quickly deploy dynamic rules to address emerging threats, all with minimal engineering overhead.</p><p>This post will walk you through what Osprey is, how it works, and how your team can start using it to build stronger safety measures.</p><div class="w-embed"><div class="btn-wrapper"><a data-track="https://github.com/roostorg/osprey" href="https://github.com/roostorg/osprey" class="btn-blog w-button" target="_blank">View the Osprey Github Repo</a></div></div>
+<h5>
+ This is a collaborative piece written by Jared Miller and Ayu.
+</h5>
+<p>
+ Despite virtually every online platform facing these sorts of challenges, many are left to reinvent tools from scratch, with varying degrees of success. We’d like to help our fellow companies get a head-start on their safety measures — that's why, in partnership with
+ <a href="https://roost.tools/">
+  ROOST
+ </a>
+ and the
+ <a href="https://internet.dev/">
+  internet.dev
+ </a>
+ team, we’re excited to open-source
+ <a href="https://discord.com/press-releases/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era">
+  Osprey
+ </a>
+ : our safety rules engine.
+</p>
+<p>
+ With Osprey, teams can investigate real-time activities across their platforms and quickly deploy dynamic rules to address emerging threats, all with minimal engineering overhead.
+</p>
+<p>
+ This post will walk you through what Osprey is, how it works, and how your team can start using it to build stronger safety measures.
+</p>
+<div class="w-embed">
+ <div class="btn-wrapper">
+  <a class="btn-blog w-button" data-track="https://github.com/roostorg/osprey" href="https://github.com/roostorg/osprey" target="_blank">
+   View the Osprey Github Repo
+  </a>
+ </div>
+</div>

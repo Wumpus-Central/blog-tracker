@@ -1,1 +1,31 @@
-<p>We’ve said it before, we’ll say it again: y’all <em>really love</em> customizing your profiles on Discord.</p><p>You’ve all made some impressive, creative, and sometimes wild profile setups over the years — you might have a perfectly-framed avatar or masterfully-written bio, or maybe you collect Avatar Decorations or Profile Effects from the Shop. Perhaps you go the extra mile and join Nitro to add splashes of profile colors, or set up a unique profile for each server you’re in. You might even do <em>all of the above</em>. Crazy. </p><p>Today, we’re showing off a brand new way to express yourself: <strong>Nameplates</strong>! Nameplates reach beyond the confines of your Discord profile and add a pop of personality to how your display name is shown wherever you’re listed. You can purchase them on the desktop app, and they’ll be visible to everyone on both desktop and mobile! </p><div class="w-embed"><div class="btn-wrapper"><a data-track="https://discord.com/shop" href="https://discord.com/shop" class="btn-blog w-button" target="_blank">Discover Nameplates in the Shop</a></div></div><p>How do you set ‘em up? Where are they shown? What do they even LOOK like? Step up to the plate and come find out! </p>
+<p>
+ We’ve said it before, we’ll say it again: y’all
+ <em>
+  really love
+ </em>
+ customizing your profiles on Discord.
+</p>
+<p>
+ You’ve all made some impressive, creative, and sometimes wild profile setups over the years — you might have a perfectly-framed avatar or masterfully-written bio, or maybe you collect Avatar Decorations or Profile Effects from the Shop. Perhaps you go the extra mile and join Nitro to add splashes of profile colors, or set up a unique profile for each server you’re in. You might even do
+ <em>
+  all of the above
+ </em>
+ . Crazy.
+</p>
+<p>
+ Today, we’re showing off a brand new way to express yourself:
+ <strong>
+  Nameplates
+ </strong>
+ ! Nameplates reach beyond the confines of your Discord profile and add a pop of personality to how your display name is shown wherever you’re listed. You can purchase them on the desktop app, and they’ll be visible to everyone on both desktop and mobile!
+</p>
+<div class="w-embed">
+ <div class="btn-wrapper">
+  <a class="btn-blog w-button" data-track="https://discord.com/shop" href="https://discord.com/shop" target="_blank">
+   Discover Nameplates in the Shop
+  </a>
+ </div>
+</div>
+<p>
+ How do you set ‘em up? Where are they shown? What do they even LOOK like? Step up to the plate and come find out!
+</p>

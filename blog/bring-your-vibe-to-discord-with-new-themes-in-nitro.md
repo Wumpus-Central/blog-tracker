@@ -1,1 +1,10 @@
-<p>Themes help you bring your own vibe to the app&#x27;s look and feel on both desktop and mobile! Everyone can pick between four default themes, while Nitro members have access to 28 <em>additional</em> color themes and can even make their own custom theme. </p><p>Read on to learn how to pick your new favorite theme — it’s as easy as changing from Light to Dark theme. If you’ve never left the boundaries of Light or Dark theme in your life, you can also read below for a quick refresher. We won’t judge.</p>
+<p>
+ Themes help you bring your own vibe to the app's look and feel on both desktop and mobile! Everyone can pick between four default themes, while Nitro members have access to 28
+ <em>
+  additional
+ </em>
+ color themes and can even make their own custom theme.
+</p>
+<p>
+ Read on to learn how to pick your new favorite theme — it’s as easy as changing from Light to Dark theme. If you’ve never left the boundaries of Light or Dark theme in your life, you can also read below for a quick refresher. We won’t judge.
+</p>

@@ -1,1 +1,19 @@
-<p>Today, together with <a href="https://techleap.nl/">Techleap</a>, we’re launching the Gaming Founders Circle, a hands-on program for a group of the most ambitious gaming companies in the Netherlands. The new program will provide participants with a direct line into the people, investors, and networks that help great games scale.</p><p>Discord is the communications platform where players gather around the games they love and where developers connect directly to their players. More than 90% of the people on Discord play games, and over 80 million of them gather across more than 10,000 game communities on the platform. Game makers don’t just reach players here, they get a real-time feedback loop on what’s landing, what isn’t, and what players want next.</p><p>We’re proud to partner with Techleap, the growth engine supporting hundreds of Dutch scaleups. The Netherlands is home to Discord’s European headquarters, making our investment in the local games community even more meaningful for us. We are also grateful for the support of the Dutch Games Association, bringing deep roots across the local games community.</p><p>Constantijn van Oranje, Special Envoy for Techleap, on the program:</p><p>&quot;Discord built its European home here. Now it&#x27;s backing the founders building our games industry, directly. That matters. Dutch gaming is already serious and it runs on the same frontier tech as our deeptech sector: AI and real-time compute but no founder scales alone. Connect them to the right peers, the right capital, and the right markets, and you don&#x27;t just grow five companies, you strengthen the whole sector.&quot;</p>
+<p>
+ Today, together with
+ <a href="https://techleap.nl/">
+  Techleap
+ </a>
+ , we’re launching the Gaming Founders Circle, a hands-on program for a group of the most ambitious gaming companies in the Netherlands. The new program will provide participants with a direct line into the people, investors, and networks that help great games scale.
+</p>
+<p>
+ Discord is the communications platform where players gather around the games they love and where developers connect directly to their players. More than 90% of the people on Discord play games, and over 80 million of them gather across more than 10,000 game communities on the platform. Game makers don’t just reach players here, they get a real-time feedback loop on what’s landing, what isn’t, and what players want next.
+</p>
+<p>
+ We’re proud to partner with Techleap, the growth engine supporting hundreds of Dutch scaleups. The Netherlands is home to Discord’s European headquarters, making our investment in the local games community even more meaningful for us. We are also grateful for the support of the Dutch Games Association, bringing deep roots across the local games community.
+</p>
+<p>
+ Constantijn van Oranje, Special Envoy for Techleap, on the program:
+</p>
+<p>
+ "Discord built its European home here. Now it's backing the founders building our games industry, directly. That matters. Dutch gaming is already serious and it runs on the same frontier tech as our deeptech sector: AI and real-time compute but no founder scales alone. Connect them to the right peers, the right capital, and the right markets, and you don't just grow five companies, you strengthen the whole sector."
+</p>

@@ -1,1 +1,17 @@
-<p>Back in 2017, we shared how we built our message search system to<a href="https://discord.com/blog/how-discord-indexes-billions-of-messages"> index billions of messages</a>. We designed our search infrastructure to be performant, cost-effective, scalable, and easy to operate. We chose to use Elasticsearch, with Discord messages sharded over<a href="https://www.elastic.co/blog/what-is-an-elasticsearch-index"> indices</a>, the logical namespace for Elasticsearch messages, on two Elasticsearch clusters. Messages were sharded either by Discord server (which we’ll refer to as a guild from here on out) or direct message (DM). This allowed us to store all a guild’s messages together for fast querying and run smaller, more manageable clusters. Since not everyone uses search, messages were lazily indexed into Discord, and we built a message queue that allowed workers to pull chunks of messages for indexing to leverage Elasticsearch’s bulk-indexing capabilities.</p><p>But as Discord grew, our search infrastructure began to exhibit a few cracks…</p><p>‍</p>
+<p>
+ Back in 2017, we shared how we built our message search system to
+ <a href="https://discord.com/blog/how-discord-indexes-billions-of-messages">
+  index billions of messages
+ </a>
+ . We designed our search infrastructure to be performant, cost-effective, scalable, and easy to operate. We chose to use Elasticsearch, with Discord messages sharded over
+ <a href="https://www.elastic.co/blog/what-is-an-elasticsearch-index">
+  indices
+ </a>
+ , the logical namespace for Elasticsearch messages, on two Elasticsearch clusters. Messages were sharded either by Discord server (which we’ll refer to as a guild from here on out) or direct message (DM). This allowed us to store all a guild’s messages together for fast querying and run smaller, more manageable clusters. Since not everyone uses search, messages were lazily indexed into Discord, and we built a message queue that allowed workers to pull chunks of messages for indexing to leverage Elasticsearch’s bulk-indexing capabilities.
+</p>
+<p>
+ But as Discord grew, our search infrastructure began to exhibit a few cracks…
+</p>
+<p>
+ ‍
+</p>

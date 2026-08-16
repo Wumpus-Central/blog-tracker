@@ -1,1 +1,10 @@
-<p>It’s Discord’s Birthday today! Another year older, another year’s worth of games added to the backlog. Don’t worry, <strong>Blue Prince</strong>, I’ll get to you soon… I already have a nice new pen and notepad set beside me just for the occasion! </p><p>We’ve been around for a while now, and we wanted to take a moment to reflect on how we got to Discord in the first place. This month, we’re inviting a new friend, Christina, along with Emi, Jeremy, and Armando (that’s me) to share what games introduced us to Discord all those years ago. Plus, you’ll get to hear what else we’ve been playing more recently, in case you want to celebrate with a new game recommendation (game sold separately).</p>
+<p>
+ It’s Discord’s Birthday today! Another year older, another year’s worth of games added to the backlog. Don’t worry,
+ <strong>
+  Blue Prince
+ </strong>
+ , I’ll get to you soon… I already have a nice new pen and notepad set beside me just for the occasion!
+</p>
+<p>
+ We’ve been around for a while now, and we wanted to take a moment to reflect on how we got to Discord in the first place. This month, we’re inviting a new friend, Christina, along with Emi, Jeremy, and Armando (that’s me) to share what games introduced us to Discord all those years ago. Plus, you’ll get to hear what else we’ve been playing more recently, in case you want to celebrate with a new game recommendation (game sold separately).
+</p>

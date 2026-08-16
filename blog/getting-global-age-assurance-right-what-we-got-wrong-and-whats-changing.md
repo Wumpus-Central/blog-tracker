@@ -1,1 +1,19 @@
-<p><strong>Update as of 3/9: </strong>Brazil&#x27;s Digital Statute for Children and Adolescents (Digital ECA) goes into effect on March 17th. Learn more about how this impacts users in Brazil in our Help Center article <a href="https://support.discord.com/hc/en-us/articles/38860612202775-Age-Assurance-for-Brazilian-Users">here</a>. </p><div class="w-embed"><hr class="hr-style"></hr></div><p>I built Discord because I wanted an easier way to hang out with my friends online, the same way I did growing up. That&#x27;s still true today. When I get off work, I hop on VC with friends, watch one of them spend hours raging at Baby Steps, or jump into Arc Raiders and befriend other players until something hilarious and memorable happens. These moments, the ones you can only get in games, are why Discord exists.</p><p>So when we announced our plans for global age assurance and I saw the reaction from our community, I didn&#x27;t just read it as a CTO. I read it as someone who uses Discord every single day. And I want to talk to you directly about what we&#x27;re doing, why we&#x27;re doing it, and what we&#x27;re changing based on your feedback.</p>
+<p>
+ <strong>
+  Update as of 3/9:
+ </strong>
+ Brazil's Digital Statute for Children and Adolescents (Digital ECA) goes into effect on March 17th. Learn more about how this impacts users in Brazil in our Help Center article
+ <a href="https://support.discord.com/hc/en-us/articles/38860612202775-Age-Assurance-for-Brazilian-Users">
+  here
+ </a>
+ .
+</p>
+<div class="w-embed">
+ <hr class="hr-style"/>
+</div>
+<p>
+ I built Discord because I wanted an easier way to hang out with my friends online, the same way I did growing up. That's still true today. When I get off work, I hop on VC with friends, watch one of them spend hours raging at Baby Steps, or jump into Arc Raiders and befriend other players until something hilarious and memorable happens. These moments, the ones you can only get in games, are why Discord exists.
+</p>
+<p>
+ So when we announced our plans for global age assurance and I saw the reaction from our community, I didn't just read it as a CTO. I read it as someone who uses Discord every single day. And I want to talk to you directly about what we're doing, why we're doing it, and what we're changing based on your feedback.
+</p>

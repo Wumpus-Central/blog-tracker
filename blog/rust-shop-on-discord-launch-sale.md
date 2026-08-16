@@ -1,1 +1,32 @@
-<p><strong>Starting today, you can now buy and gift </strong><a href="https://discord.com/blog/rust-shop-on-discord-launch-sale#2"><strong>official in-game items for Rust directly on Discord</strong></a> from both the Discord Shop and in the official Rust Server. This marks <strong>the first time Rust supports </strong><a href="https://discord.com/blog/rust-shop-on-discord-launch-sale#3"><strong>gifting official skins</strong></a><strong>.</strong> Add Rust items directly to your Discord Wishlist, so your friends know exactly which hazmat skin you’ve had your sights on for a while. </p><p><strong>To celebrate the launch, every official Rust skin released before 2026 is receiving a 20% discount, only on Discord, from now until May 21st.</strong> Stock up on all the decor, cosmetic sets, and item skins so you’re ready for whatever your team needs.</p><p>Keep scrolling to see how purchasing and gifting stuff from the Rust Shop works! </p>
+<p>
+ <strong>
+  Starting today, you can now buy and gift
+ </strong>
+ <a href="https://discord.com/blog/rust-shop-on-discord-launch-sale#2">
+  <strong>
+   official in-game items for Rust directly on Discord
+  </strong>
+ </a>
+ from both the Discord Shop and in the official Rust Server. This marks
+ <strong>
+  the first time Rust supports
+ </strong>
+ <a href="https://discord.com/blog/rust-shop-on-discord-launch-sale#3">
+  <strong>
+   gifting official skins
+  </strong>
+ </a>
+ <strong>
+  .
+ </strong>
+ Add Rust items directly to your Discord Wishlist, so your friends know exactly which hazmat skin you’ve had your sights on for a while.
+</p>
+<p>
+ <strong>
+  To celebrate the launch, every official Rust skin released before 2026 is receiving a 20% discount, only on Discord, from now until May 21st.
+ </strong>
+ Stock up on all the decor, cosmetic sets, and item skins so you’re ready for whatever your team needs.
+</p>
+<p>
+ Keep scrolling to see how purchasing and gifting stuff from the Rust Shop works!
+</p>

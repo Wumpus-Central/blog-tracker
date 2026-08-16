@@ -19499,7 +19499,8 @@
             "summary": "Gather your guildmates! Link your Discord and Battle.net accounts to unlock synced guild chat across Discord and World of Warcraft.",
             "published": "Tue, 11 Aug 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a7a5b99beaeb69ba2e79997_image6.png",
-            "body": "6dd9d89ed8f0bdeba341de84b7bdbab20273852aa4739e383263968ddb7008b1"
+            "body": "d7fefb4c844e8bd01c2ddd4702519f93a8b415e8800eb912cc1301eae682a048",
+            "body_format": 2
         },
         {
             "title": "Discord Update: August 11, 2026 Changelog",
@@ -19507,7 +19508,8 @@
             "summary": "Here's the Discord Changelog from August 11, 2026, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Tue, 11 Aug 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6360419dba12275999ef0eee_Summer_August.png",
-            "body": "930e20a7228caff70c3d38d8e4685e82d6cb85b614783ac8bfb672cc731005ef"
+            "body": "f02113d04dc8548f945d0e87aef129f1d0ac677436a180c75729b440ce6c0361",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: August 4, 2026",
@@ -19515,7 +19517,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Thu, 06 Aug 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "5e62af6a8035816c4c4b2fa8efe9205aa067e7f5cb6c6ca79d0f72149ace2e79"
+            "body": "2b754f9f6891f8e57e3e4fd93a63bda31864b99abc076a72021bb629175364f0",
+            "body_format": 2
         },
         {
             "title": "General Availability of Mobile Platform Support Arrives in Discord Social SDK Version 1.10",
@@ -19523,7 +19526,8 @@
             "summary": "Mobile support is now generally available in the Discord Social SDK, allowing developers to extend Discord's social experiences to iOS and Android.",
             "published": "Thu, 06 Aug 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a739eab90b6719a4af75a42_image1.png",
-            "body": "d18aefc8012d96ba564dfed3e4d70076a2e2965ad3960ca89d28fb29c3dfa24e"
+            "body": "1a2cef15a8cc9376fb5bd3740b67985037e9f41e71c96c7400e98ba990d5ed00",
+            "body_format": 2
         },
         {
             "title": "Squircles, Styles, and Spacing: How Your Feedback is Helping Improve Mobile",
@@ -19531,7 +19535,8 @@
             "summary": "We're working to more closely match your mobile and desktop experiences, including changes to server icons and the chat bar. (Did we mention Ash, the OG dark theme, is back?)",
             "published": "Tue, 04 Aug 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a70ce2458ab09e58b7d5218_Blog%20Hero%20-%201800x720%20-%201x.png",
-            "body": "ad3061a1dff4276e62f78d3dd0c44a72439c9d0185ca511840b183a6036b9a79"
+            "body": "a37244e3a46275aca80e79049c5f4b09dc9b3c97ef37719ba3adf840aae52f3c",
+            "body_format": 2
         },
         {
             "title": "Introducing Profile Frames: Decorative Borders to Make Your Discord Profile Museum-Worthy",
@@ -19539,7 +19544,8 @@
             "summary": "Introducing Profile Frames: a new way to put a finishing touch on your Discord profile. Frames add a decorative border around your profile, giving the whole thing a look that's unmistakably yours.",
             "published": "Wed, 29 Jul 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a61726c3c4f3808daa86917_Blog%20Header%20-%201800x720.png",
-            "body": "333cfc7923a88ae65f73502944eb44c38066cd28a26bb59d1a0d24f9586becaa"
+            "body": "b2db93f829ba125229e04b37d3e0f037b249a553f46bdfa22b9365c1017d617f",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: July 7, 2026",
@@ -19547,7 +19553,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Tue, 07 Jul 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "5e62af6a8035816c4c4b2fa8efe9205aa067e7f5cb6c6ca79d0f72149ace2e79"
+            "body": "2b754f9f6891f8e57e3e4fd93a63bda31864b99abc076a72021bb629175364f0",
+            "body_format": 2
         },
         {
             "title": "Discord is Now on Meta Quest: Reach Out to Your Servers While in VR",
@@ -19555,7 +19562,8 @@
             "summary": "Starting today, Discord is now available to download directly from Meta\u2019s Horizon App Store. No more sideloading. No more using the web app. Grab it using the link in this blog, or at discord.com/download.",
             "published": "Tue, 30 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fb78addf50b41deb42cf_image2.png",
-            "body": "375c58207dd415f3b254d38ddac537f47d3bb69ef8033d5be764188318eb8fec"
+            "body": "b1cac10ac10c29f08c94bb88d713940ba99c52229eb1dfad50c99a78a0ccda33",
+            "body_format": 2
         },
         {
             "title": "Cost Attribution in Discord\u2019s API",
@@ -19563,7 +19571,8 @@
             "summary": "Discord's API spans 1700+ endpoints across hundreds of Kubernetes deployments. The challenge: tracking per-feature hosting costs without restructuring. Jim Benton helps explain how Discord tackled the situation.",
             "published": "Tue, 30 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f597ab8965032c232c7d4a_image4.png",
-            "body": "1d4952d0bdcc6ecce70c7fb94456c82f379487e4f729a17fbe07c69ea0e252e8"
+            "body": "309ded80467be8baf841a7c2e7b3b43553fc42a1822f0d16c6e26b644756c74f",
+            "body_format": 2
         },
         {
             "title": "Discord Update: June 25, 2026 Changelog",
@@ -19571,7 +19580,8 @@
             "summary": "Here's the Discord Changelog from June 25, 2026, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Thu, 25 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6494b1e02e40699d67a766e6_Summer_June.png",
-            "body": "44773c55d724a8f1f0ec58bbe2d98db93a96518630e5d62263523051f7a58315"
+            "body": "9702864fcd99a20c30bc8d99696159bc81212018fc4ce346ab005bdaf41377cb",
+            "body_format": 2
         },
         {
             "title": "How to Manage Your Discord Desktop Notifications: A Complete Guide",
@@ -19579,7 +19589,8 @@
             "summary": "Not getting pinged for the conversations you wanna know about? This guide walks through server and channel notifications settings, Do Not Disturb, turning off specific notification sounds, and what to check when your pings mysteriously go quiet.",
             "published": "Thu, 18 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/681939dfe8fd42947e36366d_2024_10_DiscordBlog_Educational-4.png",
-            "body": "c4eceb8f3226aa2f86d72164fffeb4a50703f282f04efa60c877f3cc379bab2c"
+            "body": "acd102eb1058856a427591b0a0ad94417f780741965e338cdab4338684ec68e2",
+            "body_format": 2
         },
         {
             "title": "Updated Requirements to How Apps Access Data in Servers",
@@ -19587,7 +19598,8 @@
             "summary": "Discord is updating requirements to how apps access certain data within servers, changing the review threshold and requiring annual review. Here's what's changing and why.",
             "published": "Wed, 10 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a288b1f807541d41908c42b_image1.png",
-            "body": "7a612319093ebef196569a37416a98097d36b021d0d4b9283ade0a2fbdf4596b"
+            "body": "41cbc63975078a0b84b432f956081db744cc9ba62399e181031d8aba72a56ea4",
+            "body_format": 2
         },
         {
             "title": "Game On: Discord Is Backing the Next Generation of Dutch Gaming Founders",
@@ -19595,7 +19607,8 @@
             "summary": "Together with Techleap, we\u2019re launching the Gaming Founders Circle: a hands-on program for the most ambitious gaming companies in the Netherlands to provide participants with a direct line to the people, investors, and networks that help great games scale.",
             "published": "Wed, 10 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2745e353a855b298f3162d_2024_10_DiscordBlog_UsingDiscord-3.png",
-            "body": "c710455edaca549fdf001c90526c55b67578f32fdd77e7c06818f5c3874c6407"
+            "body": "b9994b6c819b70a4fcfaa0d78d13dda5a7151e7fe129714a9b4f0b06cc91e26e",
+            "body_format": 2
         },
         {
             "title": "How We Moved Discord Voice to the Edge",
@@ -19603,7 +19616,8 @@
             "summary": "Moving Discord\u2019s voice and video onto Cloudflare's edge network. Closer servers, lower ping in most regions, and a few real bugs getting there.",
             "published": "Tue, 09 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2840bb10082f32bf59f78a_2024_10_DiscordBlog_UsingDiscord-2.png",
-            "body": "99d420545be7c11b0e7b376b0c7142c4383828d26885e342492e1b153ea3bb9d"
+            "body": "e279710308cbd1c95af217e9796109647e8d41c054ebb072bf7d7e02c2d7d0f2",
+            "body_format": 2
         },
         {
             "title": "Introducing: You Bar",
@@ -19611,7 +19625,8 @@
             "summary": "Introducing the You Bar: an update to the Discord mobile app that celebrates your identity, simpler navigation, and a peek at what\u2019s next.",
             "published": "Mon, 08 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a2332d69dbeedfe7d0cbc92_image4.jpg",
-            "body": "69ee458861e9a5336e123f9904391ac7930ba6b1a0d39eca173e793ca4f44397"
+            "body": "b49d71fe516d9c60e5474d2f9757b0c8f773f7e9145d4924ef02bd9beb6a9462",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: June 4, 2026",
@@ -19619,7 +19634,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Thu, 04 Jun 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "e6e353d100988815b96a51ee220730aa2e43af45ac08ea220f14a32c02aae01f"
+            "body": "2b754f9f6891f8e57e3e4fd93a63bda31864b99abc076a72021bb629175364f0",
+            "body_format": 2
         },
         {
             "title": "Official Discord Integrations for Steal a Brainrot, Grow a Garden, Brookhaven RP, and more",
@@ -19627,7 +19643,8 @@
             "summary": "How some of the most popular Roblox games have integrated Discord account linking to enhance social features and safety capabilities for official community servers.",
             "published": "Thu, 28 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a17a67a014ad9969c3caf1e_image4.png",
-            "body": "8503381d6f4dd3c9b1ae195d90d798582519a08abf75ffdc955b1927fc746a42"
+            "body": "20c3687dc48299a0ad48d3c1bc0fc000c757764c90ec77b8c629d77305ecde22",
+            "body_format": 2
         },
         {
             "title": "Making It Easier Than Ever to Connect with Friends in League & VAL!",
@@ -19635,7 +19652,8 @@
             "summary": "Link your Discord and Riot accounts to sync your friends lists, show your in-game activity as your Discord status, and invite your Discord friends directly to your League or VAL lobby.",
             "published": "Thu, 21 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a0f41117da8d7b799ea1a1b_Riot-Integration-blog-gameart-centercrop-1800x720.png",
-            "body": "05422cbff30178fb5431c47e7cc1621b1aa4d43c76411bd81b20787d3ff52044"
+            "body": "8dc439789e343fd2ba3f3db99d118a30d87f454ea15caddcfafabc221f5d5393",
+            "body_format": 2
         },
         {
             "title": "Every Voice and Video Call on Discord Is Now End-to-End Encrypted",
@@ -19643,7 +19661,8 @@
             "summary": "As of March 2026, E2EE is now enforced for every voice and video call on Discord. This represents a multi-year commitment, and Discord\u2019s VP of Engineering is here to talk about why it matters.",
             "published": "Mon, 18 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a025bd747acaa792ad3ddad_image1.png",
-            "body": "794beb67a58431f5603b338412777ab6d86c9464aa52af5d1e2d4812c5482575"
+            "body": "66320525fb931905ec97fafa3aba9bf98eb2c4cc4e8fda362921636565e7729c",
+            "body_format": 2
         },
         {
             "title": "Celebrate Discord\u2019s 11th Birthday with an Exclusive Set of Emoji and Wallpapers",
@@ -19651,7 +19670,8 @@
             "summary": "Discord is turning 11 this year! To celebrate, we made over twenty Discord-themed emojis, along with over twenty wallpapers, and even a digital poster for everyone to download, for free!",
             "published": "Wed, 13 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a03ba0af460a93816fbc072_Birthday%20Blog%20Header.jpg",
-            "body": "f5fadf424586aa4cf7e767458f8688de5c69cca1738ffed24ece92c535d8eba5"
+            "body": "77a1df1a1225fc6b54dd7dc2fc75e728e818281bd3eac6302e91fa5867853f28",
+            "body_format": 2
         },
         {
             "title": "Nitro Now Comes with Xbox Game Pass and New Benefits. Welcome to Nitro Rewards.",
@@ -19659,7 +19679,8 @@
             "summary": "As we hit Nitro\u2019s 10-year anniversary, we're launching Nitro Rewards: a brand-new benefits program built with some of the biggest names in gaming. See what\u2019s coming for Nitro members, for no added cost.",
             "published": "Mon, 11 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb944c4e112d34c82f95b7_Blog_Banner.png",
-            "body": "cc29bf288abf62e9e74176a511423071d3c0cd88289169d6f00b7680955bd2a8"
+            "body": "b844c4305543e700232f19378756e7131594426f84f9e7378b9971fbea612b4b",
+            "body_format": 2
         },
         {
             "title": "How to Use Nitro: A Beginner\u2019s Guide to Discord\u2019s Premium Subscription",
@@ -19667,7 +19688,8 @@
             "summary": "What\u2019s Discord Nitro all about? What perks does it give, and how can you get it? If you\u2019re looking to expand your Nitro knowledge, you\u2019re in the right place.",
             "published": "Mon, 11 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a01d7c22acd73032a040029_image2.png",
-            "body": "4dfa0bb9eea792abfbe85ce9498ef6ecdcbcebcf4660507838503aba5fe2abd9"
+            "body": "99c697508316e90a377ec29feb102f11a3c21b768ae93c080ed246c54bfb9994",
+            "body_format": 2
         },
         {
             "title": "How Discord Automates ScyllaDB Clusters at Scale",
@@ -19675,7 +19697,8 @@
             "summary": "You've been asked to stand up a brand-new database cluster, meaning a whole day of configuring dozens of nodes, validating replication, wiring up dual-write pipelines\u2026 what if this whole ordeal took less than two hours? This is how we got ourselves into this exact mess, and how we made our way out of it.",
             "published": "Fri, 08 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb97b51217ebb66107035c_2024_10_DiscordBlog_DevandEngineers-5.png",
-            "body": "94d8ecadd5b494e8b631430cb22dca347c24ef033cf19e21f9a6503e3dd4f45a"
+            "body": "f59b6d3f3737d715396038beb3d4371c3508ba0efd1f214109ddcc161c6896e6",
+            "body_format": 2
         },
         {
             "title": "Stock Up in the New Rust Shop! Enjoy a Discord-Only 20% Sale on Most Items until 5/21",
@@ -19683,7 +19706,8 @@
             "summary": "Starting today, you can now browse, purchase, and even gift and wishlist in-game items for Rust directly in Discord! See how it all works, and learn about a hefty two-week Discord-exclusive launch discount on a wide selection of officially-made Rust items.",
             "published": "Thu, 07 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69fb913580d2452bfe2fd43a_RUST-Shop-blog-1800x720.png",
-            "body": "c94649927e76a96da1f0551a57af5269e9a289d022f2283bce2e78fa36773c1d"
+            "body": "4186da8d09e7b4ef940c88bad3a10495e7796d96dd4a33a0a7c88c1181c2e6b2",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: May 4, 2026",
@@ -19691,7 +19715,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Mon, 04 May 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "a67773d1af6a3b3fab635f42830b834a07a8f7d657c39c2032e588dec1c53086"
+            "body": "e216a5642c70711531e0bd5950119be7344b30112b5e8c15c7a1e49ba5016374",
+            "body_format": 2
         },
         {
             "title": "You\u2019ve Got (Too Much) Mail: Behind the Scenes of the 3/25/26 Voice Outage",
@@ -19699,7 +19724,8 @@
             "summary": "On March 25th, voice and video on Discord suffered major degradation beginning at 12:13 PDT, lasting a little over three hours. Learn how the issue originated, how it affected systems across Discord, how we recovered, and how we\u2019re preventing the same problem from reoccurring.",
             "published": "Wed, 29 Apr 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69f2444973213ba625d60106_2024_10_DiscordBlog_Safety-1.png",
-            "body": "ac5da59359be58143ed4cd5b1454b129157288abaf0b93573789ca0316cd0dad"
+            "body": "ddc71a836276a8cfcd6469402c3fc0882bc6d79fdf3b7de9f03361d1ca896e4e",
+            "body_format": 2
         },
         {
             "title": "Measure Less to Learn More: Using Fewer, Higher-quality Metrics to Capture What Matters",
@@ -19707,7 +19733,8 @@
             "summary": "Too many experiment metrics can make meaningful changes harder to detect. Learn how Discord used simulations and Principal Component Analysis to maximize signal and reduce noise.",
             "published": "Fri, 24 Apr 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png",
-            "body": "d3246ab428a8efcd7a3c35c3a1ea544874bf099de850f7ad9b6aae06b28ed323"
+            "body": "58e6d467166ec9cee452e75e6d7346e11664ec233d582f2fecd09e691c63efd4",
+            "body_format": 2
         },
         {
             "title": "Making Discord on Desktop Look Just Right: Display Settings to Ease the Eyes",
@@ -19715,7 +19742,8 @@
             "summary": "Learn all sorts of toggles, options, and features on Discord\u2019s desktop app to help you view media at your pace, lower the strength of colors across the app, and make app content easier to see.",
             "published": "Thu, 16 Apr 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6853360f59d0d7fd18e594a6_image6.png",
-            "body": "81fbf1fc17e1ecb544e835b16c83d0cd8750ee3f6dbffba5e2ece27f214453b8"
+            "body": "61288ae82ba0b2ed911084ecce3d1eb747a2ff8b0254b27066a79554d562b40c",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: April 6, 2026",
@@ -19723,7 +19751,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Mon, 06 Apr 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "1fc0cefc132855d5133f25db3b777a0b8938ae302cde82f363c18dcbfe7b0973"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "MULTIPLAYER SEQUEL TO ACCLAIMED AAAA GAME \u201cTHE LAST MEADOW\u201d ANNOUNCED: PLAYABLE NOW",
@@ -19731,7 +19760,8 @@
             "summary": "Band together with Discordians from across the world in Last Meadow Online, the world\u2019s first DBMMIRPG. Available to play until April 7, 2026.",
             "published": "Wed, 01 Apr 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69cc591b3990198abf5e3617_DIS26_WEBBANNER.png",
-            "body": "5308d467e89eaf7d10c4f5e4906601c9dde4105f99f542faaf9b3ed22ab87eee"
+            "body": "107923067190a798d8f812d1dfe0fe868435e2cfc7b02ee4e21e68587adab7bd",
+            "body_format": 2
         },
         {
             "title": "How Multi-Factor Authentication Helps Keep Your Discord Account Safe",
@@ -19739,7 +19769,8 @@
             "summary": "A Discord account is more than just your username and avatar. That\u2019s why it\u2019s important to help keep your account safe and secure by using Multi-Factor Authentication, SMS Backup Authentication & QR Code Login. Learn how to keep your account more secure in the following blog post!",
             "published": "Fri, 27 Mar 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/61f2eb202125983477455f6e_Discord-2FA-Blog-Header.png",
-            "body": "4e32ce0083e17f2bba95625e91fed02e5f6bc5b386db988f2175a46af1847c85"
+            "body": "2223d4723cab42bcb2839bd7f35743ec7d4360385df6fd2b89c98d9e2e36768c",
+            "body_format": 2
         },
         {
             "title": "Discord Update: March 24, 2026 Changelog",
@@ -19747,7 +19778,8 @@
             "summary": "Here's the Discord Changelog from March 24, 2026, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Tue, 24 Mar 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/65e0d5d41a1beac596a12aaa_March%20Changelog%20Headers.png",
-            "body": "3bb1a69e7072a0d29b87648373b1efa854e451e29e84a331ba450f1d4b7cbb3d"
+            "body": "9deb649f531118142441f7802e1db7ff11072f2cb55dbafc2ea3ec8b4f2c6410",
+            "body_format": 2
         },
         {
             "title": "How ROOST is Advancing Online Safety",
@@ -19755,7 +19787,8 @@
             "summary": "The threat landscape online has shifted dramatically. Many online platforms are left to reinvent safety tools from scratch. That\u2019s the gap ROOST was built to close \u2014 and it\u2019s why open-sourcing battle-tested tools like Osprey matters so much.",
             "published": "Mon, 16 Mar 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png",
-            "body": "eca8191dfb9643cdf22d8662c74c63eecca38077a1830231625a2d68c8218b19"
+            "body": "356e95ec5f9c8674fc89e878a2709d21faf980b3e180cd9ed4496df425072398",
+            "body_format": 2
         },
         {
             "title": "You\u2019re Now Discord Official: Developers, Claim Your Game and Verify Your Server",
@@ -19763,7 +19796,8 @@
             "summary": "Developers can now claim and customize their game\u2019s profiles on Discord. Curate your game\u2019s presence on the platform to help people discover more about your game, and get your server verified in the process! Read on to see how it works.",
             "published": "Thu, 12 Mar 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69b0462c05e2cfb5433031ce_game-claiming-blog-1800x720.png",
-            "body": "02016f738c8cecde176ab8b60e445535a1f5befbc40bd71ab9a248663e0cfce3"
+            "body": "e8b543e8227febbd5f4bd037f479f8d58779424f2e11dc8ac93943ec8f11249c",
+            "body_format": 2
         },
         {
             "title": "Building on the Social Layer of Games: What\u2019s New from GDC 2026",
@@ -19771,7 +19805,8 @@
             "summary": "At GDC 2026, Discord gives developers more ways to close the gap between connection and play.",
             "published": "Mon, 09 Mar 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69ab2ba75deb42d5757ebfe2_MarvelRivals-AccLinking-hero-BLOG-March-1800x720.png",
-            "body": "23c33fb16ed60bb84b50558021507f0a9ea02b40e1fb2cc66feff9224cfdc1cd"
+            "body": "d848be32e9fb42bf7e7182810f9b82cd0daeece18db7dfd33be98afc86eb57c0",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: March 6, 2026",
@@ -19779,7 +19814,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Fri, 06 Mar 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "20974582302a54570368109b3d879906fc3412a82490eea98eb4515fcf8f943a"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "Tracing Discord's Elixir Systems (Without Melting Everything)",
@@ -19787,7 +19823,8 @@
             "summary": "Join Senior Software Engineer Nick Krichevsky as he explains how Discord added distributed tracing to Elixir's message passing and optimized it to handle millions of concurrent users.",
             "published": "Wed, 04 Mar 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69a86c2c6af0e7ddd8398c2f_2024_10_DiscordBlog_Safety-2.png",
-            "body": "b7c4d1bf50b3ea09786a3e4da546060a91fa51a2785e8a63ae15782c509e40cd"
+            "body": "dcc699eb94eea8d544d0123da1e48e268235d2726c648f1597fbad163ce70ceb",
+            "body_format": 2
         },
         {
             "title": "Getting Global Age Assurance Right: What We Got Wrong and What's Changing",
@@ -19795,7 +19832,8 @@
             "summary": "Discord's CTO addresses community concerns about age assurance: no mass ID collection, new vendor transparency commitments, and a delayed global launch until second half of 2026.",
             "published": "Tue, 24 Feb 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67d0c4e0932bb59c7f6271e5_2024_10_DiscordBlog_UsingDiscord-1.png",
-            "body": "29a093e587b0c703de3d9ebb2b96a599b0a4f86b2b2611a1412ecede019f774c"
+            "body": "257a3357a7d930c96f6928062f407dd7632c8d0c3d2708b958ff8a6ffe4672bf",
+            "body_format": 2
         },
         {
             "title": "Osprey: Open Sourcing our Rule Engine",
@@ -19803,7 +19841,8 @@
             "summary": "Discord uses Osprey to quickly detect and remove new types of harm from putting our customers at risk. Now we\u2019re open-sourcing this tool so others can do the same.",
             "published": "Thu, 19 Feb 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68c465a0050ca83bcc5934ef_image2.png",
-            "body": "397c03a143cea5833e7167ad1ac81a260b730cd1dd51932767bd3322f65d9ca9"
+            "body": "3c77bb6a62b7c19d62d62c85b34b96fcc6f5eb01b66e85265e9e2a73190e74ab",
+            "body_format": 2
         },
         {
             "title": "How to Change Your Theme to Bring Your Vibe to Discord",
@@ -19811,7 +19850,8 @@
             "summary": "Add a splash of personality and make Discord pop by changing Discord\u2019s color scheme! Learn how to adjust the look of Discord on both desktop and mobile.",
             "published": "Thu, 19 Feb 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/64121f8765e921a28f9a2b54_Discord%20HQ%20-%202.png",
-            "body": "7387f3b7bdf65f1afba0fe534b34605f2e098016aa3a008642b4715debf5d605"
+            "body": "7ac33d7a9dacde833fb9fdd3714bc4ad34d1a6e060f5dcae021e3f10e04e30a4",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: February 4, 2026",
@@ -19819,7 +19859,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Wed, 04 Feb 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "20974582302a54570368109b3d879906fc3412a82490eea98eb4515fcf8f943a"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "How to Customize Your Discord Profile",
@@ -19827,7 +19868,8 @@
             "summary": "Make your first impression count with a profile that represents you how YOU want to be seen. Learn how to edit and customize your profile to have it rep you the right way.",
             "published": "Mon, 02 Feb 2026 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/681939dfe8fd42947e36366d_2024_10_DiscordBlog_Educational-4.png",
-            "body": "10b19a085ea51175b0b0d6d1dcefdc30947ea74d594da714ec8c49cf503f1c52"
+            "body": "126d7545096c7f2462ee0c94aee797a2f19923d9385aa184018913e3bbe5f0ea",
+            "body_format": 2
         },
         {
             "title": "How to Make and Use Custom Emoji on Discord",
@@ -19835,7 +19877,8 @@
             "summary": "Emojis on Discord are special \u2014 you can make a little picture out of almost any symbol, in-joke, or bizarre late-night inspiration.",
             "published": "Fri, 12 Dec 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/63603f76620d3470d9bd3f1f_2022_EmojiSurvey_HEADER_2%20(1).png",
-            "body": "184adc1dab184a424d72decf4921e3470d059188081c619973b59c76cee911c4"
+            "body": "94f93b9d2614e97a24b432c12c43038c1cfdd25c2e401df4522d9d95805c43e3",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: December 8, 2025",
@@ -19843,7 +19886,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Mon, 08 Dec 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "20974582302a54570368109b3d879906fc3412a82490eea98eb4515fcf8f943a"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "Gift Ideas for the Dedicated Discord User in Your Life",
@@ -19851,7 +19895,8 @@
             "summary": "We\u2019ve got plenty of gift ideas, from those who game through the night, to those who decorate their profile just right \u2014 let\u2019s dig in!",
             "published": "Mon, 08 Dec 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/69370de739d6d3c5ec3739da_NitroHoliday_BlogHeader_Final_V2%20(1).png",
-            "body": "89878c5cd2e4f7f9ac3559f7a6dd0b328f58de363b4cab671baca5ccac3b8924"
+            "body": "dd5c8c36bbf5211746ab62826ea312667911ef2b947f4068869f560889c20dcb",
+            "body_format": 2
         },
         {
             "title": "Your Discord Checkpoint is Rolling Out! Celebrate What You Did in 2025",
@@ -19859,7 +19904,8 @@
             "summary": "How many messages did you send? How long did you hang out in voice? Who\u2019d you talk with the most? Stop by your end-of-year Checkpoint, a recap of the stuff YOU did on Discord throughout the year!",
             "published": "Thu, 04 Dec 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692f703325021d1d0a33f1eb_BlogBanner_1800x720%20(1).png",
-            "body": "659d0f30344634c25fd4122ee98d5f8087d17ce04206f262d1632a1588ded4b6"
+            "body": "1dc9122409252fced059d3e17b387f81656f8a24d66c82547b7cd63514bb3d33",
+            "body_format": 2
         },
         {
             "title": "Save and Display Your Faves: Add Discord Shop & Marvel Rivals Items to Your Profile\u2019s Wishlist",
@@ -19867,7 +19913,8 @@
             "summary": "Keep track of all the stuff from the Shop you\u2019ve been wanting to purchase with the new Wishlist feature. Display the stuff you\u2019ve been eyeing on your profile, and if you\u2019re lucky enough, maybe one of your friends may see it and gift it to you\u2026",
             "published": "Tue, 02 Dec 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6927808f2b033db8af5e4b59_Wishlist_Banner__MarvelRivals-Shop-1800x720.png",
-            "body": "8f1555a026dbc4343898ceff8799af7f0b1df38906895a31610e6a53c19dbad7"
+            "body": "6a957e917e0b5bd61859cc1bf5edef2c4d67e4d52011ea25a354df4e10ac1d56",
+            "body_format": 2
         },
         {
             "title": "Bringing In-Game Commerce to Discord Communities",
@@ -19875,7 +19922,8 @@
             "summary": "By bringing commerce directly to official game communities, we're giving game developers the opportunity to benefit from these dynamics, creating incremental revenue that complements their existing storefronts.",
             "published": "Tue, 02 Dec 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692616af8e8bab216f88af70_MarvelRivals-Shop-hero-BLOG-1800x720.png",
-            "body": "c39a4ee66741d46208c944994d0fdc233e75b34c48a819dab0117543d16627ad"
+            "body": "3d5779f9c56c442ec2a1392184162d878508e3c678ff02b936eabefd987d5d7c",
+            "body_format": 2
         },
         {
             "title": "How to Link Discord to Battlefield 6, Marvel Rivals & More",
@@ -19883,7 +19931,8 @@
             "summary": "Some of the most popular multiplayer games have added the ability to directly link your Discord account to the game! Learn how to link your Discord account to some big-name titles and see what sorta perks it provides.",
             "published": "Fri, 14 Nov 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/691519f81bc43f40055e52e6_image4.png",
-            "body": "f54ff73727213a291d87d36b3cabeb39a3be7987633bcb06118a187fc1040a23"
+            "body": "ae76d4e806c5e1816996443f516bdc5b1cb1b8f9d8a87798bd1b418970840d6f",
+            "body_format": 2
         },
         {
             "title": "How to Share What You\u2019re Playing, Listening to, or Watching as Your Status on Discord",
@@ -19891,7 +19940,8 @@
             "summary": "Playing a game right now? Listening to some tunes, or catching up on that one anime your friends won\u2019t stop talking about? Learn how to show off what you\u2019re up to as your Discord status and show @everyone what\u2019s up!",
             "published": "Fri, 14 Nov 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6903f034183efa9894483782_image10.png",
-            "body": "dd59d2e7b85abb51cfd0fb7e2dbb75a9f205cef1434d68866e2a84219dfc903f"
+            "body": "1538d8e2259fdc583daf9232c5d8aaaa338982bcdd7c3c274c548d4f563c895f",
+            "body_format": 2
         },
         {
             "title": "Discord Update: November 6, 2025 Changelog",
@@ -19899,7 +19949,8 @@
             "summary": "Here's the Discord Changelog from November 6, 2025, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Thu, 06 Nov 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/636042835883b97b259ef618_Fall_November.png",
-            "body": "f2e068549ea71b837bf03aee0774a0b700a3f57a4d00252bc456c3ee077029aa"
+            "body": "75725be4792ff89ad087debbd0dc841de7d39c6b3ee2f55a139a06013221651a",
+            "body_format": 2
         },
         {
             "title": "A Cornucopia of Updates Make Discord on Desktop Fresher Than a Crisp Fall Breeze",
@@ -19907,7 +19958,8 @@
             "summary": "This fall, emoji making gets faster, the Settings page gets a redesign, Group DMs are easier to customize, more games gain support for special Discord-powered capabilities, and Family Center gets some expanded features. Take a peek at what\u2019s new this season!",
             "published": "Thu, 06 Nov 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/690bd1527f131ae7862bbc5b_image11.png",
-            "body": "5c0245b952cc11094607113bd90c59c980fab14e4f483c63533ffcd9a972d893"
+            "body": "ccac5443c377bdb9624267f9a29a61648907f18cbf785fb8a6d12b89bdb256e8",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: November 4, 2025",
@@ -19915,7 +19967,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Tue, 04 Nov 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "d993946e01b50b5ab57ec714ee00ac892ab1f4c4b6db418dc2086147502c5c09"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "From Single-Node to Multi-GPU Clusters: How Discord Made Distributed Compute Easy for ML Engineers",
@@ -19923,7 +19976,8 @@
             "summary": "From manual GPU configs to one-command clusters: Join Serrana Aguirregaray and Nathaniel Jenkins as they tell the story of Discord's journey to build a developer-friendly ML infrastructure on Ray for 200M+ monthly active users.",
             "published": "Thu, 09 Oct 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68e6d6dab0f1962695135365_2024_10_DiscordBlog_DevandEngineers-1.png",
-            "body": "998f6c7f2924f89b2b043c059bb0fbe182a9e55242e89c8a86ad67df9597fd6d"
+            "body": "7fbc012b6513360c5d416ad841a26766d0839c10a460f7cf4e6c93f24b89b3cc",
+            "body_format": 2
         },
         {
             "title": "During October, Treat a Friend to Nitro and Trick Out Your Profile for Halloween \ud83c\udf83",
@@ -19931,7 +19985,8 @@
             "summary": "Do you embrace tricks in the Shop or turn them into treats? Trick out your profile with shockingly sweet decorations, or treat your friend to Nitro and earn something for yourself in return!",
             "published": "Wed, 08 Oct 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68e5647a4ecb025af6e102f4_image1.png",
-            "body": "9a67670b6e6fc366a663921195b9b764a9ccc9cd6b1cdb73f5e7c517616b37a1"
+            "body": "9c470f49efeea567fbe433c13d4c1a5703ca35da9aa5f1cc321e5cb5f0634411",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: October 7, 2025",
@@ -19939,7 +19994,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Tue, 07 Oct 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "1fc0cefc132855d5133f25db3b777a0b8938ae302cde82f363c18dcbfe7b0973"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "Discord Update: September 25, 2025 Changelog",
@@ -19947,7 +20003,8 @@
             "summary": "Here's the Discord Changelog from September 25, 2025, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Thu, 25 Sep 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/66ecb1eaa5561774cf2c00d5_650233ad5dcf4b6825522e09_Fall_September.png",
-            "body": "ae0ea46bf0093df1123af549c129d660a564e12460a12f758e58d5ffd4d454ce"
+            "body": "7a3fcc91421aa340a8fa77b5ba2f13cbcf19e88a73e687907863ef52a7a735ee",
+            "body_format": 2
         },
         {
             "title": "New Looks for Nitro, New Looks for You. Get Yourself a Nitro-exclusive Profile Bundle!",
@@ -19955,7 +20012,8 @@
             "summary": "Between now and September 30th, 2025, new and existing Nitro members can claim a profile bundle matching Nitro's new look, including an Avatar Decoration, Profile Effect, and a Nameplate! Open this blog to see the details.",
             "published": "Thu, 25 Sep 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68cdfa532b6b7b634417c4dd_Final%20Blog%20Banner-.png",
-            "body": "7e9fa2d82dbf6d908827c738b68678752c2c598b8afb9a2bd6724ce4db4b3ea7"
+            "body": "fd62e9dc496486978b3d70619c656b91dc8c370515190580b42dcacf92b46f8a",
+            "body_format": 2
         },
         {
             "title": "Staff Picks, September 2025: Welcome to Our Video Game Museum",
@@ -19963,7 +20021,8 @@
             "summary": "Happy National Video Games Day! We\u2019re hearing from Veronica, Scott, Tyler, and Anni about which games would go in their hypothetical video games museum. Nothing better than honoring a beloved game by putting it behind a glass case!",
             "published": "Fri, 12 Sep 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68c35409737439c25faed7ec_StaffPicks%20BlogHeaderStep25.png",
-            "body": "45c3988e8f4912a1d4e98d2f30714a6f32baee2a6f74c5ba8336a28def9a3150"
+            "body": "bda16bca196b486608b0671d3036ca2ed991f5ce2e5917d7ce527e1a0dcb2207",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: September 3, 2025",
@@ -19971,7 +20030,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Wed, 03 Sep 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "20974582302a54570368109b3d879906fc3412a82490eea98eb4515fcf8f943a"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "Bringing DAVE to All Discord Platforms",
@@ -19979,7 +20039,8 @@
             "summary": "From March 1st, 2026, all clients and apps must be updated to utilize DAVE\u2019s end-to-end encryption support for voice and video calls. In this blog, we explore the challenges we encountered bringing E2EE to browsers, and share what you may need to do to ensure your app can still connect to voice calls in 2026.",
             "published": "Tue, 02 Sep 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68b71f6521bd8cfde92d2a73_image1.png",
-            "body": "13fdb1d35fdef93e38517d604e53d4dd40bd1b50b2f8f34557933ce3fe5556ee"
+            "body": "f62248aaf463f5eb74fa01bc8cc970fbfc26978bdab81a6d1524c0551134fe5a",
+            "body_format": 2
         },
         {
             "title": "Starting Your First Discord Server",
@@ -19987,7 +20048,8 @@
             "summary": "Looking to create a new Discord server for the first time? How do you invite your friends to it? What even IS a text or voice channel in Discord? Follow along as we help you start up a new place to talk and play games with your friends.",
             "published": "Wed, 27 Aug 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67db36ec52f3165e99f8a0d6_2024_10_DiscordBlog_CompanyAnnoucements-6.png",
-            "body": "0c980187c884e8ecf52fe0f90dfb4e9f750f12e987c72471501459235710048d"
+            "body": "dd47c000122083e2d554f23f5b4bd9ce8450224e314d38f86f5b22be3afa88ca",
+            "body_format": 2
         },
         {
             "title": "Transforming Game Discovery with Instant Play Experiences on Discord",
@@ -19995,7 +20057,8 @@
             "summary": "Discord and NVIDIA partner to showcase cloud-streamed gaming experiences on Discord to transform game discovery for players and developers, starting with Fortnite.",
             "published": "Mon, 18 Aug 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/689f7cdf79694c891764399a_GCDC_NvidiaLogoLockUp_Blog.png",
-            "body": "55ea667008cb85d6f8aaca0d43bb4c85e63a44a0ee123764486d1c44d5991f2b"
+            "body": "cd4e10ea93dbc6a08077e90f0b9079dadf65d86cb12aa20f0a8f36774ff50a97",
+            "body_format": 2
         },
         {
             "title": "Discord\u2019s Powerful Cross-Platform Chat: Ready for Your Game",
@@ -20003,7 +20066,8 @@
             "summary": "The Discord Social SDK is coming out of closed beta! Developers can now take advantage of Discord\u2019s voice and text chat in their games and help players connect for longer playtimes by enhancing their multiplayer experiences.",
             "published": "Wed, 13 Aug 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/689b87a6d883afa21a7e817c_SDK_Comms_GA_Blog_Header.png",
-            "body": "9b979f580e937d8a8a8fb58cf5c9c257e921c16b92b1997a7090f9ab7a67891f"
+            "body": "2a17b8690f21d6c6cac8cc28a58df3f7a5cd66501f2d915dc8fa4e90fc116c79",
+            "body_format": 2
         },
         {
             "title": "Introducing the Community Server Cleanup Report for August 2025",
@@ -20011,7 +20075,8 @@
             "summary": "Discord has built a whole new team dedicated to bringing communities more control, more power, and fewer reasons to scream into the void. Check out the first things they've done, including fixes and improvements for server management issues, onboarding, Forum channels, and mod tools.",
             "published": "Fri, 08 Aug 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png",
-            "body": "5ce842da855373f0534070c451d65ed0ef85730d639529e747bb3c91adf43de0"
+            "body": "1720c1ff438dc64bd3b4891d9892d3d2706d8fc25f76762ab3faad7570ec89ab",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: August 4, 2025",
@@ -20019,7 +20084,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Mon, 04 Aug 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "1fc0cefc132855d5133f25db3b777a0b8938ae302cde82f363c18dcbfe7b0973"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "ROOST Announces \u201cCoop\u201d and \u201cOsprey\u201d: Free, Open-Source Trust and Safety Infrastructure for the AI Era",
@@ -20027,7 +20093,8 @@
             "summary": "Open-sourced tools put enterprise-grade content safety and threat investigation capabilities within reach of organizations of all sizes",
             "published": "Mon, 21 Jul 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png",
-            "body": "34e6f328f2e3f21a94909c73a4823c9a2049b9dd97bc3ef1c5c216960e47592f"
+            "body": "c865281551309e3289f64cacbc7565dbfa4749c2503104e88971ee668732fb97",
+            "body_format": 2
         },
         {
             "title": "Discord for Business Vol. 2: Cannes-worthy ad product updates",
@@ -20035,7 +20102,8 @@
             "summary": "Built-in rewards, brand lift analytics, mobile Quests\u2026 and our Cannes highlights!",
             "published": "Wed, 16 Jul 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/681e43df7c5d54d17e51063f_image1.png",
-            "body": "45a7530bc4dc2f05b310f05ae72e6ed449704e982ccfa655e16094cb51238fca"
+            "body": "5b2942c471d92c975aeca5d67c592c53287037ef42e5a53979271829c32a31ee",
+            "body_format": 2
         },
         {
             "title": "Reward Your Play: Complete Quests. Earn Orbs. Get Sweet Stuff.",
@@ -20043,7 +20111,8 @@
             "summary": "Introducing a new type of Quest reward: Discord Orbs! Earn them by completing Quests and redeem them in the Shop for hundreds of different items \u2014 including Discord Nitro credit. Available on desktop and mobile.",
             "published": "Mon, 14 Jul 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/687185569dd0ac147ad89a64_image5.jpg",
-            "body": "bde8c6d82828d94d6129c24c0b127b0eb39ce779b821c88f37281f0c0a859e16"
+            "body": "1af0e0ab68a2b01163cfccc7aa635e1d9f057b7333f2ab10579cb1479c8b007b",
+            "body_format": 2
         },
         {
             "title": "*FLAILS AROUND* SUMMER SPECIAL! JOIN NITRO, GET AN EXTRA MONTH OF NITRO ON US!",
@@ -20051,7 +20120,8 @@
             "summary": "NITRO, NITRO, NITRO! From now until July 15th, 2025, if qualifying users start a new monthly Nitro membership, they\u2019ll get a SECOND month of Discord Nitro to top \u2018em off!",
             "published": "Tue, 08 Jul 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6865d2710b471e576983cf8a_image5.png",
-            "body": "b2e0ffd69d353ab2e3a672687c2163d4cfd6daf4e63b806fae304dc3085a7e6d"
+            "body": "59ce1f9cfe87a9dd3e6a457089aedd3df6ee797fce159800f82adf35c350ebf6",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: July 7, 2025",
@@ -20059,7 +20129,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Mon, 07 Jul 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "20974582302a54570368109b3d879906fc3412a82490eea98eb4515fcf8f943a"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "Discord Update: June 30, 2025 Changelog",
@@ -20067,7 +20138,8 @@
             "summary": "Here's the Discord Changelog from June 30, 2025, so you can stay informed on what\u2019s new in recent app updates!",
             "published": "Mon, 30 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6494b1e02e40699d67a766e6_Summer_June.png",
-            "body": "fdd139a272c01330d4f243858d7500ac14004635d32c648709235d04829ff968"
+            "body": "902d0505e34d9c53158cd2fd53428b5529fa728fec39f2b661879bbbf176a95f",
+            "body_format": 2
         },
         {
             "title": "Authenticity Matters: Discord's Pride Month 2025",
@@ -20075,7 +20147,8 @@
             "summary": "This June, our PRIDE ERG came together to celebrate the meaningful act of simply being who you are and bringing your whole self to work.",
             "published": "Fri, 27 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/685f0d0ce3f684eb014e922e_image1.png",
-            "body": "0297c3de381fee808bc9bae6290a5371cf57eaeba1ba8c73bf228892432f1024"
+            "body": "1e7b5f001fd283cd7ed8a712af8cc1e9f814c51caf2b084e7a268efc1ab9136c",
+            "body_format": 2
         },
         {
             "title": "Staff Picks, June 2025: Summer of Showcases",
@@ -20083,7 +20156,8 @@
             "summary": "23 game showcases in June, and just as many recommendations! We\u2019re talking about all the big announcements and big summer vibes with Alex, Armando, Matt, and\u2026 Matt???",
             "published": "Tue, 24 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6859b4b74b8e96f4b3f1abed_image3.png",
-            "body": "5ee87785cced7eafc6a965c39918a7ba6f8e5fc8939061843174db939907ce02"
+            "body": "cfa5e740ce130a1ea0b4a404c4eb5b6c23cb8c955ac91fea460263fe03b2bdeb",
+            "body_format": 2
         },
         {
             "title": "How to Set Up Your Server\u2019s Roles for Members, Mods & Admins",
@@ -20091,7 +20165,8 @@
             "summary": "There\u2019s a LOT of Role permissions to comb through for your Discord server, and every community has its own needs. In this article, we\u2019ll give some general guidance on each permission to help you decide what works best.",
             "published": "Fri, 20 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6853360f59d0d7fd18e594a6_image6.png",
-            "body": "f6afbf47fdb0001c54aa0b7f44bf36e16f0a423772a834e93bb8bf0a360f3a02"
+            "body": "1d70c404bcf90ca40b3fa39f8a8968f87464f887a3d698efe10b74585620ae7c",
+            "body_format": 2
         },
         {
             "title": "Get More From Your Boosts With New Server Perks",
@@ -20099,7 +20174,8 @@
             "summary": "We're bringing you new ways to customize your server with additional perks that delight members, along with a new way to spend available Boosts on these additional server perks \u2014 no level required.",
             "published": "Mon, 16 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/684a07a2968307ee558f19dd_image5.png",
-            "body": "0a3e30f5c81441807e63cd9b76bf29cf32ba9116ae0b51dd070bf722263f503e"
+            "body": "502e285bc34e45e69972a7960e6a045b3e53ac9e077a0d070059b39ac582aa52",
+            "body_format": 2
         },
         {
             "title": "Gift Nitro and Earn A Flavorful Splash for your Avatar",
@@ -20107,7 +20183,8 @@
             "summary": "Between now and June 20, if you treat your friend to either a monthly or annual Nitro membership, you\u2019ll earn the Freshly Picked Avatar Decoration to splash across your profile pic!",
             "published": "Fri, 13 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/684a0b131c3be3d6f58e5fe9_image3.png",
-            "body": "150c919c9a9b0712aa862d9818f7caa52c40afe5104262b8828ef3c0abd90840"
+            "body": "1545b689d4ec54c4370f592c1e74aa0f8e2ae8313ef91ce90e4afefc4b1eb77b",
+            "body_format": 2
         },
         {
             "title": "Discord Social SDK Updates & Integrations",
@@ -20115,7 +20192,8 @@
             "summary": "Dig into the latest news about the Discord Social SDK! Learn how Facepunch Studios implemented the SDK directly in their game Rust to enhance their player\u2019s social experience, and how you can do the same.",
             "published": "Thu, 05 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a1be02c321cc94c5ad745_image7.png",
-            "body": "aa3da4bace4591c05b297a20980e0c4bc35cc8d57a755e5d3dc2434ea50b73c8"
+            "body": "c477034a26c23bbb8605d4ae665c310b195f97d3365da891b98c2a5675c95bc1",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: June 3, 2025",
@@ -20123,7 +20201,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Tue, 03 Jun 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
-            "body": "20974582302a54570368109b3d879906fc3412a82490eea98eb4515fcf8f943a"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "How to Use the Discord Soundboard & Add More Sounds",
@@ -20131,7 +20210,8 @@
             "summary": "Discord\u2019s Soundboard lets you instantly react to the call with quick custom soundbites. Where do you use it? How do you add more sounds, and how long can they be? Listen closely as we lay it all down!",
             "published": "Thu, 29 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68379f8bfe550b60bc8abf5d_image10.png",
-            "body": "859a44aac51008b65717f8e97be9002484d621f202525c043b68a755d59eea59"
+            "body": "d099de9f9bc23bd0143e00db35d9c03209e2ea8308c8a475d79b906884f1625b",
+            "body_format": 2
         },
         {
             "title": "Checkpoint 3: Leveling Up Discord Quests with Orbs and Advanced Measurement",
@@ -20139,7 +20219,8 @@
             "summary": "We're expanding our Quests advertising product with a new reward for users: Discord Orbs. We\u2019re also introducing a new partnership with Kantar, which will further enhance the return on investment measurement and analytics capabilities of Quests for advertisers.",
             "published": "Wed, 28 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6836445a40f40d5602990ed9_image3.png",
-            "body": "e6945d3ceeb43bdd65ef88b3c4110e07a80e543beaf0507147be7fbb38ca4d4d"
+            "body": "6ab7fac0642b81a9ec04569e98f8f563bd112d5368fb698bf7ad2a3d3528b62b",
+            "body_format": 2
         },
         {
             "title": "Go Beyond, Plus Ultra! with the My Hero Academia Collection",
@@ -20147,7 +20228,8 @@
             "summary": "Become the hero you want to be with the My Hero Academia Collection, featuring nine Avatar Decorations and three Profile Effects based upon fan-favorite heroes and villains.",
             "published": "Wed, 21 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6825245fd44e60c25bfd350c_image4.png",
-            "body": "362ed6b1042a9ec2b0547ed1bc88dab8c0eaaae55d6bfc9dd854b5409ce776ed"
+            "body": "e0f214ba2cc21484c9e0d1a1032f7046ac187e664b0b8a0f5192015d383c09ba",
+            "body_format": 2
         },
         {
             "title": "Introducing the Discord for Business Newsletter, Vol. 1",
@@ -20155,7 +20237,8 @@
             "summary": "Exclusive to partners and friends, this newsletter brings you the latest updates on business opportunities within the world of Discord. Read the first issue and sign up for future entries on the Blog!",
             "published": "Wed, 14 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/681e4466c33b2c5383f1e8e3_image2.png",
-            "body": "eec5e51ce827f13e316a0bf557fed799137ca132544e517d9590a1a1aa66dbff"
+            "body": "4056cf7ec8f26f9e73abee8c168efe1a50d9675b22c0b4dc48c9b5efb6550a59",
+            "body_format": 2
         },
         {
             "title": "Thank You for Ten Years",
@@ -20163,7 +20246,8 @@
             "summary": "As we celebrate our tenth trip around the sun, let\u2019s see what you and your friends have been up to on Discord over the past decade.",
             "published": "Tue, 13 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68229ee20863fe05cab08da2_Discord_Birthday_Cake.png",
-            "body": "d63192f3c9bda6d2290b9c7486bdb70111990c8a50bb53eee3a4ec13cfc55e73"
+            "body": "ed5574e855b59238e3f11e02288c43fefc73adf8505bd611ac10b600b17e6e6a",
+            "body_format": 2
         },
         {
             "title": "Staff Picks, May 2025: The Games That Brought Us to Discord",
@@ -20171,7 +20255,8 @@
             "summary": "It\u2019s Discord\u2019s Birthday today! In this month\u2019s Staff Picks, we\u2019ll hear from Christina, Emi, Jeremy, and Armando about which games introduced them to Discord and the game recs they currently have.",
             "published": "Tue, 13 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68228f131517fb431c86b224_image4.png",
-            "body": "889a7039a9becdee7464fd9666dc63aea6ff3909c6ac925ab58adc82c4413689"
+            "body": "6817fc296c0e608ae2a13db45fc885c264fa1ebc8958567fafe3cacf75e40e68",
+            "body_format": 2
         },
         {
             "title": "STAR WARS\u2122 Makes Its Way to Discord",
@@ -20179,7 +20264,8 @@
             "summary": "For this year\u2019s Power of the Force celebrations, we\u2019re hyped to release a brand-new collection of Star Wars themed Avatar Decorations and Profile Effects!",
             "published": "Sun, 04 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68128a3b85b6f59abff99f3d_StarWars_BLOG%20BANNER%20720.jpg",
-            "body": "4eaae6abc14b216b13182913226791ce3fe403b81ca414721c0af2f6667325f6"
+            "body": "b9770b22eed146ec6156d521ddcd568c5bb6faad07af3070f7c89769487a48d0",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: May 1, 2025",
@@ -20187,7 +20273,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Thu, 01 May 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6657ad0a58988c5decbfbc53_Header_3.png",
-            "body": "20974582302a54570368109b3d879906fc3412a82490eea98eb4515fcf8f943a"
+            "body": "81cdb219d6c5643a56c8df0e005db488de4745a48aa2075b72b08d7d58c4a8f5",
+            "body_format": 2
         },
         {
             "title": "How Discord Indexes Trillions of Messages",
@@ -20195,7 +20282,8 @@
             "summary": "Learn how Discord scaled its search infrastructure to index trillions of messages and unlock new features.",
             "published": "Thu, 24 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6806ad72843df60c11e54f23_image4.png",
-            "body": "784908ab282da173770a934dd2e1c72d3e6c58da5bba0528668a93e6ee4bb9db"
+            "body": "6ab90f318209d4b57e3358d01a0ecf36b51274a4c834d3034af3c5edecb4979c",
+            "body_format": 2
         },
         {
             "title": "Discord Appoints Humam Sakhnini as Chief Executive Officer",
@@ -20203,7 +20291,8 @@
             "summary": "Discord names Humam Sakhnini as the company\u2019s new CEO as co-founder Jason Citron remains on the board and transitions to CEO advisor.",
             "published": "Wed, 23 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png",
-            "body": "e424ca5571af036c7a618d397b8d495ad4b48a7100fd9c2c590c1054b47279c3"
+            "body": "6a1178c7a956c4a11f178b9de28d12fe5f866a8a8203eee0945cdfdaf097f153",
+            "body_format": 2
         },
         {
             "title": "Passing the Torch",
@@ -20211,7 +20300,8 @@
             "summary": "Read the message sent to Discord employees from CEO Jason Citron sharing his decision to transition out of the role and appoint Humam Sakhnini as the company's new chief executive.",
             "published": "Wed, 23 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png",
-            "body": "6067860744929f5c9fc550aefedbd773244d95895258c346837fa2b71cee8da1"
+            "body": "0bc3224caa6e83fc4192520313a39b6626eb6e6155d24a2080390769407010a7",
+            "body_format": 2
         },
         {
             "title": "Worthy of a Plaque: Nameplates Land in the Shop",
@@ -20219,7 +20309,8 @@
             "summary": "Today, we\u2019re announcing a brand new way to express yourself: Nameplates. Add a pop of personality to your display name when it\u2019s shown in your favorite chat channels. Read on to see how they work!",
             "published": "Tue, 22 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6801703e88ed1f8cb5d6e459_(DMKT05-NP)Nameplates_BlogBanner_AB_FINAL_V1.png",
-            "body": "5832219e408415888371b347b8e11e4acb229439b5adf051805c0f278e69b5d3"
+            "body": "5ffd22360903ca5f6112005219fdaffeb0671674504ef0448afdbe2df2a00e25",
+            "body_format": 2
         },
         {
             "title": "Make More Closet Space! Nitro Members Can Now Keep Avatar Decoration Quest Rewards for Longer",
@@ -20227,7 +20318,8 @@
             "summary": "With Nitro, your Quest rewards don\u2019t fade\u2014hold onto exclusive decorations long after the adventure ends.",
             "published": "Mon, 14 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f83b2996e977048a0bc26e_image1.png",
-            "body": "7089e98ceface391c822a0a700e787df0d6bc266c7125c58806b53e512e63d28"
+            "body": "0285e0aa4403af67a3a8cd8549c020544a51c55e7211eed2bc5b7e0a65294588",
+            "body_format": 2
         },
         {
             "title": "How to Use Discord\u2019s In-Game Overlay to Talk While Playing on PC",
@@ -20235,7 +20327,8 @@
             "summary": "Discord\u2019s In-Game Overlay lets you join voice and video calls, see who\u2019s talkin\u2019, and stream your gameplay without ever having to alt-tab out of your current match! Learn how it works and how you can customize it to your liking.",
             "published": "Thu, 10 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f7087fb2994cd00027ea37_image7.png",
-            "body": "c0d57ce97a4cc5a89e4fa17025f5c7ee618e25b506ea86dbfc58767fb97c0069"
+            "body": "ad56763738ef2bf6be977a20f4536d14750ddf923f1e8626a2bc6ca4ae0d3039",
+            "body_format": 2
         },
         {
             "title": "Overclocking dbt: Discord's Custom Solution in Processing Petabytes of Data",
@@ -20243,7 +20336,8 @@
             "summary": "Explore how Discord supercharged dbt with a tailored solution designed for performance, developer productivity, and data quality.",
             "published": "Wed, 09 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f597ab8965032c232c7d4a_image4.png",
-            "body": "34bce7cbf84ae31c8fab5707ffebb4c01d9fc12dedbf0eb65a4cbdb233ab146a"
+            "body": "8492bc5f9b503a2c65fb2eea7c7c81785d6da7193e9cfed318683bdaca39ad29",
+            "body_format": 2
         },
         {
             "title": "Wicked Saints Turns Players into IRL Superheroes  with the Help of e.l.f. Beauty and Discord",
@@ -20251,7 +20345,8 @@
             "summary": "First-of-its-kind gaming platform, World Reborn, launches an 8-week limited run to empower players toward real-life impact through brand-led missions.",
             "published": "Tue, 08 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67f4343d3897ce1dca91d04e_2024_10_DiscordBlog_Educational-2.png",
-            "body": "f6aed61f9b050ae1efd450d21d1854178e95f9035354a6a33071e91756f621db"
+            "body": "acdb22b786a463fcd795d17df83d192f24731a98bda7870a1f3aa93116ded156",
+            "body_format": 2
         },
         {
             "title": "Discord Patch Notes: April 3, 2025",
@@ -20259,7 +20354,8 @@
             "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
             "published": "Thu, 03 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6657ad0a58988c5decbfbc53_Header_3.png",
-            "body": "b9e31af71aabd869e12c06a1677acfa6f84facbaf7d9a12be6eb31db0750abc2"
+            "body": "3ce5069ed3565628c7f97135d78c8cc9b3fbacfe89b3fd062184b88c1fc08de0",
+            "body_format": 2
         },
         {
             "title": "Staff Picks, April 2025: All The Adaptations",
@@ -20267,7 +20363,8 @@
             "summary": "With all the new video game adaptations coming out in April, we\u2019re asking Veronica, Cody, and Emi what their favorite ones have been so far and which games deserve a great adaptation that has yet to come.",
             "published": "Wed, 02 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67ec1debe61694fba4be4385_StaffPicks%20BlogHeader%20April%202025.png",
-            "body": "5150d40c1f35ee4be285850095bb6d25114084f611428690e619cba40815c8a9"
+            "body": "38edbe29d9c3e2a302f799c7d527a628e270607b297a9cc265585393b65cb2f2",
+            "body_format": 2
         },
         {
             "title": "MAJOR NEWS: DISCORD ANNOUNCES ITS FIRST IN-HOUSE AAAA VIDEO GAME, \u201cTHE LAST MEADOW\u201d",
@@ -20275,7 +20372,8 @@
             "summary": "Discord\u2019s new in-house studio Big Wump Games announces its first release: The Last Meadow. Available from April 1 to April 7, 2025 exclusively on Discord.",
             "published": "Tue, 01 Apr 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67ec046d4ef3c44f3c9c77df_The%20Last%20Meadow%20Blog%20Header.png",
-            "body": "5c1e19e571cb2c7d6845ad2943af890a4e767ab0773777ae562342efc0e9c238"
+            "body": "e6bad7f99bb75bac34d80b7990e0245ef0d2fbcf64b7160998aa0cacb5a85dc1",
+            "body_format": 2
         },
         {
             "title": "Checkpoint 2: Our First Year With Discord Quests",
@@ -20283,7 +20381,8 @@
             "summary": "In 2024, we launched Quests, an innovative rewarded ad format designed for Discord\u2019s gaming audience. Join us as we look back at over 70 campaigns run during our first year.",
             "published": "Mon, 31 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67eadd682cb725051aaa304c_BLOG_HEADER_WEB.png",
-            "body": "9c1459527527b841a1f61ee8160f9981a7e4ef5d7be8c11af2cfa6ac45b10155"
+            "body": "0be80a618b42e3b1438a8138c150b4f18623def3f109a2ce87386dfb3c774dc3",
+            "body_format": 2
         },
         {
             "title": "How to Create & Upload Your Own Stickers on Discord",
@@ -20291,7 +20390,8 @@
             "summary": "Stickers on Discord let you express yourself in BIG ways. Learn how to create, upload, and use stickers on Discord.",
             "published": "Thu, 27 Mar 2025 00:00:00 GMT",
             "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/67db0afec7f0c7b931a5ca51_image7.png",
-            "body": "870c963c5611ffe529f6845c870cdc2ab2221c06f7cb63357c986ce99960904f"
+            "body": "b16b2a2b59bc21753f3c3aeeb258c210e751a53026a86b0a4d7f7752721d7c3f",
+            "body_format": 2
         }
     ]
 }

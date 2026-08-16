@@ -1,1 +1,30 @@
-<p>In August 2023, we<a href="https://discord.com/blog/encryption-for-voice-and-video-on-discord"> shared</a> that we were experimenting with end-to-end encryption (E2EE) for voice and video on Discord. That post was short and deliberately understated. But it represented a real commitment, one we knew would take years to deliver on.</p><p>It&#x27;s been quite a journey since then. In September 2024, Stephen Birarda<a href="https://discord.com/blog/meet-dave-e2ee-for-audio-video"> introduced the DAVE protocol</a>: an open, audited end-to-end encryption protocol for audio and video. We began migrating calls on desktop and mobile and started proving that E2EE could operate at Discord&#x27;s scale <em>without</em> compromising the experience people expect from us. In 2025, Clément Brisset<a href="https://discord.com/blog/bringing-dave-to-all-discord-platforms"> extended DAVE to every remaining platform</a>, including web browsers, gaming consoles, support for Discord bots/apps, and our Social SDK, helping close the gaps that had kept some calls from being fully encrypted. And at the beginning of March 2026, we completed that migration. </p><p><strong>End-to-end Encryption is now standard for every voice and video call on Discord, outside of stage channels. No opt-in required.</strong></p><p>I&#x27;m proud of what our team has accomplished, and I want to talk about what it took and why it matters.</p>
+<p>
+ In August 2023, we
+ <a href="https://discord.com/blog/encryption-for-voice-and-video-on-discord">
+  shared
+ </a>
+ that we were experimenting with end-to-end encryption (E2EE) for voice and video on Discord. That post was short and deliberately understated. But it represented a real commitment, one we knew would take years to deliver on.
+</p>
+<p>
+ It's been quite a journey since then. In September 2024, Stephen Birarda
+ <a href="https://discord.com/blog/meet-dave-e2ee-for-audio-video">
+  introduced the DAVE protocol
+ </a>
+ : an open, audited end-to-end encryption protocol for audio and video. We began migrating calls on desktop and mobile and started proving that E2EE could operate at Discord's scale
+ <em>
+  without
+ </em>
+ compromising the experience people expect from us. In 2025, Clément Brisset
+ <a href="https://discord.com/blog/bringing-dave-to-all-discord-platforms">
+  extended DAVE to every remaining platform
+ </a>
+ , including web browsers, gaming consoles, support for Discord bots/apps, and our Social SDK, helping close the gaps that had kept some calls from being fully encrypted. And at the beginning of March 2026, we completed that migration.
+</p>
+<p>
+ <strong>
+  End-to-end Encryption is now standard for every voice and video call on Discord, outside of stage channels. No opt-in required.
+ </strong>
+</p>
+<p>
+ I'm proud of what our team has accomplished, and I want to talk about what it took and why it matters.
+</p>

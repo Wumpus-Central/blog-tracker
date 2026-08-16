@@ -1,1 +1,48 @@
-<p><em>Discord names Humam Sakhnini new CEO; Co-founder Jason Citron remains on board and transitions to CEO advisor</em></p><p><strong>SAN FRANCISCO, April 23, 2025</strong> — Discord today announced the appointment of Humam Sakhnini as Chief Executive Officer, effective Monday, April 28, 2025. Sakhnini will also join Discord’s Board of Directors. Jason Citron, who co-founded Discord with Stanislav Vishnevskiy and has served as CEO since its inception, will remain on the Board of Directors and transition to a role as Advisor to the CEO. Vishnevskiy will continue serving in his capacity as Chief Technology Officer.</p><p>Sakhnini brings over 15 years of gaming industry experience to Discord. Most recently he was Vice Chairman at Activision Blizzard, managing a multi-billion dollar portfolio including Call of Duty, World of Warcraft, and Candy Crush. Prior to that, as President of King Digital Entertainment, Sakhnini succeeded the founding CEO and led the company to record performance after it was acquired by Activision Blizzard. </p><p>Discord is a cornerstone of the global gaming ecosystem, now serving more than 200 million monthly active users worldwide who spend 2 billion hours playing games each month across thousands of titles. In 2024, the company refocused on its gaming roots and began pursuing opportunities beyond its core consumer subscription service, including advertising, micro-transactions, and providing social infrastructure to game developers. This momentum in product development has been matched by Discord’s financial performance, with continued strength in revenue growth and positive adjusted EBITDA for the past five quarters.</p><p>“Building Discord over the last decade has been one of the most rewarding experiences of my life. From the very beginning, our mission has been about bringing people together around games. It’s a mission I’ve dedicated my career to, and I&#x27;m confident that passing the torch to Humam is the right evolution for Discord&#x27;s future. His deep gaming industry expertise and proven track record of scaling businesses while fostering genuine friendships through play and shared experiences positions us perfectly for our next phase of growth. I believe this transition will accelerate our momentum and unlock even greater possibilities for Discord, our consumers, partners, and the overall gaming ecosystem in the years ahead.” — <strong>Jason Citron, Discord Co-Founder</strong></p><p>&quot;I want to express my sincere gratitude to Jason Citron as he moves into a new role on the Board of Directors. We’ve worked together closely for more than a decade, and Discord is the product of his incredible vision for a new company that could redefine how gamers connect. The fact that the company has scaled to reach and delight millions and millions of people is a testament to the power of that vision. I’ve known our incoming CEO Humam Sakhnini for many years as well, and I’ve long admired his work and strategic thinking. I believe he is the ideal leader for this new phase of Discord’s history, with his deep understanding of the game business generally, and particularly the nuances of customer acquisition and modern revenue creation which are so important in today’s game business. I am looking forward to working with him to help realize Discord’s long-term potential.” — <strong>Mitch Lasky, Discord Board of Directors </strong></p><p>“I&#x27;m incredibly excited to join Discord at such a pivotal moment. Discord stands as a massive, foundational part of the gaming ecosystem that millions of players, developers, and publishers rely on every day. What Jason and Discord co-founder and CTO Stan Vishnevskiy have built is truly remarkable — a platform with an undeniable product-market fit where hundreds of millions of people connect around their passion for gaming and shared interests. I look forward to working with Stan and Discord&#x27;s talented team to scale our business while staying true to the company&#x27;s core mission and the special connection it has with player communities. We&#x27;re still at the beginning of gaming&#x27;s impact on entertainment and culture, and Discord is perfectly positioned to play a central role in that future.” — <strong>Humam Sakhnini, Incoming Discord CEO</strong></p><p>‍</p><h5>About Discord</h5><h5>Discord is the communications platform that enables meaningful connections around gaming through voice, video, and text. As the only platform purposely built for multiplayer gaming communities, Discord has 200+ million monthly active users worldwide spending 1.9 billion hours playing games monthly across thousands of  titles. Headquartered in San Francisco, Discord is free to download at <a href="https://discord.com/">Discord.com</a>, with an optional Nitro subscription offering enhanced performance and personalization.</h5>
+<p>
+ <em>
+  Discord names Humam Sakhnini new CEO; Co-founder Jason Citron remains on board and transitions to CEO advisor
+ </em>
+</p>
+<p>
+ <strong>
+  SAN FRANCISCO, April 23, 2025
+ </strong>
+ — Discord today announced the appointment of Humam Sakhnini as Chief Executive Officer, effective Monday, April 28, 2025. Sakhnini will also join Discord’s Board of Directors. Jason Citron, who co-founded Discord with Stanislav Vishnevskiy and has served as CEO since its inception, will remain on the Board of Directors and transition to a role as Advisor to the CEO. Vishnevskiy will continue serving in his capacity as Chief Technology Officer.
+</p>
+<p>
+ Sakhnini brings over 15 years of gaming industry experience to Discord. Most recently he was Vice Chairman at Activision Blizzard, managing a multi-billion dollar portfolio including Call of Duty, World of Warcraft, and Candy Crush. Prior to that, as President of King Digital Entertainment, Sakhnini succeeded the founding CEO and led the company to record performance after it was acquired by Activision Blizzard.
+</p>
+<p>
+ Discord is a cornerstone of the global gaming ecosystem, now serving more than 200 million monthly active users worldwide who spend 2 billion hours playing games each month across thousands of titles. In 2024, the company refocused on its gaming roots and began pursuing opportunities beyond its core consumer subscription service, including advertising, micro-transactions, and providing social infrastructure to game developers. This momentum in product development has been matched by Discord’s financial performance, with continued strength in revenue growth and positive adjusted EBITDA for the past five quarters.
+</p>
+<p>
+ “Building Discord over the last decade has been one of the most rewarding experiences of my life. From the very beginning, our mission has been about bringing people together around games. It’s a mission I’ve dedicated my career to, and I'm confident that passing the torch to Humam is the right evolution for Discord's future. His deep gaming industry expertise and proven track record of scaling businesses while fostering genuine friendships through play and shared experiences positions us perfectly for our next phase of growth. I believe this transition will accelerate our momentum and unlock even greater possibilities for Discord, our consumers, partners, and the overall gaming ecosystem in the years ahead.” —
+ <strong>
+  Jason Citron, Discord Co-Founder
+ </strong>
+</p>
+<p>
+ "I want to express my sincere gratitude to Jason Citron as he moves into a new role on the Board of Directors. We’ve worked together closely for more than a decade, and Discord is the product of his incredible vision for a new company that could redefine how gamers connect. The fact that the company has scaled to reach and delight millions and millions of people is a testament to the power of that vision. I’ve known our incoming CEO Humam Sakhnini for many years as well, and I’ve long admired his work and strategic thinking. I believe he is the ideal leader for this new phase of Discord’s history, with his deep understanding of the game business generally, and particularly the nuances of customer acquisition and modern revenue creation which are so important in today’s game business. I am looking forward to working with him to help realize Discord’s long-term potential.” —
+ <strong>
+  Mitch Lasky, Discord Board of Directors
+ </strong>
+</p>
+<p>
+ “I'm incredibly excited to join Discord at such a pivotal moment. Discord stands as a massive, foundational part of the gaming ecosystem that millions of players, developers, and publishers rely on every day. What Jason and Discord co-founder and CTO Stan Vishnevskiy have built is truly remarkable — a platform with an undeniable product-market fit where hundreds of millions of people connect around their passion for gaming and shared interests. I look forward to working with Stan and Discord's talented team to scale our business while staying true to the company's core mission and the special connection it has with player communities. We're still at the beginning of gaming's impact on entertainment and culture, and Discord is perfectly positioned to play a central role in that future.” —
+ <strong>
+  Humam Sakhnini, Incoming Discord CEO
+ </strong>
+</p>
+<p>
+ ‍
+</p>
+<h5>
+ About Discord
+</h5>
+<h5>
+ Discord is the communications platform that enables meaningful connections around gaming through voice, video, and text. As the only platform purposely built for multiplayer gaming communities, Discord has 200+ million monthly active users worldwide spending 1.9 billion hours playing games monthly across thousands of  titles. Headquartered in San Francisco, Discord is free to download at
+ <a href="https://discord.com/">
+  Discord.com
+ </a>
+ , with an optional Nitro subscription offering enhanced performance and personalization.
+</h5>

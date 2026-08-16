@@ -1,1 +1,47 @@
-<p>After cheering from the sideline for the hundreds of millions of Discord users playing games online with friends, it’s time for Wumpus to set forth on their own adventure.</p><p>Today, we’re thrilled to announce the launch of Discord’s very own in-house game studio, Big Wump Games, along with our first quadruple-A game release: <strong>The Last Meadow</strong>.</p><figure style="padding-bottom:56.206088992974244%" class="w-richtext-align-fullwidth w-richtext-figure-type-video"><div><iframe src="https://www.youtube.com/embed/h-9SUgIeJnY" title="The Last Meadow - Announcement Trailer | Discord" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></div></figure><p>The world needs a hero… one courageous enough to journey across perilous plains, scale desert cliffsides and trudge through frostbound forests to achieve something no Discord user has done before<em>.</em>  </p><p>Become Wumpus and embark on an adventure to reach the fabled Last Meadow. </p><p>The best part? You can play it <em>right now</em>. <strong>The Last Meadow is available to play directly on Discord</strong> in User Settings on the desktop app, or by using the button below:<br/></p><div class="w-embed"><div class="btn-wrapper"><a data-track="https://dis.gd/the-last-meadow" href="https://dis.gd/the-last-meadow" class="btn-blog w-button" target="_blank">Play The Last Meadow</a></div></div><p>Players who manage to complete The Last Meadow by April 7, 2025 will earn an exclusive Avatar Decoration to use for all of April.</p>
+<p>
+ After cheering from the sideline for the hundreds of millions of Discord users playing games online with friends, it’s time for Wumpus to set forth on their own adventure.
+</p>
+<p>
+ Today, we’re thrilled to announce the launch of Discord’s very own in-house game studio, Big Wump Games, along with our first quadruple-A game release:
+ <strong>
+  The Last Meadow
+ </strong>
+ .
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-video" style="padding-bottom:56.206088992974244%">
+ <div>
+  <iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/h-9SUgIeJnY" title="The Last Meadow - Announcement Trailer | Discord">
+  </iframe>
+ </div>
+</figure>
+<p>
+ The world needs a hero… one courageous enough to journey across perilous plains, scale desert cliffsides and trudge through frostbound forests to achieve something no Discord user has done before
+ <em>
+  .
+ </em>
+</p>
+<p>
+ Become Wumpus and embark on an adventure to reach the fabled Last Meadow.
+</p>
+<p>
+ The best part? You can play it
+ <em>
+  right now
+ </em>
+ .
+ <strong>
+  The Last Meadow is available to play directly on Discord
+ </strong>
+ in User Settings on the desktop app, or by using the button below:
+ <br/>
+</p>
+<div class="w-embed">
+ <div class="btn-wrapper">
+  <a class="btn-blog w-button" data-track="https://dis.gd/the-last-meadow" href="https://dis.gd/the-last-meadow" target="_blank">
+   Play The Last Meadow
+  </a>
+ </div>
+</div>
+<p>
+ Players who manage to complete The Last Meadow by April 7, 2025 will earn an exclusive Avatar Decoration to use for all of April.
+</p>

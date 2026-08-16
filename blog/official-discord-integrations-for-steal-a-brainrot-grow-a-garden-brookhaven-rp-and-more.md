@@ -1,1 +1,63 @@
-<p><strong>Update: June 2, 2026</strong></p><p>Today, Roblox has shared <a href="https://devforum.roblox.com/t/a-reminder-about-user-privacy-and-third-party-integrations/4665118">a post in their Developer Forum</a> about user privacy and third-party integrations. Their stated focus on user safety, privacy, and trust reflects values that we share. </p><p>The SDK integration provides a user-authorized and controlled experience that helps developers maintain safer and more engaged player communities for their games: </p><ul role="list"><li>Users choose whether to connect their accounts and share their data through clear authorization flows</li><li>Users control whether and how their Rich Presence is shared on Discord through their privacy settings</li><li>Users can deauthorize the experience at any time</li></ul><p>We believe online safety is a collective responsibility and this effort is a major leap forward to provide a reliable, trusted, and effective first-party integration focused on community safety.</p><p>We&#x27;ve been very thoughtful in how the SDK was built, and we remain confident in this approach for developers, users, and both platforms.</p><figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68b71f045dad4181851b7dba_8e6a8457.png" loading="lazy"/></div></figure><p>Today, <strong>Steal a Brainrot</strong>, <strong>Brookhaven RP</strong>, <strong>Grow a Garden, and more</strong> are launching their Discord Social SDK integration, which provides them with additional server safety and engagement benefits for their player communities on Discord. This follows the latest developer-focused advances to our platform, working with some of the largest developers like Riot Games and EA to provide powerful community management solutions, social integrations, and easy invite flows. Now, it’s possible for developers of some of the most popular games built on Roblox to access these same tools and functionality, along with an additional layer of safety capabilities for their community.</p><p>Developers can also choose to unlock deeper social experiences for players in official game servers, including <strong>Rich Presence,</strong> which allows players to share their game status with their Discord friends, and easy <strong>Game Invites</strong> so players can find their team, share an invite, and launch their session, all with Discord account linking.</p>
+<p>
+ <strong>
+  Update: June 2, 2026
+ </strong>
+</p>
+<p>
+ Today, Roblox has shared
+ <a href="https://devforum.roblox.com/t/a-reminder-about-user-privacy-and-third-party-integrations/4665118">
+  a post in their Developer Forum
+ </a>
+ about user privacy and third-party integrations. Their stated focus on user safety, privacy, and trust reflects values that we share.
+</p>
+<p>
+ The SDK integration provides a user-authorized and controlled experience that helps developers maintain safer and more engaged player communities for their games:
+</p>
+<ul role="list">
+ <li>
+  Users choose whether to connect their accounts and share their data through clear authorization flows
+ </li>
+ <li>
+  Users control whether and how their Rich Presence is shared on Discord through their privacy settings
+ </li>
+ <li>
+  Users can deauthorize the experience at any time
+ </li>
+</ul>
+<p>
+ We believe online safety is a collective responsibility and this effort is a major leap forward to provide a reliable, trusted, and effective first-party integration focused on community safety.
+</p>
+<p>
+ We've been very thoughtful in how the SDK was built, and we remain confident in this approach for developers, users, and both platforms.
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1600pxpx">
+ <div>
+  <img alt="" loading="lazy" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68b71f045dad4181851b7dba_8e6a8457.png"/>
+ </div>
+</figure>
+<p>
+ Today,
+ <strong>
+  Steal a Brainrot
+ </strong>
+ ,
+ <strong>
+  Brookhaven RP
+ </strong>
+ ,
+ <strong>
+  Grow a Garden, and more
+ </strong>
+ are launching their Discord Social SDK integration, which provides them with additional server safety and engagement benefits for their player communities on Discord. This follows the latest developer-focused advances to our platform, working with some of the largest developers like Riot Games and EA to provide powerful community management solutions, social integrations, and easy invite flows. Now, it’s possible for developers of some of the most popular games built on Roblox to access these same tools and functionality, along with an additional layer of safety capabilities for their community.
+</p>
+<p>
+ Developers can also choose to unlock deeper social experiences for players in official game servers, including
+ <strong>
+  Rich Presence,
+ </strong>
+ which allows players to share their game status with their Discord friends, and easy
+ <strong>
+  Game Invites
+ </strong>
+ so players can find their team, share an invite, and launch their session, all with Discord account linking.
+</p>

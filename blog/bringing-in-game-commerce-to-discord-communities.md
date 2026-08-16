@@ -1,1 +1,29 @@
-<p>Over the past few years, we&#x27;ve been exploring ways that Discord can help connect game developers with their most dedicated players and help fuel the success of their games. In 2024, we launched our <a href="https://discord.com/ads/quests">Quests</a> ad format to help developers break through to highly engaged player audiences. At GDC 2025, we introduced the <a href="https://discord.com/developers/social-sdk">Discord Social SDK</a>, with social layer integration and account linking capabilities that can deepen player connections and increase engagement, resulting in up to 48% longer playtimes. </p><p>Now, we’re excited to share the next step in the journey: Discord is introducing commerce capabilities that let players find, buy, and gift in-game items from chat, friends’ Wishlists, and directly within official game servers on Discord. We’re debuting the initial phase of this new commerce experience with <em>Marvel Rivals, </em>which not only has been a breakout hit, <a href="https://x.com/MarvelRivals/status/1865909229070016851?lang=en">hitting 10 million players in its first 72 hours</a>, it also has one of the largest and most active communities on Discord with over 4 million members.</p><p>Starting today, players in the <em>Marvel Rivals</em> official Discord server can browse, buy, and gift in-game items right where they already hang out with their friends.</p>
+<p>
+ Over the past few years, we've been exploring ways that Discord can help connect game developers with their most dedicated players and help fuel the success of their games. In 2024, we launched our
+ <a href="https://discord.com/ads/quests">
+  Quests
+ </a>
+ ad format to help developers break through to highly engaged player audiences. At GDC 2025, we introduced the
+ <a href="https://discord.com/developers/social-sdk">
+  Discord Social SDK
+ </a>
+ , with social layer integration and account linking capabilities that can deepen player connections and increase engagement, resulting in up to 48% longer playtimes.
+</p>
+<p>
+ Now, we’re excited to share the next step in the journey: Discord is introducing commerce capabilities that let players find, buy, and gift in-game items from chat, friends’ Wishlists, and directly within official game servers on Discord. We’re debuting the initial phase of this new commerce experience with
+ <em>
+  Marvel Rivals,
+ </em>
+ which not only has been a breakout hit,
+ <a href="https://x.com/MarvelRivals/status/1865909229070016851?lang=en">
+  hitting 10 million players in its first 72 hours
+ </a>
+ , it also has one of the largest and most active communities on Discord with over 4 million members.
+</p>
+<p>
+ Starting today, players in the
+ <em>
+  Marvel Rivals
+ </em>
+ official Discord server can browse, buy, and gift in-game items right where they already hang out with their friends.
+</p>

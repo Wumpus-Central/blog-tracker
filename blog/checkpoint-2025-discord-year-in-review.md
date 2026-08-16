@@ -1,1 +1,78 @@
-<p>You’ve played dozens of games. Sent hundreds of messages. Posted thousands of emojis. And enjoyed countless meaningful moments, making for a packed year of hangin’ out. You didn&#x27;t just use Discord this year… you shaped it. MOLDED IT, like a big ball of pizza dough. </p><p>And for 2025, we’re taking your pizza dough, topping it with the stuff you did on Discord this year — your late-night dungeon crawls, your victory celebrations, and conversations that turned into lasting friendships — baking it, and serving you up a delicious end-of-year recap: your <strong>Discord Checkpoint</strong>!  </p><p>Rolling out over the next few days, Discord Checkpoint is the first time <strong>we’re giving you a recap of the stuff YOU did on Discord throughout the year</strong>.</p><figure style="max-width:1999pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img loading="lazy" alt="The in-app Checkpoint experience. " src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692f6d7dc6fbff7d8a6fd6fd_image2.png"/></div></figure><p>How many messages did you send? How long did you hang out in voice? What’re your most-used emoji, and which server did you spend the most time in? And WHO, out of everyone you talked to on Discord, did you talk with the MOST? <br/><br/>To find your Checkpoint, make sure you’re on the latest version of the Discord app. Then, on <strong>desktop</strong>, look for the flag icon in the top-right corner of your app. On <strong>mobile</strong>, head to the You tab at the bottom-right, and tap the Checkpoint banner. <br/><br/><em><sub>If you don’t see a Checkpoint, you may not have had enough activity on Discord to summarize your 2025. Or, you have toggled off “Use data to personalize my Discord experience.”</sub></em></p><p><strong>After you’ve reviewed your year on Discord, you’ll be matched with one of ten different Checkpoint cards. </strong></p><figure style="max-width:1999pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img loading="lazy" alt="An example of one of the Checkpoint cards you could receive after reviewing your Checkpoint." src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692f6d9fef6cad5cc9a95e71_image1.png"/></div></figure><p>These Checkpoint cards aren’t JUST for your eyes only… <strong>your card comes with a matching Avatar Decoration</strong>! Put it on and find your fellow Capybaras in chat. You’ll be able to wear it on your own avatar until January 15, 2026.</p><p>At the end, you’ll be shown an option to easily share a quick summary of your Checkpoint results directly in chat! But if you decide not to share, it’s all good; your Checkpoint will remain private to just yourself. </p><figure style="max-width:1999pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img loading="lazy" alt="A preview of the Checkpoint chat embed. " src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692f6dc67b82a0294bf61aa9_image8.png"/></div></figure><p>So gather around the bonfire, review your Discord Checkpoint, and bask in your curated summary of what you’ve accomplished on the platform in the last year! Don’t worry, all those nearby obstacles don’t reset after using this Checkpoint.</p><p>Got some Qs or need some POINTers? Why don’t you CHECK out the <a href="https://support.discord.com/hc/en-us/articles/36415877391511">Help Center</a>!</p>
+<p>
+ You’ve played dozens of games. Sent hundreds of messages. Posted thousands of emojis. And enjoyed countless meaningful moments, making for a packed year of hangin’ out. You didn't just use Discord this year… you shaped it. MOLDED IT, like a big ball of pizza dough.
+</p>
+<p>
+ And for 2025, we’re taking your pizza dough, topping it with the stuff you did on Discord this year — your late-night dungeon crawls, your victory celebrations, and conversations that turned into lasting friendships — baking it, and serving you up a delicious end-of-year recap: your
+ <strong>
+  Discord Checkpoint
+ </strong>
+ !
+</p>
+<p>
+ Rolling out over the next few days, Discord Checkpoint is the first time
+ <strong>
+  we’re giving you a recap of the stuff YOU did on Discord throughout the year
+ </strong>
+ .
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1999pxpx">
+ <div>
+  <img alt="The in-app Checkpoint experience. " loading="lazy" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692f6d7dc6fbff7d8a6fd6fd_image2.png"/>
+ </div>
+</figure>
+<p>
+ How many messages did you send? How long did you hang out in voice? What’re your most-used emoji, and which server did you spend the most time in? And WHO, out of everyone you talked to on Discord, did you talk with the MOST?
+ <br/>
+ <br/>
+ To find your Checkpoint, make sure you’re on the latest version of the Discord app. Then, on
+ <strong>
+  desktop
+ </strong>
+ , look for the flag icon in the top-right corner of your app. On
+ <strong>
+  mobile
+ </strong>
+ , head to the You tab at the bottom-right, and tap the Checkpoint banner.
+ <br/>
+ <br/>
+ <em>
+  <sub>
+   If you don’t see a Checkpoint, you may not have had enough activity on Discord to summarize your 2025. Or, you have toggled off “Use data to personalize my Discord experience.”
+  </sub>
+ </em>
+</p>
+<p>
+ <strong>
+  After you’ve reviewed your year on Discord, you’ll be matched with one of ten different Checkpoint cards.
+ </strong>
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1999pxpx">
+ <div>
+  <img alt="An example of one of the Checkpoint cards you could receive after reviewing your Checkpoint." loading="lazy" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692f6d9fef6cad5cc9a95e71_image1.png"/>
+ </div>
+</figure>
+<p>
+ These Checkpoint cards aren’t JUST for your eyes only…
+ <strong>
+  your card comes with a matching Avatar Decoration
+ </strong>
+ ! Put it on and find your fellow Capybaras in chat. You’ll be able to wear it on your own avatar until January 15, 2026.
+</p>
+<p>
+ At the end, you’ll be shown an option to easily share a quick summary of your Checkpoint results directly in chat! But if you decide not to share, it’s all good; your Checkpoint will remain private to just yourself.
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1999pxpx">
+ <div>
+  <img alt="A preview of the Checkpoint chat embed. " loading="lazy" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/692f6dc67b82a0294bf61aa9_image8.png"/>
+ </div>
+</figure>
+<p>
+ So gather around the bonfire, review your Discord Checkpoint, and bask in your curated summary of what you’ve accomplished on the platform in the last year! Don’t worry, all those nearby obstacles don’t reset after using this Checkpoint.
+</p>
+<p>
+ Got some Qs or need some POINTers? Why don’t you CHECK out the
+ <a href="https://support.discord.com/hc/en-us/articles/36415877391511">
+  Help Center
+ </a>
+ !
+</p>

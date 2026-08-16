@@ -1,1 +1,57 @@
-<p><strong>Starting today, Discord is now available to download directly from Meta’s Horizon App Store.</strong> No more sideloading the app. No more keeping your Discord friends confined to your headset’s web browser, or using another device to hold your call while in VR.</p><p>And <em>all</em> the familiar features from the app are here, including all your servers, DM, and Group DM conversations. <strong>It’s the full, proper Discord experience</strong>. And since your Meta Quest headset already has a mic built-in, you can hop in and out of Discord calls any time without fiddling with an external device beforehand. </p><figure style="max-width:1999pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="A Discord server seen on the Meta Quest app. " src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fa304ffefa8e355e14c3_image5.png" loading="lazy"/></div></figure><p>Keep the app pinned in your playspace while trying to aim for a higher score in Beat Saber, or send someone a quick DM on the side while you’re hanging out VR Chat. </p><div class="w-embed"><center><div class="btn-wrapper"><a data-track="https://www.meta.com/experiences/discord/25956082250713643/" href="https://www.meta.com/experiences/discord/25956082250713643/" class="btn-blog w-button" target="_blank">Download Discord for Meta Quest</a></div></center></div><p>If you’ve set up one of those Meta Avatars that sports an uncannily-close-to-you look, <strong>you can even join Discord video chats as your Meta Avatar, and stream your Quest gameplay directly to Discord</strong> while you’re wearing your headset. No more wonky workaround of streaming your gameplay to a browser, then streaming <em>that</em> browser tab to your friends. </p><figure style="max-width:1999pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="Four friends in a call on Discord for Meta Quest. " src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fa5bc2e48082ba4f9f85_image1.png" loading="lazy"/></div></figure><p>Got any more questions? <a href="https://support.discord.com/hc/en-us/articles/41412722792983-Discord-on-Meta-Quest-FAQ">Open our Help Center article</a> while in your VR headset and let the support article float around in space while getting Discord set up. </p>
+<p>
+ <strong>
+  Starting today, Discord is now available to download directly from Meta’s Horizon App Store.
+ </strong>
+ No more sideloading the app. No more keeping your Discord friends confined to your headset’s web browser, or using another device to hold your call while in VR.
+</p>
+<p>
+ And
+ <em>
+  all
+ </em>
+ the familiar features from the app are here, including all your servers, DM, and Group DM conversations.
+ <strong>
+  It’s the full, proper Discord experience
+ </strong>
+ . And since your Meta Quest headset already has a mic built-in, you can hop in and out of Discord calls any time without fiddling with an external device beforehand.
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1999pxpx">
+ <div>
+  <img alt="A Discord server seen on the Meta Quest app. " loading="lazy" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fa304ffefa8e355e14c3_image5.png"/>
+ </div>
+</figure>
+<p>
+ Keep the app pinned in your playspace while trying to aim for a higher score in Beat Saber, or send someone a quick DM on the side while you’re hanging out VR Chat.
+</p>
+<div class="w-embed">
+ <center>
+  <div class="btn-wrapper">
+   <a class="btn-blog w-button" data-track="https://www.meta.com/experiences/discord/25956082250713643/" href="https://www.meta.com/experiences/discord/25956082250713643/" target="_blank">
+    Download Discord for Meta Quest
+   </a>
+  </div>
+ </center>
+</div>
+<p>
+ If you’ve set up one of those Meta Avatars that sports an uncannily-close-to-you look,
+ <strong>
+  you can even join Discord video chats as your Meta Avatar, and stream your Quest gameplay directly to Discord
+ </strong>
+ while you’re wearing your headset. No more wonky workaround of streaming your gameplay to a browser, then streaming
+ <em>
+  that
+ </em>
+ browser tab to your friends.
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1999pxpx">
+ <div>
+  <img alt="Four friends in a call on Discord for Meta Quest. " loading="lazy" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6a42fa5bc2e48082ba4f9f85_image1.png"/>
+ </div>
+</figure>
+<p>
+ Got any more questions?
+ <a href="https://support.discord.com/hc/en-us/articles/41412722792983-Discord-on-Meta-Quest-FAQ">
+  Open our Help Center article
+ </a>
+ while in your VR headset and let the support article float around in space while getting Discord set up.
+</p>

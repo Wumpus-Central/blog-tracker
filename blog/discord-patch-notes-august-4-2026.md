@@ -1,1 +1,13 @@
-<p>Welcome to Patch Notes! In this series, we comb through the newest changes in performance, reliability, responsiveness, usability, and general bug-squishing we’ve done to make Discord better. </p><p>If you discover an issue of your own, check out our <a href="https://dis.gd/reddit-bug-megathread">Bimonthly Bug Megathread</a> on the community-run r/DiscordApp subreddit. Tell us what’s been bothering you, and our Engineering team will be more than happy to check it out. </p><p>All fixes listed below have been committed and merged, but may still be rolling out to individual platforms at the time of this post. </p>
+<p>
+ Welcome to Patch Notes! In this series, we comb through the newest changes in performance, reliability, responsiveness, usability, and general bug-squishing we’ve done to make Discord better.
+</p>
+<p>
+ If you discover an issue of your own, check out our
+ <a href="https://dis.gd/reddit-bug-megathread">
+  Bimonthly Bug Megathread
+ </a>
+ on the community-run r/DiscordApp subreddit. Tell us what’s been bothering you, and our Engineering team will be more than happy to check it out.
+</p>
+<p>
+ All fixes listed below have been committed and merged, but may still be rolling out to individual platforms at the time of this post.
+</p>

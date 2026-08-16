@@ -1,1 +1,45 @@
-<p>A Discord account is more than just a username and avatar: it’s your key to talking the night away with your closest friends and favorite communities. It’s how your day can transform from just another Tuesday night to one of your most cherished memories. </p><p>That’s why it’s important to keep your Discord account secure, so you can always stay connected to the ones you care about the most. Over the years, bad actors on nearly every social platform have grown a bit more crafty when it comes to taking over accounts. </p><p>On Discord, you’ve got a few options at your disposal to help keep your account secure:</p><ul role="list"><li><a href="https://discord.com/blog/keeping-discord-safe-and-sound#2">Login Verification Emails</a></li><li><a href="https://discord.com/blog/keeping-discord-safe-and-sound#4">Passkeys</a></li><li><a href="https://discord.com/blog/keeping-discord-safe-and-sound#5">Authenticator Apps</a> </li><li><a href="https://discord.com/blog/keeping-discord-safe-and-sound#6">SMS Authentication</a></li><li><a href="https://discord.com/blog/keeping-discord-safe-and-sound#8">QR Code Login</a></li></ul><p><strong>To make your account’s defenses as strong as possible, you should absolutely enable Multi-Factor Authentication with one or more Passkeys, or use an Authenticator app if you aren’t able to use Passkeys.</strong></p><p>Read on for a quick explainer of how each of these features protects your account, plus some general security tips near the bottom of this post.<br/></p>
+<p>
+ A Discord account is more than just a username and avatar: it’s your key to talking the night away with your closest friends and favorite communities. It’s how your day can transform from just another Tuesday night to one of your most cherished memories.
+</p>
+<p>
+ That’s why it’s important to keep your Discord account secure, so you can always stay connected to the ones you care about the most. Over the years, bad actors on nearly every social platform have grown a bit more crafty when it comes to taking over accounts.
+</p>
+<p>
+ On Discord, you’ve got a few options at your disposal to help keep your account secure:
+</p>
+<ul role="list">
+ <li>
+  <a href="https://discord.com/blog/keeping-discord-safe-and-sound#2">
+   Login Verification Emails
+  </a>
+ </li>
+ <li>
+  <a href="https://discord.com/blog/keeping-discord-safe-and-sound#4">
+   Passkeys
+  </a>
+ </li>
+ <li>
+  <a href="https://discord.com/blog/keeping-discord-safe-and-sound#5">
+   Authenticator Apps
+  </a>
+ </li>
+ <li>
+  <a href="https://discord.com/blog/keeping-discord-safe-and-sound#6">
+   SMS Authentication
+  </a>
+ </li>
+ <li>
+  <a href="https://discord.com/blog/keeping-discord-safe-and-sound#8">
+   QR Code Login
+  </a>
+ </li>
+</ul>
+<p>
+ <strong>
+  To make your account’s defenses as strong as possible, you should absolutely enable Multi-Factor Authentication with one or more Passkeys, or use an Authenticator app if you aren’t able to use Passkeys.
+ </strong>
+</p>
+<p>
+ Read on for a quick explainer of how each of these features protects your account, plus some general security tips near the bottom of this post.
+ <br/>
+</p>

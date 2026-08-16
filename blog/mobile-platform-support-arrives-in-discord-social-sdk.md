@@ -1,1 +1,10 @@
-<p>The future of mobile gaming is about helping players connect, return, and play together. With mobile support now generally available in the Discord Social SDK, developers can extend Discord&#x27;s social experiences to iOS and Android to drive retention, engagement, and growth.</p><p>We&#x27;ve worked closely with launch partners to stress-test the SDK against real player behavior on iOS and Android, refining key features to meet the demands of smaller screens and on-the-go play. The result is a fast, low-friction, and deeply social mobile experience, built for how players actually play. Read on to learn about what&#x27;s new in <a href="https://docs.discord.com/developers/change-log#discord-social-sdk-release-1-10-18247">Social SDK version 1.10</a> and see how studios like Tencent, Scopely, and Ninja Kiwi are already putting these updates to work.</p>
+<p>
+ The future of mobile gaming is about helping players connect, return, and play together. With mobile support now generally available in the Discord Social SDK, developers can extend Discord's social experiences to iOS and Android to drive retention, engagement, and growth.
+</p>
+<p>
+ We've worked closely with launch partners to stress-test the SDK against real player behavior on iOS and Android, refining key features to meet the demands of smaller screens and on-the-go play. The result is a fast, low-friction, and deeply social mobile experience, built for how players actually play. Read on to learn about what's new in
+ <a href="https://docs.discord.com/developers/change-log#discord-social-sdk-release-1-10-18247">
+  Social SDK version 1.10
+ </a>
+ and see how studios like Tencent, Scopely, and Ninja Kiwi are already putting these updates to work.
+</p>

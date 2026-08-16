@@ -1,1 +1,9 @@
-<p>They’re someone you love spending time with. You two are talkin’ in voice, over text chat, and streaming games together. And as the holiday season begins, there’s a chance you might be pondering what to give to that one special friend to show your appreciation. (Or many friends!) </p><p>Does your friend regularly play games throughout the night? Do they love streaming to their friends in voice? Are they someone with a unique profile on EVERY server they’re in, or do they keep saying “I&#x27;m STILL COLD” every five minutes in voice and need a new hoodie to keep cozy? </p><p>We’ve got gift ideas for all types of Discord users — let’s dig in!  </p>
+<p>
+ They’re someone you love spending time with. You two are talkin’ in voice, over text chat, and streaming games together. And as the holiday season begins, there’s a chance you might be pondering what to give to that one special friend to show your appreciation. (Or many friends!)
+</p>
+<p>
+ Does your friend regularly play games throughout the night? Do they love streaming to their friends in voice? Are they someone with a unique profile on EVERY server they’re in, or do they keep saying “I'm STILL COLD” every five minutes in voice and need a new hoodie to keep cozy?
+</p>
+<p>
+ We’ve got gift ideas for all types of Discord users — let’s dig in!
+</p>

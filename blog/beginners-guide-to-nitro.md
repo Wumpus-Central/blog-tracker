@@ -1,1 +1,23 @@
-<p><strong><em>Editor’s Note: </em></strong><em>In May 2026, Nitro received one of its biggest expansions to date! We’ve updated this article to reflect all the cool new updates.</em></p><p><em>‍</em>What <em>is </em>Discord Nitro? How does it work? Is Nitro free? And if not, where do you buy it? These are all things that may be swirling around your mind as you take a peek at everything that it has to offer. </p><p>If you’re looking to expand your Nitro knowledge, you’re in the right place. Let’s talk about what Discord Nitro is all about, what sorts of perks it gives, and even ways to try Nitro for free before becoming a member yourself. </p>
+<p>
+ <strong>
+  <em>
+   Editor’s Note:
+  </em>
+ </strong>
+ <em>
+  In May 2026, Nitro received one of its biggest expansions to date! We’ve updated this article to reflect all the cool new updates.
+ </em>
+</p>
+<p>
+ <em>
+  ‍
+ </em>
+ What
+ <em>
+  is
+ </em>
+ Discord Nitro? How does it work? Is Nitro free? And if not, where do you buy it? These are all things that may be swirling around your mind as you take a peek at everything that it has to offer.
+</p>
+<p>
+ If you’re looking to expand your Nitro knowledge, you’re in the right place. Let’s talk about what Discord Nitro is all about, what sorts of perks it gives, and even ways to try Nitro for free before becoming a member yourself.
+</p>

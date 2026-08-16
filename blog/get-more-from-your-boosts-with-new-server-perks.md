@@ -1,1 +1,68 @@
-<p>If you manage a server, listen in! Your Boosting strategy&#x27;s about to get a <em>huge</em> upgrade. Boosting has always been a great way for your community to come together and unlock features that make your server truly special. And today,<strong> we&#x27;re bringing you new ways to customize your server with additional perks that delight members, along with a completely new approach that lets you spend available Boosts on these additional server perks - no level required.</strong></p><figure style="padding-bottom:56.206088992974244%" class="w-richtext-align-fullwidth w-richtext-figure-type-video"><div><iframe src="https://www.youtube.com/embed/zGV1Ui4jgKI" title="Get more from your Boosts with these new perks!" scrolling="no" frameborder="0" allowfullscreen="true"></iframe></div></figure><p>We’re releasing two new unlockable perks for servers: <strong>Enhanced Role Styles</strong> and <strong>Server Tags</strong>. </p><ul role="list"><li><strong>Enhanced Role Styles (3 Boosts)</strong> let you make certain roles stand out with animated, vibrant gradients — perfect for adding extra flair to your server’s hierarchy.</li><li><strong>Server Tags (3 Boosts)</strong> give your members a way to represent your server, everywhere on Discord.</li></ul><p>And how will you unlock ’em? You might already have the key. <strong>Starting now, you’ll be able to use aallll those server Boosts contributed by your community in two ways: to level up your server <em>OR</em> to unlock specific features directly — no need to wait for the next level. </strong>That means you can use extra Boosts to get new perks like<strong> </strong>Enhanced Role Styles and Server Tags. If your server already has Boosts, you might already have everything you need to unlock them. If your server needs a few extra Boosts to unlock them, you can purchase them or rally your community around the new perks and get them excited to contribute more Boosts to your server.</p><p>So how do you unlock these slick new perks, and what makes them game-changers for your server? Let&#x27;s dive in!</p><p><strong><em>Note:</em></strong><em> Server Tags and Enhanced Role Styles each require 3 Server Boosts to enable — 6 Boosts total if you want to unlock both. Once enabled, the perks will remain active as long as your server continues to allocate the required number of Boosts to them.</em></p>
+<p>
+ If you manage a server, listen in! Your Boosting strategy's about to get a
+ <em>
+  huge
+ </em>
+ upgrade. Boosting has always been a great way for your community to come together and unlock features that make your server truly special. And today,
+ <strong>
+  we're bringing you new ways to customize your server with additional perks that delight members, along with a completely new approach that lets you spend available Boosts on these additional server perks - no level required.
+ </strong>
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-video" style="padding-bottom:56.206088992974244%">
+ <div>
+  <iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/zGV1Ui4jgKI" title="Get more from your Boosts with these new perks!">
+  </iframe>
+ </div>
+</figure>
+<p>
+ We’re releasing two new unlockable perks for servers:
+ <strong>
+  Enhanced Role Styles
+ </strong>
+ and
+ <strong>
+  Server Tags
+ </strong>
+ .
+</p>
+<ul role="list">
+ <li>
+  <strong>
+   Enhanced Role Styles (3 Boosts)
+  </strong>
+  let you make certain roles stand out with animated, vibrant gradients — perfect for adding extra flair to your server’s hierarchy.
+ </li>
+ <li>
+  <strong>
+   Server Tags (3 Boosts)
+  </strong>
+  give your members a way to represent your server, everywhere on Discord.
+ </li>
+</ul>
+<p>
+ And how will you unlock ’em? You might already have the key.
+ <strong>
+  Starting now, you’ll be able to use aallll those server Boosts contributed by your community in two ways: to level up your server
+  <em>
+   OR
+  </em>
+  to unlock specific features directly — no need to wait for the next level.
+ </strong>
+ That means you can use extra Boosts to get new perks like
+ <strong>
+ </strong>
+ Enhanced Role Styles and Server Tags. If your server already has Boosts, you might already have everything you need to unlock them. If your server needs a few extra Boosts to unlock them, you can purchase them or rally your community around the new perks and get them excited to contribute more Boosts to your server.
+</p>
+<p>
+ So how do you unlock these slick new perks, and what makes them game-changers for your server? Let's dive in!
+</p>
+<p>
+ <strong>
+  <em>
+   Note:
+  </em>
+ </strong>
+ <em>
+  Server Tags and Enhanced Role Styles each require 3 Server Boosts to enable — 6 Boosts total if you want to unlock both. Once enabled, the perks will remain active as long as your server continues to allocate the required number of Boosts to them.
+ </em>
+</p>
