@@ -104,8 +104,9 @@ class ScraperEngine:
         logger.info("Starting to walk through Discord Blog.")
         self.monitor.register(BLOG_SOURCE)
         try:
+            old_entries = self.old_data.get(BLOG_SOURCE, [])
             scraped_batch = self._fetch_with_retry(
-                BLOG_SOURCE, lambda: blog.walker()
+                BLOG_SOURCE, lambda: blog.fetch(old_entries)
             )
             self.new_data.update(scraped_batch)
             self.monitor.report(
@@ -117,6 +118,13 @@ class ScraperEngine:
                 BLOG_SOURCE, SourceStatus.FAILED, 0, str(e),
                 attempts=MAX_FETCH_ATTEMPTS,
             )
+
+    def _write_blog(self):
+        blog = blog_provider.BlogProvider()
+        try:
+            blog.write(self.new_data.get(BLOG_SOURCE, []))
+        except Exception as e:
+            logger.exception("Failed to write blog posts")
 
     def _get_diff(self):
         self.diff = differ.Differ().compute(
@@ -173,6 +181,7 @@ class ScraperEngine:
 
         self._archive_removed()
         self._write_zendesk()
+        self._write_blog()
 
         logger.info("Writing new state...")
         with open(self.state_file, "w", encoding="utf-8") as old_data_file:

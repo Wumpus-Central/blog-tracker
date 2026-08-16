@@ -3,7 +3,7 @@ import os
 import shutil
 from loguru import logger
 
-from modules.core.constants import BLOG_SOURCE, lookup_entry_by_id
+from modules.core.constants import lookup_entry_by_id
 
 
 class Archiver:
@@ -53,40 +53,12 @@ class Archiver:
                 archive_state[source].append(entry)
                 archived_count += 1
 
-        archive_state.setdefault(BLOG_SOURCE, [])
-        blog_archived, blog_restored = self._archive_blog(old_data, new_data, archive_state)
-        archived_count += blog_archived
-        restored_count += blog_restored
-
         self._save_state(archive_state, archive_state_file)
 
         logger.success(
             f"Archive complete: {archived_count} archived, {restored_count} restored "
-            f"across {len(sources)} Zendesk sources + blog"
+            f"across {len(sources)} Zendesk sources"
         )
-
-    @staticmethod
-    def _archive_blog(old_data, new_data, archive_state):
-        old_links = {p.get("link"): p for p in old_data.get(BLOG_SOURCE, []) if p.get("link")}
-        new_links = {p.get("link") for p in new_data.get(BLOG_SOURCE, []) if p.get("link")}
-        archived_links = {p.get("link") for p in archive_state[BLOG_SOURCE] if p.get("link")}
-
-        restored = 0
-        for link in (archived_links & new_links):
-            archive_state[BLOG_SOURCE] = [
-                p for p in archive_state[BLOG_SOURCE] if p.get("link") != link
-            ]
-            logger.info(f"Restored blog post from archive (re-published): {link}")
-            restored += 1
-
-        archived = 0
-        for link, post in old_links.items():
-            if link not in new_links:
-                archive_state[BLOG_SOURCE].append(post)
-                logger.info(f"Archived blog post: {link}")
-                archived += 1
-
-        return archived, restored
 
     @staticmethod
     def _load_state(archive_state_file):

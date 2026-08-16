@@ -24,11 +24,12 @@ GitHub Actions (source branch, cron 0 * * * *)
 ├── pip install from code/requirements.txt
 │
 ├── python code/main.py --scrape    (OUTPUT_DIR=data, DIFF_FILE=./diff.json, MONITOR_FILE=./monitor.json)
-│   ├── fetch Zendesk   → 3x retry per source (backoff 1s/2s/4s, 429 Retry-After), in-memory articles
-│   ├── fetch Blog      → 3x retry, in-memory posts (RSS)
+│   ├── fetch Zendesk   → 3x retry per source (backoff 1s/2s/4s), in-memory articles
+│   ├── fetch Blog      → 3x retry, RSS + content extraction for new/changed posts (append-only)
 │   ├── health gate     → if ANY source failed → save ./monitor.json, raise SystemExit(1)
-│   ├── archiver        → move removed .md to data/archive/{source}/, update archive/state.json
+│   ├── archiver        → move removed .md to data/archive/{source}/, update archive/state.json (Zendesk only)
 │   ├── write Zendesk   → data/{source}/{id}.md + hash bodies
+│   ├── write Blog      → data/blog/{slug}.md + hash bodies (new/changed posts only, never deletes)
 │   └── differ          → diff.json (full entry objects, NOT notified yet)
 │
 ├── commit & push data/ → data branch    (skipped if scrape aborted)
@@ -53,13 +54,13 @@ modules/
     monitor.py                HealthMonitor — per-source status tracking + circuit breaker
   processors/
     __init__.py
-    archiver.py               Archive removed articles: move .md to archive/, update archive/state.json
+    archiver.py               Archive removed articles: move .md to archive/, update archive/state.json (Zendesk only)
     differ.py                 Diff: git status (Zendesk) + state comparison (blog)
     line_stats.py             Build line stats dict from git diff --numstat (in-process)
   providers/
     __init__.py
     zendesk.py                Zendesk help-center API — fetch() + write() split (raises on total failure)
-    blog.py                   Discord blog RSS → state.json (raises on fetch/parse failure)
+    blog.py                   Discord blog RSS + per-post content extraction → blog/{slug}.md (append-only, raises on fetch/parse failure)
   notifiers/
     __init__.py
     discord.py                Orchestrator: iterates diff, dispatches embeds + send_error() health embed, 2s delay
@@ -72,22 +73,22 @@ modules/
 ## How It Works
 
 1. **Scrape Zendesk** — paginates through the help-center API for each source (`support`, `support-dev`, `support-apps`, `creator-support`), writes each article's HTML body to `data/{source}/{id}.md`, and stores metadata + a SHA-256 hash of the body in `state.json`. Each per-source fetch is wrapped in **3 retry attempts** with exponential backoff (`1s → 2s → 4s`) and honors the HTTP `429 Retry-After` header. A source that fails all attempts raises and is marked `FAILED` in the health monitor.
-2. **Scrape Blog** — fetches the Discord blog RSS feed (same 3-attempt retry wrapper) and stores post metadata in `state.json`. On failure, marked `FAILED` in the health monitor.
+2. **Scrape Blog** — fetches the Discord blog RSS feed (same 3-attempt retry wrapper). For each post not yet in `state.json` (or whose title/summary/published/thumbnail changed), fetches the post page and extracts the article body from the `<article class="w-richtext">` element. The RSS window covers the ~100 latest posts (Webflow CMS cap); posts that fall out of the window are **kept forever** (append-only — the blog diff never reports removals). On failure, marked `FAILED` in the health monitor.
 3. **Health gate (circuit breaker)** — after all sources are fetched, `HealthMonitor.is_healthy()` is checked. If **any** source is `FAILED`, the scrape is aborted **before** archiving, writing, or diffing: `monitor.json` is written to the workspace root and `SystemExit(1)` is raised. This prevents the false-deletion cascade that occurs when a transient API outage makes the archiver treat all articles as removed.
-4. **Diff** — runs `git status --porcelain` in the `data` checkout to detect added (`??`), updated (` M`), and removed (` D`) Zendesk article files. Blog posts are diffed by comparing old vs new `state.json` entries by `link` (since blog posts are not written as `.md` files). Each diff entry carries the **full object** from the new state (added/updated) or old state (removed), persisted to `diff.json`.
+4. **Diff** — runs `git status --porcelain` in the `data` checkout to detect added (`??`), updated (` M`), and removed (` D`) Zendesk article files. Blog posts are diffed by comparing old vs new `state.json` entries by `link` (in-memory; the blog `removed` bucket is always empty because of the append-only policy). Each diff entry carries the **full object** from the new state (added/updated) or old state (removed), persisted to `diff.json`.
 5. **Line stats** — runs `git diff --numstat HEAD~1 HEAD` in the `data` checkout to count added/removed lines per `.md` file. Computed in-process by the notify step (no intermediate file).
 6. **Notify** — if `monitor.json` exists (aborted scrape), dispatches a single health-failure error embed to Discord listing every source's status (`OK`/`FAILED`), article count, attempts, and error message, with a clickable link to the Actions run. Otherwise loads `diff.json` and dispatches one Discord embed per change (green = added, yellow = updated, red = removed). Zendesk embeds show a 2×3 grid of inline fields (Source, Article ID, Changes, Created, Promoted, Commit) plus a full-width Labels field; the Changes field (`+N ~M -K`) comes from the in-process line stats. Blog embeds link the title to the post, include the summary as description and the thumbnail as image. Each embed carries a clickable "View commit" field linking to the data-branch commit that captured the change. A 2-second delay separates sends to respect webhook rate limits.
 
 ## Archiving
 
-When Discord removes an article from Zendesk, the scraper preserves it instead of discarding it. Before each scrape overwrites the source directories, the **archiver** (`modules/archiver.py`) identifies articles present in the previous `state.json` but missing from the fresh API response and:
+When Discord removes an article from Zendesk, the scraper preserves it instead of discarding it. Before each scrape overwrites the source directories, the **archiver** (`modules/processors/archiver.py`) identifies articles present in the previous `state.json` but missing from the fresh API response and:
 
 - **Moves** `data/{source}/{id}.md` → `data/archive/{source}/{id}.md` (preserving the last-known HTML body).
 - **Appends** the article's entry (metadata + body hash) to `data/archive/state.json` under the matching source key.
 
-Blog posts are archived as **JSON-only** entries in `archive/state.json["blog"]` (no `.md` files, since blog posts are not written to disk today). If Discord later re-publishes an archived article or blog post, the archive copy is **removed** and fresh content lives at `data/{source}/{id}.md` again — the archive keeps only the most recent removed snapshot, not historical versions.
+If Discord later re-publishes an archived article, the archive copy is **removed** and fresh content lives at `data/{source}/{id}.md` again — the archive keeps only the most recent removed snapshot, not historical versions.
 
-`archive/state.json` entries are pristine copies of the old `state.json` entry (no extra metadata). The differ needs no changes: `git status` still flags the moved `.md` as ` D` (removed from `data/{source}/`) and ignores `archive/` paths (not a tracked source).
+**Blog posts are exempt from archiving.** The RSS feed only exposes the ~100 latest posts (Webflow CMS cap), so falling out of the RSS window does not mean a post was deleted. Blog posts are append-only: once tracked, they stay in `state.json` and `data/blog/{slug}.md` forever. Existing `archive/state.json["blog"]` entries from before this policy are left untouched.
 
 ## CI/CD
 
@@ -183,7 +184,7 @@ To add the official Wumpus Central server in the future, I will add a `DISCORD_W
 `state.json` contains all scraped data with top-level keys per source:
 
 - **Article sources** (`support`, `support-dev`, `support-apps`, `creator-support`): arrays of article objects from the Zendesk API. The `body` field is replaced with a SHA-256 hash of the HTML content; the full HTML lives in `data/{source}/{id}.md`.
-- **`blog`**: array of post objects from the RSS feed, containing `title`, `link`, `summary`, `published`, and `media_thumbnail_url`.
+- **`blog`**: array of post objects built from the RSS feed + per-post page content, containing `title`, `link`, `summary`, `published`, `media_thumbnail_url`, and a `body` SHA-256 hash. The full HTML lives in `data/blog/{slug}.md`. Append-only: posts are never removed, even when they fall out of the RSS window.
 
 `diff.json` is written by `--scrape` and read by `--notify`. It mirrors the diff structure with top-level keys per source, each containing `added`, `updated`, and `removed` buckets. Every entry maps its key (article `id` for Zendesk, post `link` for blog) to the **full object** captured at diff time — added/updated entries come from the new state, removed entries from the old state.
 
@@ -191,9 +192,9 @@ To add the official Wumpus Central server in the future, I will add a `DISCORD_W
 
 - [x] Build good looking embeds for webhooks
 - [x] Rich Zendesk embeds (url, labels, created, promoted, thumbnail)
-- [x] Archive removed articles and blog posts to `data/archive/`
-- [ ] Add blog posts scraping as `.md` files (currently only stored in `state.json`; archived as JSON-only)
-- [ ] Add newsroom posts scraping as `.md` files (currently only stored in `state.json`)
+- [x] Archive removed articles to `data/archive/` (Zendesk only; blog is append-only)
+- [x] Blog posts scraped as `.md` files with per-post content extraction
+- [ ] Add newsroom posts scraping as `.md` files
 - [ ] Add `WUMPUSCENTRAL` Discord webhook for the official server
 - [ ] Centralized API notifier for reporting changes to Wumpus Central services
 - [ ] Implement diff-based commit messages (new/updated/removed counts)
