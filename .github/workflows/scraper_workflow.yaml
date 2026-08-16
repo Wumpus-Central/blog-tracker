@@ -74,6 +74,7 @@ jobs:
           MONITOR_FILE: ./monitor.json
           ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           DISCORD_WEBHOOK_UNI: ${{ secrets.DISCORD_WEBHOOK_UNI }}
+          DISCORD_WEBHOOK_WUMPUSCENTRAL: ${{ secrets.DISCORD_WEBHOOK_WUMPUSCENTRAL }}
         run: |
           COMMIT_ARG=""
           if [ -n "${{ env.COMMIT_SHA }}" ]; then

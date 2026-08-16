@@ -63,7 +63,7 @@ modules/
     blog.py                   Discord blog RSS + per-post content extraction → blog/{slug}.md (append-only, raises on fetch/parse failure)
   notifiers/
     __init__.py
-    discord.py                Orchestrator: iterates diff, dispatches embeds + send_error() health embed, 2s delay
+    discord.py                Orchestrator: iterates diff, dispatches embeds + send_error() health embed, role ping on first embed (WC only), 2s delay
     embeds/
       __init__.py
       zendesk.py              create_zendesk_embed(action, entry, commit_url, source, line_stats)
@@ -172,14 +172,18 @@ DIFF_FILE=./diff.json ./venv/bin/python main.py --notify --commit-sha <SHA>
 | `BLOG_EXTRACTION_FAIL_LIMIT` | `max(5, 10% of refetch attempts)` | scrape | Blog guard: abort when content-extraction failures exceed this value in one run (possible HTML structure change on Discord's side). |
 | `ACTIONS_RUN_URL` | — | notify | Optional URL to the GitHub Actions run; embedded as a clickable "View run logs" field in health-failure error embeds. Set automatically by the workflow. |
 | `DISCORD_WEBHOOK_UNI` | — | notify | Discord webhook URL for the UNI server |
+| `DISCORD_WEBHOOK_WUMPUSCENTRAL` | — | notify | Discord webhook URL for the official Wumpus Central server |
 
 ### GitHub Secrets
 
 | Secret | Description |
 |--------|-------------|
 | `DISCORD_WEBHOOK_UNI` | Discord webhook URL for the UNI server |
+| `DISCORD_WEBHOOK_WUMPUSCENTRAL` | Discord webhook URL for the official Wumpus Central server |
 
-To add the official Wumpus Central server in the future, I will add a `DISCORD_WEBHOOK_WUMPUSCENTRAL` secret and append `"WUMPUSCENTRAL"` to `WEBHOOK_LABELS` in `modules/notifiers/discord.py`.
+### Role pings (Wumpus Central only)
+
+The **first embed of each notify run** pings the Wumpus Central notification role; every subsequent embed in the same run is sent without a ping to avoid mention spam. The ping is a bare `<@&ROLE_ID>` mention placed in the webhook payload's `content` field **before** the `embeds` array (mentions inside embed fields do not trigger pings). The role ID is hardcoded in `PING_ROLES` in `modules/notifiers/discord.py`. UNI never receives pings, and error embeds (health-failure aborts) are dispatched to UNI only.
 
 ## Data Format
 
@@ -197,6 +201,6 @@ To add the official Wumpus Central server in the future, I will add a `DISCORD_W
 - [x] Archive removed articles to `data/archive/` (Zendesk only; blog is append-only)
 - [x] Blog posts scraped as `.md` files with per-post content extraction
 - [ ] Add newsroom posts scraping as `.md` files
-- [ ] Add `WUMPUSCENTRAL` Discord webhook for the official server
+- [x] Add `WUMPUSCENTRAL` Discord webhook for the official server
 - [ ] Centralized API notifier for reporting changes to Wumpus Central services
 - [ ] Implement diff-based commit messages (new/updated/removed counts)

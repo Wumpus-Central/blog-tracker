@@ -9,7 +9,11 @@ from modules.core.constants import ZENDESK_SOURCES, BLOG_SOURCE
 
 
 class DiscordNotifier:
-    WEBHOOK_LABELS = ["UNI"]
+    WEBHOOK_LABELS = ["UNI", "WUMPUSCENTRAL"]
+    ERROR_LABELS = ["UNI"]
+    PING_ROLES = {
+        "WUMPUSCENTRAL": "1536826798959108187",
+    }
     SEND_DELAY_SECONDS = 2
     BUCKET_ACTIONS = [
         ("added", "ADDED"),
@@ -30,6 +34,7 @@ class DiscordNotifier:
         logger.info(f"Dispatching changes to {len(self.WEBHOOK_LABELS)} webhook target(s)...")
 
         sent = 0
+        ping_remaining = True
 
         for source, buckets in diff.items():
             creator = self.SOURCE_CREATORS.get(source)
@@ -43,7 +48,8 @@ class DiscordNotifier:
                     message = creator(action, entry, commit_url, source, line_stats)
                     if message is None:
                         continue
-                    self._dispatch(message, source, action, entry_key)
+                    self._dispatch(message, source, action, entry_key, ping=ping_remaining)
+                    ping_remaining = False
                     sent += 1
                     time.sleep(self.SEND_DELAY_SECONDS)
 
@@ -88,7 +94,7 @@ class DiscordNotifier:
                 "inline": False,
             })
         message = {"embeds": [embed]}
-        for label in self.WEBHOOK_LABELS:
+        for label in self.ERROR_LABELS:
             webhook_url = os.environ.get(f"DISCORD_WEBHOOK_{label}")
             if not webhook_url:
                 logger.warning(f"DISCORD_WEBHOOK_{label} not set — skipping error embed.")
@@ -109,17 +115,22 @@ class DiscordNotifier:
                     f"Failed to dispatch error embed to Discord ({label}): {e}"
                 )
 
-    def _dispatch(self, message, source, action, entry_key):
+    def _dispatch(self, message, source, action, entry_key, ping=False):
         for label in self.WEBHOOK_LABELS:
             webhook_url = os.environ.get(f"DISCORD_WEBHOOK_{label}")
             if not webhook_url:
                 logger.warning(f"DISCORD_WEBHOOK_{label} not set — skipping.")
                 continue
 
+            payload = message
+            role_id = self.PING_ROLES.get(label)
+            if ping and role_id:
+                payload = {"content": f"<@&{role_id}>", **message}
+
             try:
                 response = requests.post(
                     webhook_url,
-                    json=message,
+                    json=payload,
                     timeout=10,
                 )
                 if response.status_code in (200, 204):
