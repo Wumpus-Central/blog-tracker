@@ -1,0 +1,1 @@
+<p>Discord’s roots in games like World of Warcraft® go pretty far back. In fact, when Discord first launched and only had a handful of users, many of them were using it for their MMO guilds! </p><p>We figured after all these years, it’s about time we partnered with our friends at Blizzard to <em>officially</em> bring your Discord and World of Warcraft guild chats together. </p>
