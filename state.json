@@ -1,6 +1,31 @@
 {
     "support": [
         {
+            "id": 42704051358359,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42704051358359.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/42704051358359-Why-video-features-are-currently-unavailable-in-Brazil",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 24453122216087,
+            "created_at": "2026-08-13T20:30:50Z",
+            "name": "Why video features are currently unavailable in Brazil",
+            "title": "Why video features are currently unavailable in Brazil",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-08-17T16:59:45Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720952,
+            "content_tag_ids": [],
+            "label_names": [],
+            "body": "fedd2912894a7e767f8a510d3bab1e1d9c76d261cce8b2d916845480d2d5d7ea",
+            "user_segment_ids": []
+        },
+        {
             "id": 42536197426071,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42536197426071.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/42536197426071-Discord-s-Beta-Programs-FAQ",
@@ -14048,7 +14073,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-08-11T16:59:01Z",
+            "edited_at": "2026-08-17T16:19:06Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -14059,7 +14084,7 @@
                 "DSA",
                 "MAU"
             ],
-            "body": "69b27fd2f309a4682ee2da193d4eec0e6c72427177a90fae43cd9a3dd6cc4966",
+            "body": "b617b5db44320c4b4556bf4b8e9c893554a2e04fd4a954241fb754358ebcfa54",
             "user_segment_ids": []
         },
         {
@@ -19493,6 +19518,15 @@
         }
     ],
     "blog": [
+        {
+            "title": "A letter to the Discord community in Brazil",
+            "link": "https://discord.com/blog/a-letter-to-the-discord-community-in-brazil",
+            "summary": "On the order from Brazil's ANPD to suspend screensharing and video features in the country, how we're complying, and our commitment to our community in Brazil.",
+            "published": "Mon, 17 Aug 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/68090f03d6cb868fab0af03c_2024_10_DiscordBlog_CompanyAnnoucements-1.png",
+            "body": "4ec60fa2890ba8ba006ac8281400a1ec882420d0f8efcc3ca44d9646f5b63e9d",
+            "body_format": 2
+        },
         {
             "title": "Link Discord and WoW to Keep the Guild Chatting Wherever You Are",
             "link": "https://discord.com/blog/link-world-of-warcraft-with-discord",
