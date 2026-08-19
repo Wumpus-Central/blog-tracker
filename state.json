@@ -1,6 +1,39 @@
 {
     "support": [
         {
+            "id": 42846930613783,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42846930613783.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/42846930613783--Known-Issue-Support-for-macOS-12",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 115000352292,
+            "created_at": "2026-08-19T19:35:31Z",
+            "name": "[Known Issue] Support for macOS 12",
+            "title": "[Known Issue] Support for macOS 12",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-08-19T19:35:31Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [
+                "OS",
+                "answer-bot",
+                "known issue",
+                "system requirements",
+                "macOS",
+                "known",
+                "12"
+            ],
+            "body": "dcbec1e86dfae0413e1d16b562ebf2601d62cff1f69b65dc01ee854e66c5d753",
+            "user_segment_ids": []
+        },
+        {
             "id": 42704051358359,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42704051358359.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/42704051358359-Why-video-features-are-currently-unavailable-in-Brazil",
@@ -446,7 +479,7 @@
         {
             "id": 41117240080151,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/41117240080151.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/41117240080151--Known-Issue-Support-for-macOS-12",
+            "html_url": "https://support.discord.com/hc/en-us/articles/41117240080151--Known-Issue-Support-for-macOS-11",
             "author_id": 1504238994441,
             "comments_disabled": true,
             "draft": false,
@@ -454,13 +487,13 @@
             "position": 0,
             "section_id": 115000352292,
             "created_at": "2026-06-10T15:16:10Z",
-            "name": "[Known Issue] Support for macOS 12",
-            "title": "[Known Issue] Support for macOS 12",
+            "name": "[Known Issue] Support for macOS 11",
+            "title": "[Known Issue] Support for macOS 11",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-08-17T18:59:38Z",
+            "edited_at": "2026-08-19T19:36:00Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -473,7 +506,7 @@
                 "12",
                 "11"
             ],
-            "body": "3ac8b200a5f90d0c5f9601bb6f2afc8b2ec1199daea011fb926c644dbb9c8bcf",
+            "body": "48679f9897c905313b87cba8597a88afe180aec994b9706e522d41df7ccb9758",
             "user_segment_ids": []
         },
         {
