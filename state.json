@@ -10203,7 +10203,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-08-24T17:48:56Z",
+            "edited_at": "2026-08-24T23:45:12Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -10213,7 +10213,7 @@
                 "billing",
                 "purchase"
             ],
-            "body": "fa235b569496838284b23c7ebf3cc1ab0640819985a7733cff108c44ef3e0402",
+            "body": "3ff109528f58210edffbaebc36aec91bd7ef023945c992be4915c6e489a84cb5",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/24509121394711"
         },
