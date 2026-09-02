@@ -101,6 +101,36 @@
             "body": "d47bc7965c2b9dbf8ec0be6390410a2bc141100e598a6a82498ff91587225d0c",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/36501934123671"
+        },
+        {
+            "id": 21084266106775,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/21084266106775.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/21084266106775-New-Server-Notification-Settings-Experiment",
+            "author_id": 2921470028,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 360007875151,
+            "created_at": "2024-02-02T22:10:46Z",
+            "name": "New Server Notification Settings Experiment",
+            "title": "New Server Notification Settings Experiment",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2024-05-03T16:12:17Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [
+                "01H3WBPCPDQ2ABF4Q3SS01M69V",
+                "01HNNXW79VZAZHVJ7Q7P7M890W",
+                "01HNNXWDME44ZG4Y2NNDKQPS0T"
+            ],
+            "label_names": [],
+            "body": "0a40dad2b092ae54831a846a888026b7758daf867d3fae10541544d5ef075f41",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/21084266097815"
         }
     ],
     "support-dev": [
