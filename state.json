@@ -788,7 +788,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-03T18:02:48Z",
+            "edited_at": "2026-09-04T18:03:56Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -799,7 +799,7 @@
                 "game shop",
                 "rust shop"
             ],
-            "body": "c0cc1ac83b1e1f840a85d7511d395a959d138bc1a373fade676e62821dc7fc4c",
+            "body": "1ccca9de14a16c40e9147ab14679d38d04cce6368a376f85ac26475e1bfef31f",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/42477023070359"
         },
@@ -11584,7 +11584,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2025-05-06T16:06:52Z",
+            "edited_at": "2026-09-04T18:31:32Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -11599,7 +11599,7 @@
                 "2 weeks",
                 "sender"
             ],
-            "body": "52084a0f23dac7f9189854b531ed88144710fea9fffb0b6bdc63017d46491eb2",
+            "body": "9e14384c0418753fd9e8a5ea4fc6ed9c886cd81764ad3fe0ede3d8c72adc504d",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/24143904581655"
         },
