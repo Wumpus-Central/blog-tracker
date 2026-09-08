@@ -19433,6 +19433,15 @@
     ],
     "blog": [
         {
+            "title": "Discord Patch Notes: September 8, 2026",
+            "link": "https://discord.com/blog/discord-patch-notes-september-8-2026",
+            "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
+            "published": "Tue, 08 Sep 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
+            "body": "2b754f9f6891f8e57e3e4fd93a63bda31864b99abc076a72021bb629175364f0",
+            "body_format": 2
+        },
+        {
             "title": "A letter to the Discord community in Brazil",
             "link": "https://discord.com/blog/a-letter-to-the-discord-community-in-brazil",
             "summary": "On the order from Brazil's ANPD to suspend screensharing and video features in the country, how we're complying, and our commitment to our community in Brazil.",
