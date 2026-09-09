@@ -17,7 +17,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-09T16:42:15Z",
+            "edited_at": "2026-09-09T16:46:00Z",
             "user_segment_id": null,
             "permission_group_id": 1720952,
             "content_tag_ids": [],
@@ -33,7 +33,7 @@
                 "toggle",
                 "Ad"
             ],
-            "body": "22d5fe3c91992f32815e0888705a8caaa06fa627b03e05c4044008a39a4b0a53",
+            "body": "a2a9035d22f0f109aabce918b9ab1fff73cfd31d69b71075fb62f133849a21bc",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/43335916906903"
         },
@@ -54,7 +54,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-02T15:18:39Z",
+            "edited_at": "2026-09-09T17:03:23Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -71,7 +71,7 @@
                 "typing",
                 "indicator"
             ],
-            "body": "cfe16024ab6c84ed9c5aa94ccb73ead76ea82ff18d29f7c1b53827b059ab1d46",
+            "body": "0f7b49e4867a77dd58af14286e0b409e0394b533762fbc3002d2870c9415ad17",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/43188238655511"
         },
