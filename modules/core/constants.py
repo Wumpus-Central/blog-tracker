@@ -1,4 +1,5 @@
-ZENDESK_SOURCES = ["support", "support-dev", "support-apps", "creator-support"]
+ZENDESK_SOURCES = ["support", "support-dev", "support-apps", "creator-support", "support-ads"]
+PENDING_SOURCES = {"support-ads"}
 BLOG_SOURCE = "blog"
 
 

@@ -58,7 +58,7 @@ class DiscordNotifier:
     def send_error(self, monitor, run_url=None):
         status = monitor.to_dict() if hasattr(monitor, "to_dict") else monitor
         failed = [
-            name for name, s in status.items() if s.get("status") != "ok"
+            name for name, s in status.items() if s.get("status") not in ("ok", "skipped")
         ]
         total = len(status)
         embed = {
@@ -71,8 +71,13 @@ class DiscordNotifier:
             "fields": [],
         }
         for name, info in status.items():
-            is_ok = info.get("status") == "ok"
-            marker = "OK" if is_ok else "FAIL"
+            state = info.get("status")
+            if state == "ok":
+                marker = "OK"
+            elif state == "skipped":
+                marker = "SKIP"
+            else:
+                marker = "FAIL"
             value = (
                 f"**{marker}**  `{info.get('status', '?')}`\n"
                 f"articles: `{info.get('articles', 0)}`  attempts: `{info.get('attempts', 0)}`"

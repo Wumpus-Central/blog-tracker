@@ -12,7 +12,7 @@ This repository uses a **two-branch architecture** to separate code from generat
 | Branch | Role | Contents |
 |--------|------|----------|
 | `source` (default) | Code | `main.py`, `modules/`, `.github/`, `.gitignore` |
-| `data` | Output | `state.json`, `support/`, `support-dev/`, `support-apps/`, `creator-support/`, `archive/` |
+| `data` | Output | `state.json`, `support/`, `support-dev/`, `support-apps/`, `creator-support/`, `support-ads/`, `archive/` |
 
 The scraper runs on `source` (since GitHub Actions scheduled workflows only fire on the default branch), but writes its output into a checkout of `data`, then commits and pushes changes there. This keeps the data branch's history clean (only data commits) and the source branch's history focused on code.
 
@@ -72,12 +72,21 @@ modules/
 
 ## How It Works
 
-1. **Scrape Zendesk** — paginates through the help-center API for each source (`support`, `support-dev`, `support-apps`, `creator-support`), writes each article's HTML body to `data/{source}/{id}.md`, and stores metadata + a SHA-256 hash of the body in `state.json`. Each per-source fetch is wrapped in **3 retry attempts** with exponential backoff (`1s → 2s → 4s`) and honors the HTTP `429 Retry-After` header. A source that fails all attempts raises and is marked `FAILED` in the health monitor.
+1. **Scrape Zendesk** — paginates through the help-center API for each source (`support`, `support-dev`, `support-apps`, `creator-support`, `support-ads`), writes each article's HTML body to `data/{source}/{id}.md`, and stores metadata + a SHA-256 hash of the body in `state.json`. Each per-source fetch is wrapped in **3 retry attempts** with exponential backoff (`1s → 2s → 4s`) and honors the HTTP `429 Retry-After` header. A source that fails all attempts raises and is marked `FAILED` in the health monitor. If a page fails mid-pagination (page 1 succeeds but a later page errors), the whole fetch raises instead of returning a partial article list, so the archiver never mistakes missing articles for removals.
 2. **Scrape Blog** — fetches the Discord blog RSS feed (same 3-attempt retry wrapper). For each post not yet in `state.json` (or whose title/summary/published/thumbnail changed), fetches the post page, extracts the article body from the `<article class="w-richtext">` element, and pretty-prints it with BeautifulSoup (`body_format: 2` marker) so `.md` files are multi-line and diffs stay readable. The RSS window covers the ~100 latest posts (Webflow CMS cap); posts that fall out of the window are **kept forever** (append-only — the blog diff never reports removals). Failed extractions are not cached (`body=None`) and retried on the next run. Two anomaly guards run before any write/diff: a **mass-change guard** (aborts when added/updated posts exceed `max(10, 20% of tracked)`) and an **extraction-failure guard** (aborts when failures exceed `max(5, 10% of refetch attempts)`) — both raise through the health monitor so the whole run is cancelled with an error embed instead of spamming 100 webhooks. On fetch failure, marked `FAILED` in the health monitor.
 3. **Health gate (circuit breaker)** — after all sources are fetched, `HealthMonitor.is_healthy()` is checked. If **any** source is `FAILED`, the scrape is aborted **before** archiving, writing, or diffing: `monitor.json` is written to the workspace root and `SystemExit(1)` is raised. This prevents the false-deletion cascade that occurs when a transient API outage makes the archiver treat all articles as removed.
 4. **Diff** — runs `git status --porcelain` in the `data` checkout to detect added (`??`), updated (` M`), and removed (` D`) Zendesk article files. Blog posts are diffed by comparing old vs new `state.json` entries by `link` (in-memory; the blog `removed` bucket is always empty because of the append-only policy). Each diff entry carries the **full object** from the new state (added/updated) or old state (removed), persisted to `diff.json`.
 5. **Line stats** — runs `git diff --numstat HEAD~1 HEAD` in the `data` checkout to count added/removed lines per `.md` file. Computed in-process by the notify step (no intermediate file).
-6. **Notify** — if `monitor.json` exists (aborted scrape), dispatches a single health-failure error embed to Discord listing every source's status (`OK`/`FAILED`), article count, attempts, and error message, with a clickable link to the Actions run. Otherwise loads `diff.json` and dispatches one Discord embed per change (green = added, yellow = updated, red = removed). Zendesk embeds show a 2×3 grid of inline fields (Source, Article ID, Changes, Created, Promoted, Commit) plus a full-width Labels field; the Changes field (`+N ~M -K`) comes from the in-process line stats. Blog embeds link the title to the post, include the summary as description and the thumbnail as image. Each embed carries a clickable "View commit" field linking to the data-branch commit that captured the change. A 2-second delay separates sends to respect webhook rate limits.
+6. **Notify** — if `monitor.json` exists (aborted scrape), dispatches a single health-failure error embed to Discord listing every source's status (`OK`/`SKIP`/`FAILED`), article count, attempts, and error message, with a clickable link to the Actions run. Otherwise loads `diff.json` and dispatches one Discord embed per change (green = added, yellow = updated, red = removed). Zendesk embeds show a 2×3 grid of inline fields (Source, Article ID, Changes, Created, Promoted, Commit) plus a full-width Labels field; the Changes field (`+N ~M -K`) comes from the in-process line stats. Blog embeds link the title to the post, include the summary as description and the thumbnail as image. Each embed carries a clickable "View commit" field linking to the data-branch commit that captured the change. A 2-second delay separates sends to respect webhook rate limits.
+
+### Pending sources
+
+A source listed in `PENDING_SOURCES` (`modules/core/constants.py`) is expected to be private/unpublished at first (e.g. `support-ads`, which returns `HTTP 401` until Discord opens it). Such a source is still part of `ZENDESK_SOURCES` and gets all normal handling, but fetch failures are classified by history:
+
+- **Never scraped successfully** (no entry in `state.json`): the failure is reported as `SKIPPED` — healthy, no alert, no write. Partial results are discarded. The next run retries automatically.
+- **Previously scraped** (has state): a failure is a real regression → `FAILED`, which trips the health gate, aborts the run **before** any write/archive (freezing the last-known `.md` files and `state.json`), and dispatches the error embed to the error webhook.
+
+The moment a pending source returns a complete `200` response it is written like any other source, and its first articles surface as `added` embeds. No manual promotion is needed.
 
 ## Archiving
 
@@ -189,7 +198,7 @@ The **first embed of each notify run** pings the Wumpus Central notification rol
 
 `state.json` contains all scraped data with top-level keys per source:
 
-- **Article sources** (`support`, `support-dev`, `support-apps`, `creator-support`): arrays of article objects from the Zendesk API. The `body` field is replaced with a SHA-256 hash of the HTML content; the full HTML lives in `data/{source}/{id}.md`.
+- **Article sources** (`support`, `support-dev`, `support-apps`, `creator-support`, `support-ads`): arrays of article objects from the Zendesk API. The `body` field is replaced with a SHA-256 hash of the HTML content; the full HTML lives in `data/{source}/{id}.md`.
 - **`blog`**: array of post objects built from the RSS feed + per-post page content, containing `title`, `link`, `summary`, `published`, `media_thumbnail_url`, a `body` SHA-256 hash, and a `body_format` marker (`2` = BeautifulSoup-pretty-printed HTML). The full HTML lives in `data/blog/{slug}.md`. Append-only: posts are never removed, even when they fall out of the RSS window.
 
 `diff.json` is written by `--scrape` and read by `--notify`. It mirrors the diff structure with top-level keys per source, each containing `added`, `updated`, and `removed` buckets. Every entry maps its key (article `id` for Zendesk, post `link` for blog) to the **full object** captured at diff time — added/updated entries come from the new state, removed entries from the old state.

@@ -86,7 +86,7 @@ class ZendeskProvider:
 
             page += 1
 
-        if first_page_failed or (fetch_error is not None and len(articles) == 0):
+        if first_page_failed or fetch_error is not None:
             raise RuntimeError(f"Zendesk source '{source}' fetch failed: {fetch_error}")
 
         logger.success(f"Fetched {len(articles)} articles from '{source}'.")

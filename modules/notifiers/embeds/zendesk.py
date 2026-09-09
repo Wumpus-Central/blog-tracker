@@ -12,6 +12,7 @@ SOURCE_LABELS = {
     "support-dev": "Discord Developer Support",
     "support-apps": "Discord Apps Support",
     "creator-support": "Creator Support",
+    "support-ads": "Discord Ads Support",
 }
 
 

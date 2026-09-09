@@ -7,6 +7,7 @@ class SourceStatus(Enum):
     PENDING = "pending"
     OK = "ok"
     FAILED = "failed"
+    SKIPPED = "skipped"
 
 
 class HealthMonitor:
@@ -34,10 +35,13 @@ class HealthMonitor:
             logger.error(f"Source '{name}' marked FAILED: {error}")
         elif status == SourceStatus.OK:
             logger.success(f"Source '{name}' OK — {article_count} articles ({attempts} attempt(s)).")
+        elif status == SourceStatus.SKIPPED:
+            logger.info(f"Source '{name}' SKIPPED — not public yet: {error}")
 
     def is_healthy(self):
         return all(
-            s["status"] == SourceStatus.OK for s in self._sources.values()
+            s["status"] in (SourceStatus.OK, SourceStatus.SKIPPED)
+            for s in self._sources.values()
         )
 
     def failed_sources(self):

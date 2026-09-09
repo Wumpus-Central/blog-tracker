@@ -10,7 +10,7 @@ import modules.processors.archiver as archiver
 import modules.notifiers.discord as discord_notifier
 import modules.processors.line_stats as line_stats_module
 import modules.core.log_setup
-from modules.core.constants import ZENDESK_SOURCES, BLOG_SOURCE
+from modules.core.constants import ZENDESK_SOURCES, BLOG_SOURCE, PENDING_SOURCES
 from modules.core.monitor import HealthMonitor, SourceStatus
 
 REPO_URL = "https://github.com/Wumpus-Central/blog-tracker"
@@ -29,6 +29,7 @@ class ScraperEngine:
         self.monitor = HealthMonitor()
         self.zendesk_sources = ZENDESK_SOURCES
         self._attempt_counts = {}
+        self._skip_write = set()
         logger.debug(f"ScraperEngine initialized. State file: {self.state_file}")
 
     def _fetch_with_retry(self, source_name, fetch_fn):
@@ -72,10 +73,21 @@ class ScraperEngine:
                 )
                 logger.success(f"Successfully scraped {batch_size} articles from '{source}'")
             except Exception as e:
-                self.monitor.report(
-                    source, SourceStatus.FAILED, 0, str(e),
-                    attempts=MAX_FETCH_ATTEMPTS,
-                )
+                if source in PENDING_SOURCES and not self.old_data.get(source):
+                    self.new_data[source] = []
+                    self._skip_write.add(source)
+                    self.monitor.report(
+                        source, SourceStatus.SKIPPED, 0, str(e),
+                        attempts=self._attempt_counts.get(source, MAX_FETCH_ATTEMPTS),
+                    )
+                    logger.info(
+                        f"Source '{source}' is pending — not public yet, skipping this run."
+                    )
+                else:
+                    self.monitor.report(
+                        source, SourceStatus.FAILED, 0, str(e),
+                        attempts=MAX_FETCH_ATTEMPTS,
+                    )
 
         if total_scraped > 0:
             logger.success(f"Finished! Total articles collected from all sources: {total_scraped}")
@@ -84,6 +96,9 @@ class ScraperEngine:
 
     def _write_zendesk(self):
         for source in self.zendesk_sources:
+            if source in self._skip_write:
+                logger.info(f"Skipping write for pending source '{source}'.")
+                continue
             articles = self.new_data.get(source, [])
             try:
                 self._zendesk.write(source, articles)
