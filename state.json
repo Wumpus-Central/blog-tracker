@@ -254,7 +254,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-09T23:32:38Z",
+            "edited_at": "2026-09-09T23:34:46Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -266,7 +266,7 @@
                 "eligibility",
                 "promotions"
             ],
-            "body": "7c01ccc61df3cdf6735574707157cd315fc47d4050705bdc384c5606acb093b4",
+            "body": "c434086ce757ca2730893ab4ab8e7762a028b626342c6b7552321135f1620f12",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/42440935345815"
         },
