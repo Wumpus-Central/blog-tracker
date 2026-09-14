@@ -8320,7 +8320,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-07-01T18:06:19Z",
+            "edited_at": "2026-09-14T18:00:25Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -8335,9 +8335,9 @@
                 "boosting streak",
                 "boosts"
             ],
-            "body": "5bf3a9d06f186eefaf03c78374af71b88e409b93f17e8e6cc8078b33fabd3614",
+            "body": "7ada28ae1f9aba2e593ce2bd26b441055f7501927957dde4142bf121fd985632",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/19576208155671"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43482964473111"
         },
         {
             "id": 360023968311,
@@ -10132,7 +10132,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2023-11-29T18:40:22Z",
+            "edited_at": "2026-09-14T18:00:18Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -10146,9 +10146,9 @@
                 "activate credit",
                 "credits"
             ],
-            "body": "44f89859d80e7d86a27cb1400af604dcecce788c6c9b3b47546ec0fea9e9b5c3",
+            "body": "65929e76fe40667decc3cd9bd1d5228d9cf0b210c090c69b8f5359ae5f6ef476",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/17353099028631"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43482952487191"
         },
         {
             "id": 360020877112,
@@ -11544,7 +11544,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-03T21:48:17Z",
+            "edited_at": "2026-09-14T18:18:53Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -11552,7 +11552,7 @@
                 "ideas",
                 "answer-bot"
             ],
-            "body": "678a265bea40a30c8a06a011bd6c69a6acb31880c37ce3f3c5c5ab2047b85a7e",
+            "body": "986595d50f4df280a509c9e2a5255dffaab5acc1bd0d34ea08be265324781b42",
             "user_segment_ids": []
         },
         {
