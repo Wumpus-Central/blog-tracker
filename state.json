@@ -3665,7 +3665,7 @@
         {
             "id": 30326565624343,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/30326565624343.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Confirm-Your-Age-Group-on-Discord",
+            "html_url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord",
             "author_id": 1504238994441,
             "comments_disabled": true,
             "draft": false,
@@ -3673,13 +3673,13 @@
             "position": 0,
             "section_id": 360009072571,
             "created_at": "2025-02-28T23:11:37Z",
-            "name": "How to Confirm Your Age Group on Discord",
-            "title": "How to Confirm Your Age Group on Discord",
+            "name": "How to Complete Age Assurance on Discord",
+            "title": "How to Complete Age Assurance on Discord",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:28:29Z",
+            "edited_at": "2026-09-15T20:32:30Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -3707,9 +3707,9 @@
                 "australia",
                 "i've been locked out"
             ],
-            "body": "ba0fcba10c0fb15e77b5e066ce628101216ee7c0c0419ee99c6861534da51643",
+            "body": "7e38a07d728a9d4d8a5edbdb342a2db8dd1eaceaa4beacf027a2b754dbbac09a",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517442456343"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/39423279630743"
         },
         {
             "id": 30152512891543,
@@ -12718,7 +12718,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:28:41Z",
+            "edited_at": "2026-09-15T20:31:26Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -12731,8 +12731,9 @@
                 "guidelines",
                 "birthday"
             ],
-            "body": "cc4ca42bdb1a8b9a1ac21477872d70c2459a6bb821c4ae5c6ba9b7eeb8d8828f",
-            "user_segment_ids": []
+            "body": "f62492996504d005fdd69587376808338254d98806b1b8b916f0d317e59ec701",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517549967255"
         },
         {
             "id": 360039598252,
@@ -13005,7 +13006,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:28:34Z",
+            "edited_at": "2026-09-15T20:31:53Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -13017,9 +13018,9 @@
                 "guidelines",
                 "birthday"
             ],
-            "body": "51912683035761a35674494f01f54f5c03deb1ef7387b2eb63e7b65521aab522",
+            "body": "a469775e382b3a2f8921fe37282e7af11a2112a7cf06bc58ad55ff3ea9bed5c4",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517442927639"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/36768944589335"
         },
         {
             "id": 360041139231,
