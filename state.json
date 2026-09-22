@@ -76,6 +76,38 @@
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/43188238655511"
         },
         {
+            "id": 42855178312087,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42855178312087.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/42855178312087-How-Discord-Confirms-Your-Age-Group-in-Texas",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 360009072571,
+            "created_at": "2026-08-20T01:13:47Z",
+            "name": "How Discord Confirms Your Age Group in Texas",
+            "title": "How Discord Confirms Your Age Group in Texas",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-09-22T18:20:13Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [
+                "answer-bot",
+                "age",
+                "age verification",
+                "age group",
+                "age assurance",
+                "texas"
+            ],
+            "body": "7cbad18c6f68c5f731863600031dd3ca988b518b74dc33e18c6cdfff4876a9ba",
+            "user_segment_ids": []
+        },
+        {
             "id": 42846930613783,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42846930613783.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/42846930613783--Known-Issue-Support-for-macOS-12",
@@ -131,6 +163,39 @@
             "content_tag_ids": [],
             "label_names": [],
             "body": "fedd2912894a7e767f8a510d3bab1e1d9c76d261cce8b2d916845480d2d5d7ea",
+            "user_segment_ids": []
+        },
+        {
+            "id": 42653320919447,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42653320919447.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/42653320919447-Getting-the-Right-Experience-for-Your-Age-Group-Find-Your-Region",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 360009072571,
+            "created_at": "2026-08-12T00:49:03Z",
+            "name": "Getting the Right Experience for Your Age Group: Find Your Region",
+            "title": "Getting the Right Experience for Your Age Group: Find Your Region",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-09-14T23:12:17Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [
+                "answer-bot",
+                "region",
+                "age",
+                "teen",
+                "age verification",
+                "age group",
+                "age assurance"
+            ],
+            "body": "4f2167833f629f87e87a92af5886c29434b229827f8f46b23349efd117c0e73c",
             "user_segment_ids": []
         },
         {
@@ -303,6 +368,50 @@
             "body": "9169eeb50f6013bd5bbc0b396f6d0e819353486a60ffd0ab3a6b896d3c73f936",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/42207576679191"
+        },
+        {
+            "id": 42178056096663,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/42178056096663.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/42178056096663-What-Protections-Do-You-Get-in-the-Teen-Age-Group",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 24453122216087,
+            "created_at": "2026-07-23T20:12:04Z",
+            "name": "What Protections Do You Get in the Teen Age Group?",
+            "title": "What Protections Do You Get in the Teen Age Group?",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-09-22T18:19:18Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [
+                "answer-bot",
+                "age",
+                "verification",
+                "nsfw",
+                "teens",
+                "teen",
+                "the",
+                "you",
+                "safe",
+                "group",
+                "get",
+                "in",
+                "assurance",
+                "model",
+                "adults",
+                "protections",
+                "estimation"
+            ],
+            "body": "c05567912d3ff7d99bf329d0320ebe2278ece838ce1b198407b2bfb24b2ed1d7",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43482885502231"
         },
         {
             "id": 42015072654231,
@@ -1053,7 +1162,7 @@
         {
             "id": 38860612202775,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/38860612202775.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/38860612202775-Age-Assurance-for-Brazilian-Users",
+            "html_url": "https://support.discord.com/hc/en-us/articles/38860612202775-How-Teens-Experience-Discord-in-Brazil",
             "author_id": 2921470028,
             "comments_disabled": true,
             "draft": false,
@@ -1061,13 +1170,13 @@
             "position": 0,
             "section_id": 360009072571,
             "created_at": "2026-03-06T18:58:30Z",
-            "name": "Age Assurance for Brazilian Users",
-            "title": "Age Assurance for Brazilian Users",
+            "name": "How Teens Experience Discord in Brazil",
+            "title": "How Teens Experience Discord in Brazil",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:23:33Z",
+            "edited_at": "2026-09-22T17:54:25Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -1076,9 +1185,9 @@
                 "brazil",
                 "brazil users"
             ],
-            "body": "6af9fc3c98683ebe8e2dedb6b3ff8c1cfcff2f0b385ac201c7f7f15b11d7d3a6",
+            "body": "4a526fc887ff54c249a6f9485421741f8162a533ce8cb6b2501553b751dea28a",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/38905173185303"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517208150935"
         },
         {
             "id": 38859942749463,
@@ -1097,7 +1206,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:02:57Z",
+            "edited_at": "2026-09-22T17:54:37Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -1105,14 +1214,14 @@
                 "answer-bot",
                 "profile privacy"
             ],
-            "body": "36419ee569a2a8101e5dddb09df3087221d6bd59b9008b41641a1bc132d460df",
+            "body": "689fb446f1d65804f4a50584d4cc8c44edd4c1f7ba376506857568ae6f21dbc8",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/39722756283031"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43516525837207"
         },
         {
             "id": 38832004637207,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/38832004637207.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/38832004637207-Age-Assurance-for-Australian-Users",
+            "html_url": "https://support.discord.com/hc/en-us/articles/38832004637207-How-Teens-Experience-Discord-in-Australia",
             "author_id": 2921470028,
             "comments_disabled": true,
             "draft": false,
@@ -1120,13 +1229,13 @@
             "position": 0,
             "section_id": 360009072571,
             "created_at": "2026-03-05T18:20:15Z",
-            "name": "Age Assurance for Australian Users",
-            "title": "Age Assurance for Australian Users",
+            "name": "How Teens Experience Discord in Australia",
+            "title": "How Teens Experience Discord in Australia",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:23:04Z",
+            "edited_at": "2026-09-22T17:54:11Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -1134,9 +1243,9 @@
                 "age assurance",
                 "australian users"
             ],
-            "body": "3ebb38cecff7dec6bdb3fa517a7e8ada842fe0176e9a29c2eb3dcbf147472e67",
+            "body": "dfd06e1b2b4392a5fe126159c51f6f8cf6216d14d393392219e167d657802bb6",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/38905428721687"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517153040023"
         },
         {
             "id": 38810584460439,
@@ -1278,33 +1387,6 @@
             "body": "2e9f4d26686a3ea3606beeffa963ea0f1a8f8fe96af2bce796a2304f916ddf9a",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/38744307021335"
-        },
-        {
-            "id": 38332670254231,
-            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/38332670254231.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/38332670254231-Age-Assurance-Update-FAQ",
-            "author_id": 12415876668,
-            "comments_disabled": true,
-            "draft": false,
-            "promoted": false,
-            "position": 0,
-            "section_id": 360009072571,
-            "created_at": "2026-02-11T18:05:40Z",
-            "name": "Age Assurance Update FAQ",
-            "title": "Age Assurance Update FAQ",
-            "source_locale": "en-us",
-            "locale": "en-us",
-            "outdated": false,
-            "outdated_locales": [],
-            "edited_at": "2026-02-24T19:02:12Z",
-            "user_segment_id": null,
-            "permission_group_id": 1720972,
-            "content_tag_ids": [],
-            "label_names": [
-                "age assurance"
-            ],
-            "body": "d89784b98a3e18060067e909bd6ad39b3de7137cbdb628692ba289ee01bb8515",
-            "user_segment_ids": []
         },
         {
             "id": 38025123604631,
@@ -2633,7 +2715,7 @@
         {
             "id": 33362401287959,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/33362401287959.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/33362401287959-Age-Assurance-for-UK-Users",
+            "html_url": "https://support.discord.com/hc/en-us/articles/33362401287959-How-Teens-Experience-Discord-in-the-UK",
             "author_id": 1504238994441,
             "comments_disabled": true,
             "draft": false,
@@ -2641,13 +2723,13 @@
             "position": 0,
             "section_id": 360009072571,
             "created_at": "2025-07-09T21:03:43Z",
-            "name": "Age Assurance for UK Users",
-            "title": "Age Assurance for UK Users",
+            "name": "How Teens Experience Discord in the UK",
+            "title": "How Teens Experience Discord in the UK",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:22:31Z",
+            "edited_at": "2026-09-22T17:54:05Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -2681,9 +2763,9 @@
                 "age assurance",
                 "experience"
             ],
-            "body": "bb9fe059b70bc5ccee1d9e1a81f4a75461400cf24599b04697a0edd8fe3c6bba",
+            "body": "3e8b3d5753287d89fac101e9b1e1bd283342b1eaebf37d66a2cd9c97bbb79611",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/38909170377239"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517136656663"
         },
         {
             "id": 33103248997911,
@@ -3669,7 +3751,7 @@
         {
             "id": 30326565624343,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/30326565624343.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Complete-Age-Assurance-on-Discord",
+            "html_url": "https://support.discord.com/hc/en-us/articles/30326565624343-How-to-Confirm-Your-Age-Group-on-Discord",
             "author_id": 1504238994441,
             "comments_disabled": true,
             "draft": false,
@@ -3677,13 +3759,13 @@
             "position": 0,
             "section_id": 360009072571,
             "created_at": "2025-02-28T23:11:37Z",
-            "name": "How to Complete Age Assurance on Discord",
-            "title": "How to Complete Age Assurance on Discord",
+            "name": "How to Confirm Your Age Group on Discord",
+            "title": "How to Confirm Your Age Group on Discord",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-18T20:31:33Z",
+            "edited_at": "2026-09-22T17:53:10Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -3716,9 +3798,9 @@
                 "confirm",
                 "your"
             ],
-            "body": "7e38a07d728a9d4d8a5edbdb342a2db8dd1eaceaa4beacf027a2b754dbbac09a",
+            "body": "6fcd208458a47ea1211c7455ba1b1ff61a1c57f496250b71104006e89f6c67bd",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/39423279630743"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517442456343"
         },
         {
             "id": 30152512891543,
@@ -6228,7 +6310,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T19:28:35Z",
+            "edited_at": "2026-09-22T17:55:07Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -6249,9 +6331,9 @@
                 "guardians",
                 "linked account"
             ],
-            "body": "366406d8443a05cc0ec018570f1ccd74dafaa8a25edb8be0497e1015353fafd2",
+            "body": "17b5754d995a39a89529f08b2f6c4ef4d7bca85c73e7b306976ff941bc36d7f5",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/36027365517207"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43515415808919"
         },
         {
             "id": 14155043715735,
@@ -6270,7 +6352,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T19:22:09Z",
+            "edited_at": "2026-09-22T17:55:10Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -6290,9 +6372,9 @@
                 "center",
                 "linking"
             ],
-            "body": "27d1717f65c447a7be05c15d637f61825349ce0a7ec3e778be58602abd0db43d",
+            "body": "02cbed218736e319b92f20017bdbe6a53fa9a1829e6c5344541da31520a26933",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/41441807578903"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43515234093975"
         },
         {
             "id": 14155039712407,
@@ -6884,7 +6966,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T19:59:37Z",
+            "edited_at": "2026-09-22T17:54:42Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -6894,9 +6976,9 @@
                 "activity status",
                 "activity status settings"
             ],
-            "body": "f173c681b32c71d48dbefd894b353c3485826b78cdf4e0948f7d0672ecbf65a9",
+            "body": "6ae7d36a234396ff241fa8b54afd902a9dc0516b9b4be3666fe527f9152b69e7",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/33543076762007"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43516378944151"
         },
         {
             "id": 6181726888215,
@@ -9316,7 +9398,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-16T19:41:22Z",
+            "edited_at": "2026-09-22T17:55:04Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -9330,9 +9412,9 @@
                 "friend request failed",
                 "how to add a friend"
             ],
-            "body": "6017802f77549ff0f51705079273380a9c2da5e2d2518cf7acd81841035c93bd",
+            "body": "2431beed974692355238f72ebfbe707634ba39c07bb79ad0ebacf763eeb88cbf",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/24234624725911"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43515620545303"
         },
         {
             "id": 216273938,
@@ -11316,7 +11398,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-18T20:30:00Z",
+            "edited_at": "2026-09-22T17:54:45Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -11327,9 +11409,9 @@
                 "message-requests",
                 "spam folder"
             ],
-            "body": "033264e2b8d513244343dc0e597b28da074dbe6fd3914aa944d71b959fbf990f",
+            "body": "66d342ce4e6b6178141ecc3a237d4260a2b480553a0917b77eb129868b7eae5b",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/33574428973591"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43516363509143"
         },
         {
             "id": 4407571667351,
@@ -11757,12 +11839,12 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-17T22:36:41Z",
+            "edited_at": "2026-09-22T17:55:31Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
             "label_names": [],
-            "body": "af67e846ac0b469c2a48d5773a1b46aabf4d9f94a2aadd572ae4d14a02aba50f",
+            "body": "7cbd886af75d3070eb67dc42fe0351128dafd97013384d4251a90c72b0088f17",
             "user_segment_ids": []
         },
         {
@@ -12178,7 +12260,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:03:41Z",
+            "edited_at": "2026-09-22T17:54:32Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -12187,9 +12269,9 @@
                 "content filters",
                 "sensitive content filters"
             ],
-            "body": "c0b6de4a615564cb057b5e6a454cf04796d0d0f39b46696986fc7d505792b656",
+            "body": "b50badd654d88490f7a05a6537614ff3b0c868ebf2fc04c5fa4978c734ac40ea",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/33022824060055"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43516520209943"
         },
         {
             "id": 7180791233559,
@@ -12727,7 +12809,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T20:31:26Z",
+            "edited_at": "2026-09-22T17:53:38Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -12747,9 +12829,8 @@
                 "assurance",
                 "asking"
             ],
-            "body": "f62492996504d005fdd69587376808338254d98806b1b8b916f0d317e59ec701",
-            "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517549967255"
+            "body": "cc4ca42bdb1a8b9a1ac21477872d70c2459a6bb821c4ae5c6ba9b7eeb8d8828f",
+            "user_segment_ids": []
         },
         {
             "id": 360039598252,
@@ -13022,7 +13103,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-22T00:05:02Z",
+            "edited_at": "2026-09-22T17:53:57Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -13043,9 +13124,9 @@
                 "suspended",
                 "violation"
             ],
-            "body": "a469775e382b3a2f8921fe37282e7af11a2112a7cf06bc58ad55ff3ea9bed5c4",
+            "body": "2b6b7347a34476cbbf7e710542edea18078d8f823eadd2f356ffc55ee6e1acac",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/36768944589335"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43517442927639"
         },
         {
             "id": 360041139231,
@@ -13341,14 +13422,14 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T19:53:45Z",
+            "edited_at": "2026-09-22T17:54:52Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
             "label_names": [],
-            "body": "985b7f474b801e55b33586430eadbef88c2a8c873bbcded7c649abb371e26e0f",
+            "body": "600ab258b94792bc877c12b0ae7b0827c5e63bc7383aa0a01e944de3fca17c20",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/35492977169943"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43516248537879"
         },
         {
             "id": 360045738891,
@@ -13769,7 +13850,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T19:50:17Z",
+            "edited_at": "2026-09-22T17:54:53Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -13781,7 +13862,7 @@
                 "gate",
                 "18+"
             ],
-            "body": "194bdd02d018426822f19245bca7b755c86a4b30bddf4dcfcf55cb72d0e45a55",
+            "body": "c31c6632aee4520f90553ac140503b02087507c3af6aa58ad471ea5a2dbb47c9",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/35493461038359"
         },
@@ -14085,7 +14166,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-15T19:41:59Z",
+            "edited_at": "2026-09-22T17:54:56Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -14094,9 +14175,9 @@
                 "tns",
                 "answer-bot"
             ],
-            "body": "698392524e1b58c4275780c9bb29c3532207a8ae418cc4c4ee35dca840dc28dd",
+            "body": "32d4b4de33e2f7b80aa5d60400605a12c0ffec7c714f546035e1464144efb773",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/33574711900951"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43515751142935"
         },
         {
             "id": 12477677109143,
@@ -16824,7 +16905,7 @@
         {
             "id": 38338398970263,
             "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/38338398970263.json",
-            "html_url": "https://support-dev.discord.com/hc/en-us/articles/38338398970263-Upcoming-Discord-Age-Assurance-Changes-What-You-Need-To-Know",
+            "html_url": "https://support-dev.discord.com/hc/en-us/articles/38338398970263-Age-Assurance-What-Developers-Need-to-Know",
             "author_id": 17347533772439,
             "comments_disabled": true,
             "draft": false,
@@ -16832,13 +16913,13 @@
             "position": 0,
             "section_id": 360001637571,
             "created_at": "2026-02-11T21:11:11Z",
-            "name": "Upcoming Discord Age Assurance Changes: What You Need To Know",
-            "title": "Upcoming Discord Age Assurance Changes: What You Need To Know",
+            "name": "Age Assurance: What Developers Need to Know",
+            "title": "Age Assurance: What Developers Need to Know",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-02-24T19:04:42Z",
+            "edited_at": "2026-09-22T18:12:55Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [
@@ -16846,7 +16927,7 @@
                 "01KH78N6KWDQ0M5C31EPRPR6BM"
             ],
             "label_names": [],
-            "body": "944594eac3ad4391e6b54f9066620e790683f3a102fc30a92d41d6dc1e1321bb",
+            "body": "c88782cd78780c1542cd28fbb6131bf3aacae0c8010a01e18eee7258601bbc13",
             "user_segment_ids": []
         },
         {
