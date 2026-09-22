@@ -1,0 +1,141 @@
+<h2>
+ TLDR
+</h2>
+<ul role="list">
+ <li>
+  <strong>
+   More than 90% of you won’t be asked to confirm your age.
+  </strong>
+  Since
+  <a href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing">
+   our last post
+  </a>
+  about teen safety, we've had to launch age assurance solutions in more places, including Texas and Brazil. Laws requiring age assurance are expanding around the world. Rather than waiting to be told how to do it, we’re launching our own privacy-preserving approach: one that reflects your feedback.
+ </li>
+ <li>
+  <strong>
+   You can check your age group status at
+  </strong>
+  <a href="https://discord.com/settings/account-status">
+   <strong>
+    User Settings &gt; Account Status
+   </strong>
+  </a>
+  <strong>
+   .
+  </strong>
+  We've estimated your age group automatically from account signals like how long your account has existed or the kinds of servers you're a part of. We don’t look at your messages, calls, or other content.
+  <strong>
+   We're launching this over the course of this week, so it may take a few days to reach your account.
+  </strong>
+ </li>
+ <li>
+  <strong>
+   If you're in the adult age group (18+), nothing changes.
+  </strong>
+  If you're in the teen age group (13-17), you can keep messaging friends, joining voice calls, and participating in non-age-restricted servers, but with additional safety protections that block age-restricted content, spaces, and settings. Otherwise, Discord works the same. More on this
+  <a href="https://discord.com/blog/safer-for-teens-same-discord-for-adults#4">
+   below
+  </a>
+  .
+ </li>
+ <li>
+  <strong>
+   We've added several new ways to confirm your age, including some that don't require an ID or selfie (including credit cards)
+  </strong>
+  . If you're an adult but weren't automatically placed in the adult age group, you can confirm your age group at any time by going to
+  <a href="https://discord.com/settings/account-status">
+   User Settings &gt; Account Status
+  </a>
+  . More on the new options
+  <a href="https://discord.com/blog/safer-for-teens-same-discord-for-adults#2">
+   below
+  </a>
+  .
+  <br/>
+  ‍
+ </li>
+</ul>
+<div class="w-embed">
+ <hr class="hr-style"/>
+</div>
+<p>
+ In February, after listening to your feedback, I shared that we were
+ <a href="https://discord.com/blog/getting-global-age-assurance-right-what-we-got-wrong-and-whats-changing">
+  delaying our announced plans for global age assurance
+ </a>
+ . I promised we'd come back in the second half of the year with a more transparent, clearer path forward, with less friction. Here's where we landed.
+</p>
+<p>
+ Age assurance draws strong opinions and skepticism, especially when it involves sharing biometric information or a form of ID. At the same time, age assurance laws are expanding, and since my last post we've had to launch age assurance in other regions, including in Brazil and in Texas. We're hearing from policymakers in countless states and countries who want stronger teen protections, from the European Union to Indonesia. To me, that makes it more important than ever to show that this can be done in a privacy-preserving way: one where
+ <strong>
+  more than 90% of you won’t have to confirm your age.
+ </strong>
+</p>
+<p>
+ That's why, starting tomorrow, we'll automatically place you in an age group using account signals, like how long your account has existed and the kinds of servers you're part of. We use multiple account signals to determine age groups at an accuracy level matching what’s possible with biometrics.
+ <strong>
+  No single server determines your age group, and we don't look at your messages, calls, or other content to decide which age group you’re in.
+ </strong>
+</p>
+<p>
+ <strong>
+  If you just want to know your age group:
+ </strong>
+ Go to
+ <a href="https://discord.com/settings/account-status">
+  <strong>
+   User Settings &gt; Account Status
+  </strong>
+ </a>
+ . We're launching this over the course of this week, so it may take a few days to reach your account. If you don't see anything yet, check back later. Your age group isn't shown on your profile or visible to other members in a server. Here's what each age group status means:
+</p>
+<ul role="list">
+ <li>
+  <strong>
+   Adult Age Group:
+  </strong>
+  You're in the adult age group (18+), so nothing changes for you.
+ </li>
+ <li>
+  <strong>
+   Teen Age Group:
+  </strong>
+  You're in the teen age group (13-17), so you have additional protections. Content and settings meant for adults aren't available. Otherwise, Discord works the same.
+  <a href="https://support.discord.com/hc/en-us/articles/42178056096663">
+   Learn more here
+  </a>
+  .
+ </li>
+ <li>
+  <strong>
+   Unconfirmed:
+  </strong>
+  This is for cases where we don't have enough signal yet to place you in an age group, so
+  <a href="https://support.discord.com/hc/en-us/articles/42178056096663">
+   some content and settings meant for adults
+  </a>
+  aren't available until you confirm you're an adult. New accounts remain unconfirmed until we have enough information to determine an age group for them. You can continue to use Discord without taking any action, but if you want access to age-restricted content, spaces, and settings, you can confirm your age group in
+  <a href="https://discord.com/settings/account-status">
+   User Settings &gt; Account Status
+  </a>
+  .
+ </li>
+</ul>
+<p>
+ If you're an adult but you weren't automatically placed in the adult age group, you can fix it by confirming your age group in
+ <a href="https://discord.com/settings/account-status">
+  <strong>
+   User Settings &gt; Account Status
+  </strong>
+ </a>
+ .
+</p>
+<figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1492pxpx">
+ <div>
+  <img alt="Account status settings page with new age group section." loading="lazy" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6aad3e656e75dc60fe16dcbf_account%20status.png"/>
+ </div>
+</figure>
+<p>
+ Here's more on what we did since February and how age assurance works.
+</p>
