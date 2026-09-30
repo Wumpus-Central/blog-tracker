@@ -1,6 +1,46 @@
 {
     "support": [
         {
+            "id": 43773430420119,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/43773430420119.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/43773430420119-Non-Consensual-Intimate-Imagery-Reporting-Under-the-UK-Online-Safety-Act-OSA",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 24453122216087,
+            "created_at": "2026-09-25T23:45:10Z",
+            "name": "Non-Consensual Intimate Imagery Reporting Under the UK Online Safety Act (OSA)",
+            "title": "Non-Consensual Intimate Imagery Reporting Under the UK Online Safety Act (OSA)",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-09-28T19:48:03Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [
+                "safety",
+                "answer-bot",
+                "OSA",
+                "UK",
+                "Safety",
+                "Intimate",
+                "Reporting",
+                "Online",
+                "children",
+                "NCII",
+                "Non-Consensual",
+                "Imagery",
+                "Act",
+                "protection"
+            ],
+            "body": "ca6ed87d5674e685ba5661b1eb26cbd2d04e6c13612ad370e075de229df01048",
+            "user_segment_ids": []
+        },
+        {
             "id": 43761617103767,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/43761617103767.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/43761617103767-Get-a-Riot-Cash-Code-When-You-Subscribe-to-Nitro",
@@ -17,7 +57,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-30T18:46:13Z",
+            "edited_at": "2026-09-30T22:02:43Z",
             "user_segment_id": null,
             "permission_group_id": 1720952,
             "content_tag_ids": [],
@@ -28,7 +68,7 @@
                 "riot",
                 "cash"
             ],
-            "body": "0a0db3b200cc4926c90663720a88eb8251140a986de17d1ac57f4b391b995d9f",
+            "body": "217ed23964dfe3479bf7f3d1b4b85ae79e0af1d945e0a5fe09f3cb3cd0d054f7",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/43832707836439"
         },
@@ -49,7 +89,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-30T15:51:45Z",
+            "edited_at": "2026-09-30T22:14:42Z",
             "user_segment_id": null,
             "permission_group_id": 1720952,
             "content_tag_ids": [],
@@ -66,9 +106,9 @@
                 "halloween",
                 "familiar"
             ],
-            "body": "ec04534a73219ce697aaf9a983489173979d7964c2c8347f9457da83c6376198",
+            "body": "37edd422d0649a78a7b12dc53244fc625d181f18f5286892035a6a5b78a62f53",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43879549461527"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43892299407639"
         },
         {
             "id": 43483782921623,
@@ -1222,7 +1262,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-24T23:12:17Z",
+            "edited_at": "2026-09-30T21:35:13Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -1405,7 +1445,7 @@
         {
             "id": 38675715591831,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/38675715591831.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/38675715591831-How-to-Report-Non-Consensual-Intimate-Imagery-Under-The-Take-It-Down-Act",
+            "html_url": "https://support.discord.com/hc/en-us/articles/38675715591831-How-to-Report-Non-Consensual-Intimate-Imagery-Under-Local-Laws",
             "author_id": 1504238994441,
             "comments_disabled": true,
             "draft": false,
@@ -1413,13 +1453,13 @@
             "position": 0,
             "section_id": 24453668939799,
             "created_at": "2026-02-26T23:45:47Z",
-            "name": "How to Report Non-Consensual Intimate Imagery Under The Take It Down Act",
-            "title": "How to Report Non-Consensual Intimate Imagery Under The Take It Down Act",
+            "name": "How to Report Non-Consensual Intimate Imagery Under Local Laws",
+            "title": "How to Report Non-Consensual Intimate Imagery Under Local Laws",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-30T18:01:09Z",
+            "edited_at": "2026-09-30T20:52:58Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -1440,9 +1480,9 @@
                 "takeitdown",
                 "act"
             ],
-            "body": "a54fe32f6edd7f79e15e0bb97626f695cfccbd2427e7b1529e1607613242bca0",
+            "body": "3948763b4e8200c605987b27c60f11549f5752c438ffe4bd9b0917c6207b014a",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/39550452560535"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/43884062606871"
         },
         {
             "id": 38512923241623,
@@ -16994,6 +17034,64 @@
         }
     ],
     "support-dev": [
+        {
+            "id": 43187606277271,
+            "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/43187606277271.json",
+            "html_url": "https://support-dev.discord.com/hc/en-us/articles/43187606277271-Self-Serve-Verified-Name-Changes",
+            "author_id": 17347533772439,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": true,
+            "position": 0,
+            "section_id": 6308906589975,
+            "created_at": "2026-09-02T15:02:01Z",
+            "name": "Self Serve Verified Name Changes",
+            "title": "Self Serve Verified Name Changes",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-09-30T19:17:57Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720952,
+            "content_tag_ids": [
+                "01KHVYQJCDQDZSG7WN6H14S0G5",
+                "01KS0SN4Y4V2CEMNM2X6HJRGF7"
+            ],
+            "label_names": [],
+            "body": "0b8f0d0a8da1a7144b443ba2449a51691b146cf35de653d17da29ec7ff3ab918",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support-dev.discord.com/hc/article_attachments/43886333055767"
+        },
+        {
+            "id": 43187479884951,
+            "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/43187479884951.json",
+            "html_url": "https://support-dev.discord.com/hc/en-us/articles/43187479884951-Self-Serve-Verified-Ownership-Transfers",
+            "author_id": 17347533772439,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": true,
+            "position": 0,
+            "section_id": 6308906589975,
+            "created_at": "2026-09-02T14:58:21Z",
+            "name": "Self Serve Verified Ownership Transfers",
+            "title": "Self Serve Verified Ownership Transfers",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-09-30T20:44:50Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720952,
+            "content_tag_ids": [
+                "01KHVYQJCDQDZSG7WN6H14S0G5",
+                "01M1H9YWK5CQ1Z117TARK3JS9G"
+            ],
+            "label_names": [],
+            "body": "f787132c563bddd603644bdd90a18d5252ac8246ab45ec1793c470d1ae17234d",
+            "user_segment_ids": [],
+            "thumbnail_url": "https://support-dev.discord.com/hc/article_attachments/43888331284247"
+        },
         {
             "id": 40281523410967,
             "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/40281523410967.json",
