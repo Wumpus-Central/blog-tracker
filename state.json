@@ -819,7 +819,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-21T18:55:40Z",
+            "edited_at": "2026-10-02T21:59:16Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -836,7 +836,7 @@
                 "can",
                 "i"
             ],
-            "body": "14dbeddea350dd19c5279ab3327e8b0c67f680b34fc87d5c417e40ec6d6a0dc5",
+            "body": "310d911709b459c88bf013331ff4b27e08838e742e76e255fbbbc4364b0bd6ce",
             "user_segment_ids": []
         },
         {
@@ -1297,7 +1297,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-30T21:35:13Z",
+            "edited_at": "2026-10-02T20:44:58Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -1305,7 +1305,7 @@
                 "answer-bot",
                 "nitro rewards"
             ],
-            "body": "43828385fdaf7112577edbd8b6bf2373165630dd73cb87fc1e0f2bfe310bac81",
+            "body": "72b0895052aa1c00b465af07a4bd96e6db10119498172dbf226de4fb0449b9eb",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/40276842682007"
         },
