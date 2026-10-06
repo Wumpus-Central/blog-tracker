@@ -57,7 +57,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-10-03T00:20:33Z",
+            "edited_at": "2026-10-06T18:56:03Z",
             "user_segment_id": null,
             "permission_group_id": 1720952,
             "content_tag_ids": [],
@@ -68,7 +68,7 @@
                 "riot",
                 "cash"
             ],
-            "body": "960ca5f950de1c84d898f0e5b49c730c8e857d3656bde6f2bcdb8a022991d62a",
+            "body": "217ed23964dfe3479bf7f3d1b4b85ae79e0af1d945e0a5fe09f3cb3cd0d054f7",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/43832707836439"
         },
@@ -19912,6 +19912,15 @@
     ],
     "support-ads": [],
     "blog": [
+        {
+            "title": "Discord Patch Notes: October 6, 2026",
+            "link": "https://discord.com/blog/discord-patch-notes-october-6-2026",
+            "summary": "Check out the finer details of the more technical fixes implemented into Discord recently.",
+            "published": "Tue, 06 Oct 2026 00:00:00 GMT",
+            "media_thumbnail_url": "https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/683a385e31ae16bd173ee8d9_image2.png",
+            "body": "5eaea91c581a68abe2684fd03d49090dbc79144d9c90fa0d613db39ac187310d",
+            "body_format": 2
+        },
         {
             "title": "Cauldron Bubble w/o the Trouble? It\u2019s Discord Halloween, Witches",
             "link": "https://discord.com/blog/halloween-2026",
