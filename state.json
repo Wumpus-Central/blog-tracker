@@ -1,6 +1,44 @@
 {
     "support": [
         {
+            "id": 43819652702871,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/43819652702871.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/43819652702871-What-is-Decree-No-12-976-2026",
+            "author_id": 1504238994441,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "section_id": 24453122216087,
+            "created_at": "2026-09-28T16:14:04Z",
+            "name": "What is Decree No. 12,976/2026",
+            "title": "What is Decree No. 12,976/2026",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-10-07T17:36:50Z",
+            "user_segment_id": null,
+            "permission_group_id": 1720972,
+            "content_tag_ids": [],
+            "label_names": [
+                "removal",
+                "answer-bot",
+                "request",
+                "brazil",
+                "Non-Consensual",
+                "ncii",
+                "law",
+                "no",
+                "12976/2026",
+                "imagery",
+                "decree",
+                "submit"
+            ],
+            "body": "f5db0dbc04ce846974ceadcdfb54b616ecf0f21fff7ec728138c3f101289abbc",
+            "user_segment_ids": []
+        },
+        {
             "id": 43773430420119,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/43773430420119.json",
             "html_url": "https://support.discord.com/hc/en-us/articles/43773430420119-Non-Consensual-Intimate-Imagery-Reporting-Under-the-UK-Online-Safety-Act-OSA",
@@ -498,7 +536,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-24T22:47:45Z",
+            "edited_at": "2026-10-07T16:00:32Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -510,7 +548,7 @@
                 "eligibility",
                 "promotions"
             ],
-            "body": "c434086ce757ca2730893ab4ab8e7762a028b626342c6b7552321135f1620f12",
+            "body": "035d10a2c1283e0fc902012aa994adda989639eda5d7fb80557ca9b7ce5354a3",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/42440935345815"
         },
@@ -1151,7 +1189,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-18T19:10:13Z",
+            "edited_at": "2026-10-07T18:05:56Z",
             "user_segment_id": null,
             "permission_group_id": 6449276657303,
             "content_tag_ids": [],
@@ -1162,7 +1200,7 @@
                 "game shop",
                 "rust shop"
             ],
-            "body": "07c139aeb9db78f30102567516ad7d16f7a8eff08277b32db3b69cc4d0abc808",
+            "body": "2c82e9445122257bc3d892b1609b2d7b0a73b8b1cca8f27e1555d9c1dfdb84de",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/42477023070359"
         },
@@ -1494,7 +1532,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-09-30T20:52:58Z",
+            "edited_at": "2026-10-07T17:26:37Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -1515,7 +1553,7 @@
                 "takeitdown",
                 "act"
             ],
-            "body": "3948763b4e8200c605987b27c60f11549f5752c438ffe4bd9b0917c6207b014a",
+            "body": "d6a0a437b478109253966c32d19ed886194c9330ad7b81d0cc7f898ee84b50fa",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/43884062606871"
         },
@@ -4742,7 +4780,7 @@
         {
             "id": 27304636159895,
             "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/27304636159895.json",
-            "html_url": "https://support.discord.com/hc/en-us/articles/27304636159895-Halloween-Event-2025-FAQ",
+            "html_url": "https://support.discord.com/hc/en-us/articles/27304636159895-Halloween-Event-2026-FAQ",
             "author_id": 1504238994441,
             "comments_disabled": true,
             "draft": false,
@@ -4750,13 +4788,13 @@
             "position": 0,
             "section_id": 115000457731,
             "created_at": "2024-10-24T16:29:37Z",
-            "name": "Halloween Event 2025 FAQ",
-            "title": "Halloween Event 2025 FAQ",
+            "name": "Halloween Event 2026 FAQ",
+            "title": "Halloween Event 2026 FAQ",
             "source_locale": "en-us",
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-10-05T22:45:13Z",
+            "edited_at": "2026-10-07T16:05:58Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -4773,9 +4811,9 @@
                 "2025",
                 "ringtone"
             ],
-            "body": "b07235b9fbc2bb9f035609a0a95a8b4b9b8f08d6f3ed1f76c18ba684e4331e9e",
+            "body": "09ca4292d8744f66dce055ffb89eca02c12e2abff1b53269317423c2ad263bd5",
             "user_segment_ids": [],
-            "thumbnail_url": "https://support.discord.com/hc/article_attachments/35757697627159"
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/44018524106007"
         },
         {
             "id": 27299669812375,
