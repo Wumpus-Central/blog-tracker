@@ -17,7 +17,7 @@
             "locale": "en-us",
             "outdated": false,
             "outdated_locales": [],
-            "edited_at": "2026-10-07T17:36:50Z",
+            "edited_at": "2026-10-07T23:53:50Z",
             "user_segment_id": null,
             "permission_group_id": 1720972,
             "content_tag_ids": [],
@@ -35,7 +35,7 @@
                 "decree",
                 "submit"
             ],
-            "body": "f5db0dbc04ce846974ceadcdfb54b616ecf0f21fff7ec728138c3f101289abbc",
+            "body": "8a1f021e20398dbacf7d3b978c3d57f5750b69de5dacf9778d9f4e9970edcb17",
             "user_segment_ids": []
         },
         {
@@ -164,7 +164,7 @@
             "outdated_locales": [],
             "edited_at": "2026-09-30T22:14:42Z",
             "user_segment_id": null,
-            "permission_group_id": 1720952,
+            "permission_group_id": 1720972,
             "content_tag_ids": [],
             "label_names": [
                 "avatar",
