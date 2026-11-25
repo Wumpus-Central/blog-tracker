@@ -290,6 +290,38 @@
             "body": "9ff5c171bb55a0ae7afcbfbc7bdb2972de08fd96c093858188d2f4817fda507e",
             "user_segment_ids": [],
             "thumbnail_url": "https://support.discord.com/hc/article_attachments/115002666791"
+        },
+        {
+            "id": 37097755077015,
+            "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/37097755077015.json",
+            "html_url": "https://support.discord.com/hc/en-us/articles/37097755077015-Monthly-Orbs-Drop-for-Nitro-Members-FAQ",
+            "author_id": 2921470028,
+            "comments_disabled": true,
+            "draft": false,
+            "promoted": false,
+            "position": 0,
+            "upvote_count": 373,
+            "downvote_count": 175,
+            "section_id": 360002436391,
+            "created_at": "2025-12-17T18:57:26Z",
+            "name": "Monthly Orbs Drop for Nitro Members FAQ",
+            "title": "Monthly Orbs Drop for Nitro Members FAQ",
+            "source_locale": "en-us",
+            "locale": "en-us",
+            "outdated": false,
+            "outdated_locales": [],
+            "edited_at": "2026-05-20T21:28:42Z",
+            "user_segment_id": null,
+            "user_segment_ids": [],
+            "permission_group_id": 6449276657303,
+            "content_tag_ids": [],
+            "label_names": [
+                "nitro orbs",
+                "monthly orbs",
+                "orbs"
+            ],
+            "body": "8954e7f6f22e2b50d1b6596c439212dd0570a29978d816b0f03c04725d93828a",
+            "thumbnail_url": "https://support.discord.com/hc/article_attachments/38196741245847"
         }
     ],
     "support-dev": [
